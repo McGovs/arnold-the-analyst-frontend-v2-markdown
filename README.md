@@ -1,4 +1,4 @@
-# GA4 Analytics Assistant with n8n Integration
+# GA4 Analytics Assistant with n8n Integration 
 
 A production-ready chatbot interface that connects to n8n workflows for BigQuery data analysis. Features advanced timeout handling, session management, and embeddable components.
 
