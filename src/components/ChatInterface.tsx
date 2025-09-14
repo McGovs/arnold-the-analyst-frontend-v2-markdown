@@ -5,6 +5,7 @@ import { Input } from './ui/Input';
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from './ui/Card';
 import { ScrollArea } from './ui/ScrollArea';
 import { Send, Bot, User, Wifi, WifiOff, Clock, X, Trash2 } from 'lucide-react';
+import MarkdownRenderer from './MarkdownRenderer';
 
 export default function ChatInterface() {
   const { 
@@ -156,7 +157,11 @@ export default function ChatInterface() {
                       message.role === "user" ? "bg-blue-600 text-white" : "bg-gray-100 text-gray-900"
                     }`}
                   >
-                    <p className="whitespace-pre-wrap">{message.content}</p>
+                    {message.role === "assistant" ? (
+                      <MarkdownRenderer content={message.content} />
+                    ) : (
+                      <p className="whitespace-pre-wrap">{message.content}</p>
+                    )}
                     <div className="text-xs opacity-70 mt-1">
                       {new Date(message.timestamp).toLocaleTimeString()}
                     </div>
