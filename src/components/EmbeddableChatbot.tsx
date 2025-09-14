@@ -5,6 +5,7 @@ import { Input } from './ui/Input';
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from './ui/Card';
 import { ScrollArea } from './ui/ScrollArea';
 import { Send, Bot, User, Minimize2, Maximize2, X, Clock, Wifi, WifiOff, Trash2 } from 'lucide-react';
+import MarkdownRenderer from './MarkdownRenderer';
 
 interface EmbeddableChatbotProps {
   title?: string;
@@ -180,7 +181,11 @@ export default function EmbeddableChatbot({
                         message.role === "user" ? "bg-blue-600 text-white" : "bg-gray-100 text-gray-900"
                       }`}
                     >
-                      <p className="whitespace-pre-wrap">{message.content}</p>
+                      {message.role === "assistant" ? (
+                        <MarkdownRenderer content={message.content} />
+                      ) : (
+                        <p className="whitespace-pre-wrap">{message.content}</p>
+                      )}
                       <div className="text-xs opacity-70 mt-1">
                         {new Date(message.timestamp).toLocaleTimeString()}
                       </div>
