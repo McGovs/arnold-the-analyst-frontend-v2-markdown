@@ -236,7 +236,7 @@ export default function ChatInterface() {
                     
                     {elapsedTime > 60 && (
                       <div className="mt-2 text-xs text-blue-600 bg-blue-50 p-2 rounded">
-                        💡 Complex BigQuery operations in progress. You can safely switch tabs while waiting.
+                        💡 You can safely switch tabs while waiting.
                       </div>
                     )}
                   </div>
