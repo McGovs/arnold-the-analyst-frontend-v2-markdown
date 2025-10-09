@@ -312,7 +312,7 @@ export function useChat(config?: ChatConfig) {
           const processingMsg: Message = {
             id: (Date.now() + 1).toString(),
             role: 'assistant',
-            content: 'Processing your query... This may take up to 10 minutes.',
+            content: 'Processing your query...please allow 3 to 5 minutes for very complicated queries',
             timestamp: Date.now(),
           };
           setMessages(prev => [...prev, processingMsg]);
