@@ -1,10 +1,11 @@
+// src/App.tsx
 import React, { useState } from 'react';
 import ChatInterface from './components/ChatInterface';
-import EmbedDemo from './pages/EmbedDemo';
-import { MessageCircle, Home } from 'lucide-react';
+import Description from './pages/Description'; // ← was ./pages/EmbedDemo
+import { MessageCircle } from 'lucide-react';
 
 function App() {
-  const [currentPage, setCurrentPage] = useState<'chat' | 'embed'>('chat');
+  const [currentPage, setCurrentPage] = useState<'chat' | 'description'>('chat'); // ← add 'description'
 
   return (
     <div className="min-h-screen">
@@ -28,14 +29,14 @@ function App() {
                 Chat Interface
               </button>
               <button
-                onClick={() => setCurrentPage('embed')}
+                onClick={() => setCurrentPage('description')} // ← was 'embed'
                 className={`px-3 py-2 text-sm font-medium rounded-md transition-colors ${
-                  currentPage === 'embed'
+                  currentPage === 'description'
                     ? 'bg-blue-100 text-blue-700'
                     : 'text-gray-600 hover:text-gray-900 hover:bg-gray-100'
                 }`}
               >
-                Embed Demo
+                Description {/* ← was Embed Demo */}
               </button>
             </div>
           </div>
@@ -43,7 +44,7 @@ function App() {
       </nav>
 
       {/* Page Content */}
-      {currentPage === 'chat' ? <ChatInterface /> : <EmbedDemo />}
+      {currentPage === 'chat' ? <ChatInterface /> : <Description />} {/* ← was <EmbedDemo /> */}
     </div>
   );
 }
