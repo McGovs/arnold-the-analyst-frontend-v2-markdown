@@ -135,7 +135,7 @@ export default function ChatInterface() {
                     <p className="font-medium mb-2 mt-4">Data Source:</p>
                     <p className="text-gray-600">
                       The data is drawn from publicly available Google Merchant Store data. This data covers a three
-                      month time period from <strong>November 1st 2020 to January 2021</strong>.
+                      month time period from <strong>November 1st 2020 to January 31st 2021</strong>.
                     </p>
                     <div className="mt-4 p-2 bg-blue-50 rounded border-l-4 border-blue-400">
                       <p className="text-blue-800 font-medium text-xs">💡 Performance Note</p>
