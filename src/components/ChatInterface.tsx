@@ -118,16 +118,16 @@ export default function ChatInterface() {
               {messages.length === 0 && (
                 <div className="text-center text-gray-500 mt-8">
                   <Bot className="w-12 h-12 mx-auto mb-4 text-gray-400" />
-                  {/* Intro line: 20% larger + black */}
-                  <p className="text-[1.35rem] font-medium mb-3 text-black">
+                  {/* Intro line: now 10% smaller than the prior bump and grey via inheritance */}
+                  <p className="text-[1.215rem] font-medium mb-3">
                     I'm Arnold, Your Personal Google Analytics Data Analyst :)
                   </p>
 
-                  {/* Info block: increased base font and black where requested */}
-                  <div className="mt-4 text-base text-left bg-gray-50 p-3 rounded-lg">
-                    {/* Example Queries: 30% larger than previous xs and black */}
-                    <p className="font-semibold mb-2 text-black">Example Queries:</p>
-                    <ul className="space-y-2 text-black">
+                  {/* Info block: 10% smaller than the previous bump, back to grey */}
+                  <div className="mt-4 text-[0.9rem] text-left bg-gray-50 p-3 rounded-lg text-gray-600">
+                    {/* Example Queries header back to grey and sized with the container */}
+                    <p className="font-medium mb-2">Example Queries:</p>
+                    <ul className="space-y-2">
                       <li>
                         • Easy: "Which month had the most number of page views?" - <strong>Approx. 1 min</strong>
                       </li>
@@ -139,17 +139,17 @@ export default function ChatInterface() {
                       </li>
                     </ul>
 
-                    {/* Data Source: 30% larger and black */}
-                    <p className="font-semibold mb-2 mt-4 text-black">Data Source:</p>
-                    <p className="text-black">
+                    {/* Data Source header and text back to grey, same 10% smaller size */}
+                    <p className="font-medium mb-2 mt-4">Data Source:</p>
+                    <p>
                       The data is drawn from publicly available Google Merchant Store data. This data covers a three
                       month time period from November 1st 2020 to January 31st 2021.
                     </p>
 
-                    {/* Performance Note: 30% larger */}
+                    {/* Performance Note made 10% smaller than last time (kept blue styling) */}
                     <div className="mt-4 p-3 bg-blue-50 rounded border-l-4 border-blue-400">
-                      <p className="text-blue-800 font-semibold text-base">💡 Performance Note</p>
-                      <p className="text-blue-700 text-base">
+                      <p className="text-blue-800 font-semibold text-[0.9rem]">💡 Performance Note</p>
+                      <p className="text-blue-700 text-[0.9rem]">
                         Complex queries may take up to 5 minutes to process. You can safely switch tabs while waiting.
                       </p>
                     </div>
