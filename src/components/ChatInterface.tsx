@@ -118,22 +118,38 @@ export default function ChatInterface() {
               {messages.length === 0 && (
                 <div className="text-center text-gray-500 mt-8">
                   <Bot className="w-12 h-12 mx-auto mb-4 text-gray-400" />
-                  <p className="text-lg font-medium mb-2">I'm Arnold, Your Personal Google Analytics Data Analyst :)</p>
-                  <div className="mt-4 text-xs text-left bg-gray-50 p-3 rounded-lg">
-                    <p className="font-medium mb-2">Example queries:</p>
-                    <ul className="space-y-1">
-                      <li>• "What were our top selling products last month?"</li>
-                      <li>• "Show me customer growth trends"</li>
-                      <li>• "What's the average order value by region?"</li>
+                  {/* Intro line: 20% larger + black */}
+                  <p className="text-[1.35rem] font-medium mb-3 text-black">
+                    I'm Arnold, Your Personal Google Analytics Data Analyst :)
+                  </p>
+
+                  {/* Info block: increased base font and black where requested */}
+                  <div className="mt-4 text-base text-left bg-gray-50 p-3 rounded-lg">
+                    {/* Example Queries: 30% larger than previous xs and black */}
+                    <p className="font-semibold mb-2 text-black">Example Queries:</p>
+                    <ul className="space-y-2 text-black">
+                      <li>
+                        • Easy: "Which month had the most number of page views?" - <strong>Approx. 1 min</strong>
+                      </li>
+                      <li>
+                        • Intermediate: "Show me the add-to-cart to checkout conversion rate, i.e. number of users who began checkout divided by the number of users who added to cart, in January 2021 by product category. Identify which categories underperformed." - <strong>Approx. 1 to 2 mins</strong>
+                      </li>
+                      <li>
+                        • Advanced: "Compare the 30-day repeat purchase rates for new customers acquired via mobile versus desktop in December. Please output the repeat purchase rate for the top three countries across each device type." - <strong>Approx. 2 to 4 mins</strong>
+                      </li>
                     </ul>
-                    <p className="font-medium mb-2 mt-4">Data Source:</p>
-                    <p className="text-gray-600">
+
+                    {/* Data Source: 30% larger and black */}
+                    <p className="font-semibold mb-2 mt-4 text-black">Data Source:</p>
+                    <p className="text-black">
                       The data is drawn from publicly available Google Merchant Store data. This data covers a three
                       month time period from November 1st 2020 to January 31st 2021.
                     </p>
-                    <div className="mt-4 p-2 bg-blue-50 rounded border-l-4 border-blue-400">
-                      <p className="text-blue-800 font-medium text-xs">💡 Performance Note</p>
-                      <p className="text-blue-700 text-xs">
+
+                    {/* Performance Note: 30% larger */}
+                    <div className="mt-4 p-3 bg-blue-50 rounded border-l-4 border-blue-400">
+                      <p className="text-blue-800 font-semibold text-base">💡 Performance Note</p>
+                      <p className="text-blue-700 text-base">
                         Complex queries may take up to 5 minutes to process. You can safely switch tabs while waiting.
                       </p>
                     </div>
