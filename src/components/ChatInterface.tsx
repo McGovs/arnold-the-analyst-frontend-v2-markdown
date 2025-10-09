@@ -134,7 +134,7 @@ export default function ChatInterface() {
                     </ul>
                     <p className="font-medium mb-2 mt-4">Data Source:</p>
                     <p className="text-gray-600">
-                      The data is drawn from publicly available Google Merchant Store data. This data covers a three
+                      The data is drawn from publicly available Google Merchant Store Google Analytics 4 data. This data covers a three
                       month time period from <strong>November 2020 - January 2021</strong>.
                     </p>
                     <div className="mt-4 p-2 bg-blue-50 rounded border-l-4 border-blue-400">
