@@ -140,7 +140,7 @@ export default function ChatInterface() {
                     <div className="mt-4 p-2 bg-blue-50 rounded border-l-4 border-blue-400">
                       <p className="text-blue-800 font-medium text-xs">💡 Performance Note</p>
                       <p className="text-blue-700 text-xs">
-                        Complex queries may take up to 5 minutes to process. You can safely switch tabs while waiting.
+                        You can safely switch tabs while waiting.
                       </p>
                     </div>
                   </div>
