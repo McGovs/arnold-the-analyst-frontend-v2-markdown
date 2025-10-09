@@ -52,7 +52,7 @@ export default function ChatInterface() {
     } else if (seconds < 60) {
       return "Processing complex data analysis...";
     } else if (seconds < 120) {
-      return "Running advanced BigQuery operations...";
+      return "Translating your query into SQL before executing...";
     } else if (seconds < 240) {
       return "Almost there! Complex queries can take up to 5 minutes...";
     } else {
