@@ -126,7 +126,7 @@ export default function ChatInterface() {
                         • "Which month had the most number of page views?" - <strong>1 min</strong>
                       </li>
                       <li>
-                        • "Show me the add-to-cart to checkout conversion rate, i.e. number of users who began checkout divided by the number of users who added to cart, in January 2021 by product category. Identify which categories underperformed." - <strong>1 to 2 mins</strong>
+                        • "Show me the add-to-cart to user checkout conversion rate, in January 2021 by product category. Identify which categories underperformed." - <strong>1 to 2 mins</strong>
                       </li>
                       <li>
                         • "Compare the 30-day repeat purchase rates for new customers acquired via mobile versus desktop in December. Please output the repeat purchase rate for the top three countries across each device type." - <strong>2 to 4 mins</strong>
