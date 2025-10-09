@@ -122,14 +122,20 @@ export default function ChatInterface() {
                   <div className="mt-4 text-xs text-left bg-gray-50 p-3 rounded-lg">
                     <p className="font-medium mb-2">Example queries:</p>
                     <ul className="space-y-1">
-                      <li>• "What were our top selling products last month?"</li>
-                      <li>• "Show me customer growth trends"</li>
-                      <li>• "What's the average order value by region?"</li>
+                      <li>
+                        • "Which month had the most number of page views?" - <strong>1 min</strong>
+                      </li>
+                      <li>
+                        • "Show me the add-to-cart to checkout conversion rate, i.e. number of users who began checkout divided by the number of users who added to cart, in January 2021 by product category. Identify which categories underperformed." - <strong>1 to 2 mins</strong>
+                      </li>
+                      <li>
+                        • "Compare the 30-day repeat purchase rates for new customers acquired via mobile versus desktop in December. Please output the repeat purchase rate for the top three countries across each device type." - <strong>2 to 4 mins</strong>
+                      </li>
                     </ul>
                     <p className="font-medium mb-2 mt-4">Data Source:</p>
                     <p className="text-gray-600">
                       The data is drawn from publicly available Google Merchant Store data. This data covers a three
-                      month time period from November 1st 2020 to January 31st 2021.
+                      month time period from <strong>November 1st 2020 to January 2021</strong>.
                     </p>
                     <div className="mt-4 p-2 bg-blue-50 rounded border-l-4 border-blue-400">
                       <p className="text-blue-800 font-medium text-xs">💡 Performance Note</p>
