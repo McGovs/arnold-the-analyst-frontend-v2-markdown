@@ -50,7 +50,7 @@ export default function ChatInterface() {
     if (seconds < 30) {
       return "Analyzing your query...";
     } else if (seconds < 60) {
-      return "Processing complex data analysis...";
+      return "Examining the GA4 BigQuery table schema...";
     } else if (seconds < 120) {
       return "Translating your query into SQL before executing...";
     } else if (seconds < 240) {
