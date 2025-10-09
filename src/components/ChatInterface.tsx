@@ -118,38 +118,22 @@ export default function ChatInterface() {
               {messages.length === 0 && (
                 <div className="text-center text-gray-500 mt-8">
                   <Bot className="w-12 h-12 mx-auto mb-4 text-gray-400" />
-                  {/* Intro line (kept as previously adjusted version) */}
-                  <p className="text-[1.215rem] font-medium mb-3">
-                    I'm Arnold, Your Personal Google Analytics Data Analyst :)
-                  </p>
-
-                  {/* Info block overall size remains; inner sections adjusted as requested */}
-                  <div className="mt-4 text-[0.9rem] text-left bg-gray-50 p-3 rounded-lg text-gray-600">
-                    {/* Example Queries */}
-                    <p className="font-medium mb-2">Example Queries:</p>
-                    <ul className="space-y-2 text-[0.81rem]">
-                      <li>
-                        • <strong>Easy</strong>: "Which month had the most number of page views?" - <strong>1 min</strong>
-                      </li>
-                      <li>
-                        • <strong>Intermediate</strong>: "Show me the user add-to-cart to checkout conversion rate in January 2021 by product category. Identify which categories underperformed." - <strong>1 to 2 mins</strong>
-                      </li>
-                      <li>
-                        • <strong>Advanced</strong>: "Compare the 30-day repeat purchase rates for new customers acquired via mobile versus desktop in December. Please output the repeat purchase rate for the top three countries across each device type." - <strong>2 to 4 mins</strong>
-                      </li>
+                  <p className="text-lg font-medium mb-2">I'm Arnold, Your Personal Google Analytics Data Analyst :)</p>
+                  <div className="mt-4 text-xs text-left bg-gray-50 p-3 rounded-lg">
+                    <p className="font-medium mb-2">Example queries:</p>
+                    <ul className="space-y-1">
+                      <li>• "What were our top selling products last month?"</li>
+                      <li>• "Show me customer growth trends"</li>
+                      <li>• "What's the average order value by region?"</li>
                     </ul>
-
-                    {/* Data Source */}
                     <p className="font-medium mb-2 mt-4">Data Source:</p>
-                    <p>
+                    <p className="text-gray-600">
                       The data is drawn from publicly available Google Merchant Store data. This data covers a three
                       month time period from November 1st 2020 to January 31st 2021.
                     </p>
-
-                    {/* Performance Note (downsized by ~10%) */}
-                    <div className="mt-4 p-3 bg-blue-50 rounded border-l-4 border-blue-400">
-                      <p className="text-blue-800 font-semibold text-[0.81rem]">💡 Performance Note</p>
-                      <p className="text-blue-700 text-[0.81rem]">
+                    <div className="mt-4 p-2 bg-blue-50 rounded border-l-4 border-blue-400">
+                      <p className="text-blue-800 font-medium text-xs">💡 Performance Note</p>
+                      <p className="text-blue-700 text-xs">
                         Complex queries may take up to 5 minutes to process. You can safely switch tabs while waiting.
                       </p>
                     </div>
