@@ -123,7 +123,7 @@ export default function ChatInterface() {
                     <p className="font-medium mb-2">Example queries:</p>
                     <ul className="space-y-1">
                       <li>
-                        • "Which month had the most number of page views?" - <strong>1 min</strong>
+                        • "Which month had the most number of page views?" - <strong>Less than 1 min</strong>
                       </li>
                       <li>
                         • "Show me the add-to-cart to user checkout conversion rate, in January 2021 by product category. Identify which categories underperformed." - <strong>1 to 2 mins</strong>
