@@ -7,7 +7,7 @@ export default function Description() {
     <div className="min-h-screen bg-gray-100 p-8">
       <div className="max-w-4xl mx-auto">
         {/* Main title */}
-        <h1 className="text-3xl font-bold mb-6 text-blue-800">
+        <h1 className="text-3xl font-bold mb-6 bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-md px-4 py-2 inline-block">
           Arnold The Analyst — GA4 Answers on Demand
         </h1>
 
@@ -19,7 +19,9 @@ export default function Description() {
 
           <div className="grid md:grid-cols-2 gap-6">
             <div>
-              <h2 className="text-lg font-semibold mb-2 text-blue-800">What it does</h2>
+              <h2 className="text-lg font-semibold mb-2 bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-md px-3 py-1 inline-block">
+                What it does
+              </h2>
               <ul className="text-gray-700 list-disc list-inside space-y-1">
                 <li>Translates natural language → <span className="font-medium">SQL</span></li>
                 <li>Runs queries against your <span className="font-medium">GA4 BigQuery</span> dataset</li>
@@ -27,7 +29,9 @@ export default function Description() {
               </ul>
             </div>
             <div>
-              <h2 className="text-lg font-semibold mb-2 text-blue-800">Why clients love it</h2>
+              <h2 className="text-lg font-semibold mb-2 bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-md px-3 py-1 inline-block">
+                Why clients love it
+              </h2>
               <ul className="text-gray-700 list-disc list-inside space-y-1">
                 <li>Saves hours on manual exports and dashboard edits</li>
                 <li>Bypasses GA4’s confusing UI and missing data</li>
@@ -38,24 +42,30 @@ export default function Description() {
         </div>
 
         <div className="bg-white p-6 rounded-lg shadow-sm mb-6">
-          <h2 className="text-xl font-semibold mb-3 text-blue-800">How it works</h2>
+          <h2 className="text-xl font-semibold mb-3 bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-md px-3 py-1 inline-block">
+            How it works
+          </h2>
           <ol className="text-gray-700 list-decimal list-inside space-y-1">
             <li>Type your query</li>
             <li>Arnold generates and validates SQL</li>
             <li>BigQuery runs the query</li>
-            <li>You get your answer with along with a Google Sheets export</li>
+            <li>You get your answer along with a Google Sheets export</li>
           </ol>
         </div>
 
         <div className="bg-white p-6 rounded-lg shadow-sm mb-6">
-          <h2 className="text-xl font-semibold mb-3 text-blue-800">Demo dataset &amp; timing</h2>
+          <h2 className="text-xl font-semibold mb-3 bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-md px-3 py-1 inline-block">
+            Demo dataset &amp; timing
+          </h2>
           <p className="text-gray-700">
             The demo uses the Google Merchandise Store dataset (Nov 1, 2020 → Jan 31, 2021).
             Typical response time is <span className="font-medium">1–2 minutes</span>; complex cohort queries can take
             up to <span className="font-medium">5 minutes</span>.
           </p>
           <div className="mt-4">
-            <h3 className="font-medium mb-2 text-blue-800">Great starter queries</h3>
+            <h3 className="font-medium mb-2 bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-md px-3 py-1 inline-block">
+              Great starter queries
+            </h3>
             <ul className="text-gray-700 list-disc list-inside space-y-1">
               <li>Top products by revenue in December 2020</li>
               <li>AOV by traffic source for Nov–Dec 2020</li>
@@ -67,14 +77,16 @@ export default function Description() {
         </div>
 
         <div className="bg-white p-6 rounded-lg shadow-sm">
-          <h2 className="text-xl font-semibold mb-3 text-blue-800">Data &amp; security</h2>
+          <h2 className="text-xl font-semibold mb-3 bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-md px-3 py-1 inline-block">
+            Data &amp; security
+          </h2>
           <ul className="text-gray-700 list-disc list-inside space-y-1">
             <li>Your data stays in your <span className="font-medium">Google Cloud</span> project</li>
             <li>Arnold runs read-only queries you initiate</li>
             <li>SSO / magic links for access control</li>
           </ul>
           <p className="text-gray-700 mt-4">
-            Ready to use Arnold on client data? We can set up your GA4 BigQuery export, connect it to Arnold and fine-tune according to your dataset in under three working days.
+            Ready to use Arnold on client data? We can set up your GA4 BigQuery export, connect it to Arnold, and fine-tune it to your dataset in under three working days.
           </p>
         </div>
       </div>
