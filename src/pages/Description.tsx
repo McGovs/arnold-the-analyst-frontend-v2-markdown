@@ -4,7 +4,8 @@ import React from 'react';
 
 export default function Description() {
   return (
-    <div className="min-h-screen bg-gray-100 p-8">
+    // Force same font as chat: font-sans (optionally antialiased)
+    <div className="min-h-screen bg-gray-100 p-8 font-sans antialiased">
       <div className="max-w-4xl mx-auto">
         {/* Main title */}
         <h1 className="text-3xl font-bold mb-6 text-blue-600">
