@@ -10,27 +10,26 @@ export default function Description() {
 
         <div className="bg-white p-6 rounded-lg shadow-sm mb-6 space-y-4">
           <p className="text-gray-700">
-            Arnold is a chat interface that lets your team ask plain-English questions about GA4 and get trustworthy
-            answers pulled from your <span className="font-medium">BigQuery export</span>.
+            Arnold is an always on analyst that lets your team ask plain-English questions about GA4 and get trustworthy
+            answers within minutes.
           </p>
 
           <div className="grid md:grid-cols-2 gap-6">
             <div>
               <h2 className="text-lg font-semibold mb-2">What it does</h2>
               <ul className="text-gray-700 list-disc list-inside space-y-1">
-                <li>Translates natural language → <span className="font-medium">SQL</span> automatically</li>
-                <li>Runs queries against your GA4 <span className="font-medium">BigQuery</span> dataset</li>
-                <li>Returns clear explanations plus tables (exportable to Google Sheets)</li>
-                <li>Handles everyday KPIs and deeper cohort/retention analysis</li>
+                <li>Translates natural language → <span className="font-medium">SQL</span></li>
+                <li>Runs queries against your <span className="font-medium">GA4 BigQuery</span> dataset</li>
+                <li>Returns clear text answers along with the raw data in Google Sheets</li>
               </ul>
             </div>
             <div>
-              <h2 className="text-lg font-semibold mb-2">Why agencies use it</h2>
+              <h2 className="text-lg font-semibold mb-2">Why clients love it</h2>
               <ul className="text-gray-700 list-disc list-inside space-y-1">
-                <li>Faster client answers—minutes, not hours</li>
-                <li>Consistency from a single source of truth (GA4 BigQuery)</li>
-                <li>Scales across accounts with the same workflow</li>
-                <li>Non-technical friendly—no SQL required</li>
+                <li>Replaces hours of manual exports and dashboard rebuilding</li>
+                <li>Cuts through GA4’s confusing interface and missing reports</li>
+                <li>Delivers consistent, accurate metrics straight from BigQuery</li>
+                <li>Restores flexible time-based and cohort analysis without workarounds</li>
               </ul>
             </div>
           </div>
@@ -39,10 +38,10 @@ export default function Description() {
         <div className="bg-white p-6 rounded-lg shadow-sm mb-6">
           <h2 className="text-xl font-semibold mb-3">How it works</h2>
           <ol className="text-gray-700 list-decimal list-inside space-y-1">
-            <li>Type a question in chat</li>
+            <li>Type your query</li>
             <li>Arnold generates and validates SQL</li>
             <li>BigQuery runs the query</li>
-            <li>You get an explanation + table, with optional <span className="font-medium">Export to Sheets</span></li>
+            <li>You get your answer with along with a Google Sheets export</li>
           </ol>
         </div>
 
@@ -57,9 +56,9 @@ export default function Description() {
             <h3 className="font-medium mb-2">Great starter queries</h3>
             <ul className="text-gray-700 list-disc list-inside space-y-1">
               <li>Top products by revenue in December 2020</li>
-              <li>AOV by channel for Nov–Dec 2020</li>
+              <li>AOV by traffic source for Nov–Dec 2020</li>
               <li>New vs returning users by week</li>
-              <li>Conversion rate by device category in December 2020</li>
+              <li>Conversion rate by device type in December 2020</li>
               <li>Repeat purchase rate within 30 days for December 2020</li>
             </ul>
           </div>
@@ -70,10 +69,10 @@ export default function Description() {
           <ul className="text-gray-700 list-disc list-inside space-y-1">
             <li>Your data stays in your <span className="font-medium">Google Cloud</span> project</li>
             <li>Arnold runs read-only queries you initiate</li>
-            <li>Optional SSO / magic links for access control</li>
+            <li>SSO / magic links for access control</li>
           </ul>
           <p className="text-gray-700 mt-4">
-            Ready to use Arnold on client data? We can connect your GA4 BigQuery in under a day.
+            Ready to use Arnold on client data? We can set up your GA4 BigQuery export, connect it to Arnold and fine-tune according to your dataset in under three working days.
           </p>
         </div>
       </div>
