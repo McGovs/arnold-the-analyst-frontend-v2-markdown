@@ -20,7 +20,7 @@ export default function Description() {
               <ul className="text-gray-700 list-disc list-inside space-y-1">
                 <li>Translates natural language → <span className="font-medium">SQL</span></li>
                 <li>Runs queries against your <span className="font-medium">GA4 BigQuery</span> dataset</li>
-                <li>Returns clear text answers along with the raw data in Google Sheets</li>
+                <li>Returns clear answers & the data in Google Sheets</li>
               </ul>
             </div>
             <div>
