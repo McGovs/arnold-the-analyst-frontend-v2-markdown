@@ -47,7 +47,8 @@ export default function Description() {
           </ol>
         </div>
 
-        <div className="bg-white p-6 rounded-lg shadow-sm mb-6">
+        {/* tighter spacing below this card: mb-3 instead of mb-6 */}
+        <div className="bg-white p-6 rounded-lg shadow-sm mb-3">
           <h2 className="text-xl font-semibold mb-3 text-blue-600">Demo dataset &amp; timing</h2>
           <p className="text-gray-700">
             The demo uses the Google Merchandise Store dataset (Nov 1, 2020 → Jan 31, 2021).
@@ -66,6 +67,7 @@ export default function Description() {
           </div>
         </div>
 
+        {/* sits closer now because previous card's mb is smaller */}
         <div className="bg-white p-6 rounded-lg shadow-sm">
           <h2 className="text-xl font-semibold mb-3 text-blue-600">Data &amp; security</h2>
           <ul className="text-gray-700 list-disc list-inside space-y-1">
@@ -73,7 +75,8 @@ export default function Description() {
             <li>Arnold runs read-only queries you initiate</li>
             <li>SSO / magic links for access control</li>
           </ul>
-          <p className="text-gray-700 mt-4">
+          {/* more breathing room before the closing sentence: mt-6 */}
+          <p className="text-gray-700 mt-6">
             Ready to use Arnold on client data? We can set up your GA4 BigQuery export, connect it to Arnold, and fine-tune it to your dataset in under three working days.
           </p>
         </div>
