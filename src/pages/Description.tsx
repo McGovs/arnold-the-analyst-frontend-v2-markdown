@@ -14,8 +14,8 @@ export default function Description() {
 
         <div className="bg-white p-6 rounded-lg shadow-sm mb-6 space-y-4">
           <p className="text-gray-700">
-            Arnold is an always on analyst that lets your team ask plain-English questions about GA4 and get trustworthy
-            answers within minutes. Built by a digital analytics expert with eight years’ experience navigating GA4’s quirks and data gaps, Arnold delivers senior-level analysis at software speed.
+            Arnold is an always on analyst that lets your team <span className="font-medium">ask plain-English questions about GA4 and get trustworthy
+            answers within minutes</span>. Built by a digital analytics expert with eight years’ experience navigating GA4’s quirks and data gaps, <span className="font-medium">Arnold delivers senior-level analysis at software speed</span>.
           </p>
 
           <div className="grid md:grid-cols-2 gap-6">
