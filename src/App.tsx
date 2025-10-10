@@ -27,7 +27,7 @@ function App() {
                 }`}
                 aria-selected={currentPage === 'chat'}
               >
-                Chat Interface
+                Arnold
               </button>
               <button
                 onClick={() => setCurrentPage('description')}
@@ -38,7 +38,7 @@ function App() {
                 }`}
                 aria-selected={currentPage === 'description'}
               >
-                Description
+                About Arnold
               </button>
             </div>
           </div>
