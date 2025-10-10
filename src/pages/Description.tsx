@@ -14,8 +14,8 @@ export default function Description() {
 
         <div className="bg-white p-6 rounded-lg shadow-sm mb-6 space-y-4">
           <p className="text-gray-700">
-            Arnold is an always-on analyst that lets your team <span className="font-medium">ask plain-English questions about GA4 and get trustworthy
-            answers within minutes</span>. Built by a digital analytics expert with more than eight years of experience navigating GA4’s quirks and data gaps, <span className="font-medium">Arnold delivers senior-level analysis at software speed</span>.
+            Arnold is an always-on analyst that lets your team <span className="font-medium">ask plain-English questions about GA4 and get accurate
+            answers within minutes</span>. Built by a digital analytics expert with more than eight years of experience navigating Google Analytics' quirks and limitations, <span className="font-medium">Arnold delivers senior-level analysis at software speed</span>.
           </p>
 
           <div className="grid md:grid-cols-2 gap-6">
@@ -24,7 +24,7 @@ export default function Description() {
               <ul className="text-gray-700 list-disc list-inside space-y-1">
                 <li>Translates natural language → <span className="font-medium">SQL</span></li>
                 <li>Runs queries against your <span className="font-medium">GA4 BigQuery</span> dataset</li>
-                <li>Returns clear answers & the data in Google Sheets</li>
+                <li>Returns clear answers & the data in <span className="font-medium">Google Sheets</span></li>
               </ul>
             </div>
             <div>
@@ -43,8 +43,8 @@ export default function Description() {
           <ol className="text-gray-700 list-decimal list-inside space-y-1">
             <li>Type your query</li>
             <li>Arnold generates and validates SQL</li>
-            <li>BigQuery runs the query</li>
-            <li>You get your answer along with a Google Sheets export</li>
+            <li>The SQL code is executed in BigQuery</li>
+            <li>Arnold outputs a clear, natural language answer along with a Google Sheets export</li>
           </ol>
         </div>
 
@@ -53,7 +53,7 @@ export default function Description() {
           <h2 className="text-xl font-semibold mb-3 text-blue-600">Demo dataset &amp; timing</h2>
           <p className="text-gray-700">
             The demo uses the Google Merchandise Store dataset (Nov 1, 2020 → Jan 31, 2021).
-            Typical response time is <span className="font-medium">1–2 minutes</span>; complex cohort queries can take
+            Typical response time is <span className="font-medium">1–2 minutes</span>; more complex queries can take
             up to <span className="font-medium">5 minutes</span>.
           </p>
           <div className="mt-4">
@@ -73,8 +73,8 @@ export default function Description() {
           <h2 className="text-xl font-semibold mb-3 text-blue-600">Data &amp; security</h2>
           <ul className="text-gray-700 list-disc list-inside space-y-1">
             <li>Your data stays in your <span className="font-medium">Google Cloud</span> project</li>
-            <li>Arnold runs read-only queries you initiate</li>
-            <li>SSO / magic links for access control</li>
+            <li>Arnold runs read-only queries that you initiate</li>
+            <li>SSO/magic links for access control</li>
           </ul>
           {/* more breathing room before the closing sentence: mt-6 */}
           <p className="text-gray-700 mt-6">
