@@ -129,7 +129,7 @@ export default function ChatInterface() {
                         • "Show me the user add-to-cart to checkout completion rate, in January 2021 by product category. Identify which categories underperformed." - <strong>1 to 2 mins</strong>
                       </li>
                       <li>
-                        • "Compare the 30-day repeat purchase rates for new customers from mobile vs. desktop in Dec-20. Please output repeat purchase rate for the top three countries across each device type." - <strong>2 to 4 mins</strong>
+                        • "Compare the 30-day repeat purchase rates for new customers from mobile vs. desktop in Dec-20. Please output repeat purchase rate for the top three countries across each device type." - <strong>2 to 3 mins</strong>
                       </li>
                     </ul>
                     <p className="font-medium mb-2 mt-4">Data Source:</p>
