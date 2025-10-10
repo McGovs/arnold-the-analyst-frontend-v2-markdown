@@ -31,7 +31,7 @@ export default function Description() {
               <h2 className="text-lg font-semibold mb-2 text-blue-600">Why clients love it</h2>
               <ul className="text-gray-700 list-disc list-inside space-y-1">
                 <li>Saves hours on manual exports and dashboard edits</li>
-                <li>Bypasses GA4’s confusing UI and missing data</li>
+                <li>Bypasses GA4’s convoluted UI and incomplete data</li>
                 <li>Delivers consistent, accurate answers from BigQuery</li>
               </ul>
             </div>
