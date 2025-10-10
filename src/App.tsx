@@ -1,11 +1,11 @@
 // src/App.tsx
 import React, { useState } from 'react';
 import ChatInterface from './components/ChatInterface';
-import Description from './pages/Description'; // ← was ./pages/EmbedDemo
+import Description from './pages/Description';
 import { MessageCircle } from 'lucide-react';
 
 function App() {
-  const [currentPage, setCurrentPage] = useState<'chat' | 'description'>('chat'); // ← add 'description'
+  const [currentPage, setCurrentPage] = useState<'chat' | 'description'>('chat');
 
   return (
     <div className="min-h-screen">
@@ -25,26 +25,33 @@ function App() {
                     ? 'bg-blue-100 text-blue-700'
                     : 'text-gray-600 hover:text-gray-900 hover:bg-gray-100'
                 }`}
+                aria-selected={currentPage === 'chat'}
               >
                 Chat Interface
               </button>
               <button
-                onClick={() => setCurrentPage('description')} // ← was 'embed'
+                onClick={() => setCurrentPage('description')}
                 className={`px-3 py-2 text-sm font-medium rounded-md transition-colors ${
                   currentPage === 'description'
                     ? 'bg-blue-100 text-blue-700'
                     : 'text-gray-600 hover:text-gray-900 hover:bg-gray-100'
                 }`}
+                aria-selected={currentPage === 'description'}
               >
-                Description {/* ← was Embed Demo */}
+                Description
               </button>
             </div>
           </div>
         </div>
       </nav>
 
-      {/* Page Content */}
-      {currentPage === 'chat' ? <ChatInterface /> : <Description />} {/* ← was <EmbedDemo /> */}
+      {/* Page Content: keep both mounted, toggle visibility */}
+      <div className={currentPage === 'chat' ? '' : 'hidden'}>
+        <ChatInterface />
+      </div>
+      <div className={currentPage === 'description' ? '' : 'hidden'}>
+        <Description />
+      </div>
     </div>
   );
 }
