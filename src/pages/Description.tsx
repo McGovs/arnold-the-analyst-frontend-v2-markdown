@@ -45,7 +45,7 @@ export default function Description() {
         </div>
 
         <div className="bg-white p-6 rounded-lg shadow-sm mb-6">
-          <h2 className="text-xl font-semibold mb-3">Demo dataset &amp; timing</h2>
+          <h2 className="text-xl font-semibold mb-3">Demo dataset &amp; time to answers</h2>
           <p className="text-gray-700">
             The demo uses the Google Merchandise Store dataset (Nov 1, 2020 → Jan 31, 2021).
             Typical response time is <span className="font-medium">1–2 minutes</span>; complex cohort queries can take
