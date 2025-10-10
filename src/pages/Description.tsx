@@ -73,7 +73,7 @@ export default function Description() {
           <h2 className="text-xl font-semibold mb-3 text-blue-600">Data &amp; security</h2>
           <ul className="text-gray-700 list-disc list-inside space-y-1">
             <li>Your data stays in your <span className="font-medium">Google Cloud</span> project</li>
-            <li>Arnold runs <span className="font-medium">read-only queries</span> that you initiate</li>
+            <li>Arnold runs <span className="font-medium">read-only queries</span> that you initiate. Arnold never writes or alters your data.</li>
             <li>SSO/magic links for <span className="font-medium">access control</span></li>
           </ul>
           {/* more breathing room before the closing sentence: mt-6 */}
