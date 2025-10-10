@@ -6,7 +6,10 @@ export default function Description() {
   return (
     <div className="min-h-screen bg-gray-100 p-8">
       <div className="max-w-4xl mx-auto">
-        <h1 className="text-3xl font-bold mb-6">Arnold The Analyst — GA4 Answers on Demand</h1>
+        {/* Main title */}
+        <h1 className="text-3xl font-bold mb-6 text-blue-800">
+          Arnold The Analyst — GA4 Answers on Demand
+        </h1>
 
         <div className="bg-white p-6 rounded-lg shadow-sm mb-6 space-y-4">
           <p className="text-gray-700">
@@ -16,7 +19,7 @@ export default function Description() {
 
           <div className="grid md:grid-cols-2 gap-6">
             <div>
-              <h2 className="text-lg font-semibold mb-2">What it does</h2>
+              <h2 className="text-lg font-semibold mb-2 text-blue-800">What it does</h2>
               <ul className="text-gray-700 list-disc list-inside space-y-1">
                 <li>Translates natural language → <span className="font-medium">SQL</span></li>
                 <li>Runs queries against your <span className="font-medium">GA4 BigQuery</span> dataset</li>
@@ -24,7 +27,7 @@ export default function Description() {
               </ul>
             </div>
             <div>
-              <h2 className="text-lg font-semibold mb-2">Why clients love it</h2>
+              <h2 className="text-lg font-semibold mb-2 text-blue-800">Why clients love it</h2>
               <ul className="text-gray-700 list-disc list-inside space-y-1">
                 <li>Saves hours on manual exports and dashboard edits</li>
                 <li>Bypasses GA4’s confusing UI and missing data</li>
@@ -35,7 +38,7 @@ export default function Description() {
         </div>
 
         <div className="bg-white p-6 rounded-lg shadow-sm mb-6">
-          <h2 className="text-xl font-semibold mb-3">How it works</h2>
+          <h2 className="text-xl font-semibold mb-3 text-blue-800">How it works</h2>
           <ol className="text-gray-700 list-decimal list-inside space-y-1">
             <li>Type your query</li>
             <li>Arnold generates and validates SQL</li>
@@ -45,14 +48,14 @@ export default function Description() {
         </div>
 
         <div className="bg-white p-6 rounded-lg shadow-sm mb-6">
-          <h2 className="text-xl font-semibold mb-3">Demo dataset &amp; time to answers</h2>
+          <h2 className="text-xl font-semibold mb-3 text-blue-800">Demo dataset &amp; timing</h2>
           <p className="text-gray-700">
             The demo uses the Google Merchandise Store dataset (Nov 1, 2020 → Jan 31, 2021).
             Typical response time is <span className="font-medium">1–2 minutes</span>; complex cohort queries can take
             up to <span className="font-medium">5 minutes</span>.
           </p>
           <div className="mt-4">
-            <h3 className="font-medium mb-2">Great starter queries</h3>
+            <h3 className="font-medium mb-2 text-blue-800">Great starter queries</h3>
             <ul className="text-gray-700 list-disc list-inside space-y-1">
               <li>Top products by revenue in December 2020</li>
               <li>AOV by traffic source for Nov–Dec 2020</li>
@@ -64,7 +67,7 @@ export default function Description() {
         </div>
 
         <div className="bg-white p-6 rounded-lg shadow-sm">
-          <h2 className="text-xl font-semibold mb-3">Data &amp; security</h2>
+          <h2 className="text-xl font-semibold mb-3 text-blue-800">Data &amp; security</h2>
           <ul className="text-gray-700 list-disc list-inside space-y-1">
             <li>Your data stays in your <span className="font-medium">Google Cloud</span> project</li>
             <li>Arnold runs read-only queries you initiate</li>
