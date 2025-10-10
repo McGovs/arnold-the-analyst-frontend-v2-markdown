@@ -26,10 +26,9 @@ export default function Description() {
             <div>
               <h2 className="text-lg font-semibold mb-2">Why clients love it</h2>
               <ul className="text-gray-700 list-disc list-inside space-y-1">
-                <li>Replaces hours of manual exports and dashboard rebuilding</li>
-                <li>Cuts through GA4’s confusing interface and missing reports</li>
-                <li>Delivers consistent, accurate metrics straight from BigQuery</li>
-                <li>Restores flexible time-based and cohort analysis without workarounds</li>
+                <li>Saves hours on manual exports and dashboard edits</li>
+                <li>Bypasses GA4’s confusing UI and missing data</li>
+                <li>Delivers consistent, accurate answers from BigQuery</li>
               </ul>
             </div>
           </div>
