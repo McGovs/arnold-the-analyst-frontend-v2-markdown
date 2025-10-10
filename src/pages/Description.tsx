@@ -59,11 +59,11 @@ export default function Description() {
           <div className="mt-4">
             <h3 className="font-medium mb-2 text-blue-600">Great starter queries</h3>
             <ul className="text-gray-700 list-disc list-inside space-y-1">
-              <li>Top products by revenue in December 2020</li>
-              <li>AOV by traffic source for Nov–Dec 2020</li>
-              <li>New vs returning users by week</li>
-              <li>Conversion rate by device type in December 2020</li>
-              <li>Repeat purchase rate within 30 days for December 2020</li>
+              <li>Top products by purchase revenue in December 2020</li>
+              <li>Average order value by traffic source in November 2020</li>
+              <li>New vs. returning users by week</li>
+              <li>Conversion rate by device type in January 2021 vs. December 2020</li>
+              <li>User repeat purchase rate within 30 days for December 2020</li>
             </ul>
           </div>
         </div>
@@ -73,12 +73,12 @@ export default function Description() {
           <h2 className="text-xl font-semibold mb-3 text-blue-600">Data &amp; security</h2>
           <ul className="text-gray-700 list-disc list-inside space-y-1">
             <li>Your data stays in your <span className="font-medium">Google Cloud</span> project</li>
-            <li>Arnold runs read-only queries that you initiate</li>
-            <li>SSO/magic links for access control</li>
+            <li>Arnold runs <span className="font-medium">read-only queries</span> that you initiate</li>
+            <li>SSO/magic links for <span className="font-medium">access control</span></li>
           </ul>
           {/* more breathing room before the closing sentence: mt-6 */}
           <p className="text-gray-700 mt-6">
-            Ready to use Arnold on your data or your clients' data? We can set up your GA4 BigQuery export, connect it to Arnold, and fine-tune according to your dataset before pushing live in under three working days.
+            Ready to use Arnold on your data or your clients' data? We can set up your GA4 BigQuery export, connect it to Arnold, and fine-tune according to your dataset before pushing <span className="font-medium">live in under three working days</span>.
           </p>
         </div>
       </div>
