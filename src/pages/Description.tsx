@@ -41,6 +41,7 @@ export default function Description() {
         <div className="bg-white p-6 rounded-lg shadow-sm mb-6">
           <h2 className="text-xl font-semibold mb-3 text-blue-600">How it works</h2>
           <ol className="text-gray-700 list-decimal list-inside space-y-1">
+            <li>We handle your onboarding, including the GA4 BigQuery set up if needed, in 3 working days</li>
             <li>Type your query</li>
             <li>Arnold generates and validates SQL</li>
             <li>The SQL code is executed in BigQuery</li>
