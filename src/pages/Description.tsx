@@ -79,7 +79,7 @@ export default function Description() {
           </ul>
           {/* more breathing room before the closing sentence: mt-6 */}
           <p className="text-gray-700 mt-6">
-            Ready to use Arnold on your data or your clients' data? We can set up your GA4 BigQuery export, connect it to Arnold, and fine-tune according to your dataset before pushing <span className="font-medium">live in under three working days</span>.
+            Ready to use Arnold on your data or your clients' data? We can set up your GA4 BigQuery export, connect it to Arnold, and fine-tune according to your dataset before pushing <span className="font-medium">live in three working days</span>.
           </p>
         </div>
       </div>
