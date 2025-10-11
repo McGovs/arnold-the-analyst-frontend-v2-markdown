@@ -86,7 +86,7 @@ export default function ChatInterface() {
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-8">
           <h1 className="text-3xl font-bold text-gray-900 mb-2">Your Always-On Digital Analyst</h1>
-          <p className="text-gray-600">Ask. Analyze. Act. Get actionable, reliable GA4 insights that cannot be answered via the UI, event by Analytics Advisor, in minutes.</p>
+          <p className="text-gray-600">Get actionable, reliable GA4 insights that cannot be answered via the UI, even by Analytics Advisor, in minutes.</p>
         </div>
 
         <Card className="w-full max-w-2xl mx-auto shadow-lg">
