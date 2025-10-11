@@ -85,8 +85,8 @@ export default function ChatInterface() {
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 p-4">
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-8">
-          <h1 className="text-3xl font-bold text-gray-900 mb-2">Your Google Analytics Assistant</h1>
-          <p className="text-gray-600">Ask questions about your data and get insights powered by AI and BigQuery</p>
+          <h1 className="text-3xl font-bold text-gray-900 mb-2">Your Always-On Digital Analyst</h1>
+          <p className="text-gray-600">Ask. Analyze. Act. Get reliable GA4 insights in minutes.</p>
         </div>
 
         <Card className="w-full max-w-2xl mx-auto shadow-lg">
