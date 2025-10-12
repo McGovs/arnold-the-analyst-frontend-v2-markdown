@@ -118,7 +118,7 @@ export default function ChatInterface() {
               {messages.length === 0 && (
                 <div className="text-center text-gray-500 mt-8">
                   <Bot className="w-12 h-12 mx-auto mb-4 text-gray-400" />
-                  <p className="text-lg font-medium mb-2">I'm Arnold, Your Personal Google Analytics Data Analyst :)</p>
+                  <p className="text-lg font-medium mb-2">I'm Arnold, Your Personal Google Analytics AI Agent :)</p>
                   <div className="mt-4 text-xs text-left bg-gray-50 p-3 rounded-lg">
                     <p className="font-medium mb-2">Example queries:</p>
                     <ul className="space-y-1">
