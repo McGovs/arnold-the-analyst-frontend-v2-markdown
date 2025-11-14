@@ -12,8 +12,8 @@ export default function Privacy() {
 
         <div className="bg-white p-6 rounded-lg shadow-sm mb-6">
           <p className="text-gray-700 mb-4">
-            <strong>Effective Date:</strong> January 13, 2025<br />
-            <strong>Last Updated:</strong> January 13, 2025
+            <strong>Effective Date:</strong> November 14, 2025<br />
+            <strong>Last Updated:</strong> November 14, 2025
           </p>
         </div>
 
@@ -21,7 +21,7 @@ export default function Privacy() {
         <div className="bg-white p-6 rounded-lg shadow-sm mb-6">
           <h2 className="text-xl font-semibold mb-3 text-blue-600">1. Introduction</h2>
           <p className="text-gray-700 mb-4">
-            Welcome to Arnold The Analyst ("Arnold," "we," "us," or "our"). Arnold is a Google Analytics 4 assistant that operates within Slack workspaces to help users query and analyze their analytics data using natural language.
+            Welcome to Arnold The Analyst ("Arnold," "we," "us," or "our"). Arnold is a Google Analytics 4 assistant that operates within a web interface and within Slack workspaces to help users query and analyze both their own analytics data and the publicly available Google Merchant Store GA4 BigQuery data using natural language.
           </p>
           <p className="text-gray-700 mb-4">
             This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use Arnold through Slack. Please read this privacy policy carefully. If you do not agree with the terms of this privacy policy, please do not use Arnold.
@@ -42,7 +42,7 @@ export default function Privacy() {
           <h2 className="text-xl font-semibold mb-3 text-blue-600">2. Information We Collect</h2>
           
           <h3 className="text-lg font-semibold mb-2 text-gray-800">2.1 Information You Provide Directly</h3>
-          <p className="text-gray-700 mb-3">When you install and use Arnold, we collect:</p>
+          <p className="text-gray-700 mb-3">When you install and use the Arnold Slack app, we collect:</p>
           <ul className="text-gray-700 list-disc list-inside space-y-1 mb-4">
             <li><strong>Slack Workspace Information:</strong> Your Slack workspace ID, workspace name, and the user ID of the person who installed Arnold</li>
             <li><strong>Slack User Information:</strong> Your Slack user ID and username when you interact with Arnold</li>
@@ -75,7 +75,7 @@ export default function Privacy() {
             <li><strong>Authentication:</strong> To verify your identity within Slack and ensure secure access</li>
             <li><strong>Analytics Queries:</strong> To access your Google Analytics data and generate insights in response to your requests</li>
             <li><strong>Response Generation:</strong> To process your natural language queries and provide accurate analytics answers</li>
-            <li><strong>Data Visualization:</strong> To create charts, tables, and reports based on your Google Analytics data</li>
+            <li><strong>Data Output:</strong> To create Google Sheets exports containing the data requested derived from your Google Analytics data</li>
           </ul>
 
           <h3 className="text-lg font-semibold mb-2 text-gray-800">3.2 Service Improvement</h3>
@@ -468,7 +468,7 @@ export default function Privacy() {
 
         {/* Version info */}
         <div className="text-center text-gray-500 text-sm">
-          <p>This privacy policy was last updated on January 13, 2025. Version 1.0</p>
+          <p>This privacy policy was last updated on November 14, 2025.</p>
         </div>
       </div>
     </div>
