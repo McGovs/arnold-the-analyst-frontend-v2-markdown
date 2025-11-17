@@ -1,12 +1,16 @@
 // src/App.tsx
 import React, { useState } from 'react';
+import { BrowserRouter as Router, Routes, Route, Link, useLocation, useNavigate } from 'react-router-dom';
 import ChatInterface from './components/ChatInterface';
 import Description from './pages/Description';
 import Privacy from './pages/Privacy';
+import Terms from './pages/Terms';
 import { MessageCircle } from 'lucide-react';
 
-function App() {
+// Main App Component with Tabs (for homepage)
+function AppWithTabs() {
   const [currentPage, setCurrentPage] = useState<'chat' | 'description' | 'privacy'>('chat');
+  const navigate = useNavigate();
 
   return (
     <div className="min-h-screen">
@@ -68,6 +72,24 @@ function App() {
         <Privacy />
       </div>
     </div>
+  );
+}
+
+// Main App with Router
+function App() {
+  return (
+    <Router>
+      <Routes>
+        {/* Homepage with tabs - keeps existing functionality */}
+        <Route path="/" element={<AppWithTabs />} />
+        
+        {/* Dedicated Privacy Policy page - for Google verification */}
+        <Route path="/privacy" element={<Privacy />} />
+        
+        {/* Dedicated Terms of Service page - for Google verification */}
+        <Route path="/terms" element={<Terms />} />
+      </Routes>
+    </Router>
   );
 }
 
