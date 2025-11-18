@@ -11,8 +11,8 @@ export default function Privacy() {
 
         <div className="bg-white p-6 rounded-lg shadow-sm mb-6">
           <p className="text-gray-700 mb-4">
-            <strong>Effective Date:</strong> January 14, 2025<br />
-            <strong>Last Updated:</strong> January 14, 2025
+            <strong>Effective Date:</strong> November 18, 2025<br />
+            <strong>Last Updated:</strong> November 18, 2025
           </p>
         </div>
 
@@ -602,7 +602,7 @@ export default function Privacy() {
 
         {/* Version info */}
         <div className="text-center text-gray-500 text-sm">
-          <p>This document was last updated on January 14, 2025.</p>
+          <p>This document was last updated on November 18, 2025.</p>
         </div>
       </div>
     </div>
