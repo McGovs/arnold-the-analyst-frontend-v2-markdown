@@ -1,4 +1,3 @@
-// src/pages/Privacy.tsx
 import React from 'react';
 
 export default function Privacy() {
@@ -7,14 +6,46 @@ export default function Privacy() {
       <div className="max-w-4xl mx-auto">
         {/* Main title */}
         <h1 className="text-3xl font-bold mb-6 text-blue-600">
-          Privacy Policy for Arnold The Analyst
+          Privacy Policy & Terms of Service
         </h1>
 
         <div className="bg-white p-6 rounded-lg shadow-sm mb-6">
           <p className="text-gray-700 mb-4">
-            <strong>Effective Date:</strong> November 14, 2025<br />
-            <strong>Last Updated:</strong> November 14, 2025
+            <strong>Effective Date:</strong> January 14, 2025<br />
+            <strong>Last Updated:</strong> January 14, 2025
           </p>
+        </div>
+
+        {/* Table of Contents */}
+        <div className="bg-white p-6 rounded-lg shadow-sm mb-6">
+          <h2 className="text-xl font-semibold mb-3 text-blue-600">Contents</h2>
+          <div className="grid md:grid-cols-2 gap-4">
+            <div>
+              <h3 className="font-semibold text-gray-800 mb-2">Privacy Policy</h3>
+              <ul className="text-sm text-gray-600 space-y-1">
+                <li>• Introduction</li>
+                <li>• Information We Collect</li>
+                <li>• How We Use Your Information</li>
+                <li>• Data Security & Retention</li>
+                <li>• Your Rights (GDPR/CCPA)</li>
+              </ul>
+            </div>
+            <div>
+              <h3 className="font-semibold text-gray-800 mb-2">Terms of Service</h3>
+              <ul className="text-sm text-gray-600 space-y-1">
+                <li>• Acceptance of Terms</li>
+                <li>• Service Description</li>
+                <li>• User Responsibilities</li>
+                <li>• Liability & Termination</li>
+                <li>• Contact Information</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        {/* ========== PRIVACY POLICY SECTION ========== */}
+        <div className="bg-blue-50 border-l-4 border-blue-600 p-6 rounded-lg mb-6">
+          <h1 className="text-2xl font-bold text-blue-800">PRIVACY POLICY</h1>
         </div>
 
         {/* Section 1 */}
@@ -459,16 +490,119 @@ export default function Privacy() {
           </p>
         </div>
 
+        {/* ========== TERMS OF SERVICE SECTION ========== */}
+        <div className="bg-blue-50 border-l-4 border-blue-600 p-6 rounded-lg mb-6 mt-12">
+          <h1 className="text-2xl font-bold text-blue-800">TERMS OF SERVICE</h1>
+        </div>
+
+        <div className="bg-white p-6 rounded-lg shadow-sm mb-6">
+          <h2 className="text-xl font-semibold mb-3 text-blue-600">1. Acceptance of Terms</h2>
+          <p className="text-gray-700">
+            By installing and using Arnold The Analyst ("Arnold"), you agree to these Terms of Service. 
+            If you do not agree, do not use Arnold.
+          </p>
+        </div>
+
+        <div className="bg-white p-6 rounded-lg shadow-sm mb-6">
+          <h2 className="text-xl font-semibold mb-3 text-blue-600">2. Service Description</h2>
+          <p className="text-gray-700">
+            Arnold is a Slack-based assistant that helps users query Google Analytics 4 data using 
+            natural language. Arnold translates queries into SQL and executes them against the user's 
+            BigQuery dataset.
+          </p>
+        </div>
+
+        <div className="bg-white p-6 rounded-lg shadow-sm mb-6">
+          <h2 className="text-xl font-semibold mb-3 text-blue-600">3. User Responsibilities</h2>
+          <ul className="text-gray-700 list-disc list-inside space-y-2">
+            <li>You must have authorization to access the Google Analytics data you query</li>
+            <li>You are responsible for the accuracy of your queries</li>
+            <li>You must comply with Google Analytics Terms of Service</li>
+            <li>You must not use Arnold for illegal purposes or to violate third-party rights</li>
+          </ul>
+        </div>
+
+        <div className="bg-white p-6 rounded-lg shadow-sm mb-6">
+          <h2 className="text-xl font-semibold mb-3 text-blue-600">4. Service Availability</h2>
+          <ul className="text-gray-700 list-disc list-inside space-y-2">
+            <li>Arnold is provided "as is" without guarantees of uptime</li>
+            <li>We strive for 99% uptime but do not guarantee continuous availability</li>
+            <li>Scheduled maintenance will be communicated in advance when possible</li>
+          </ul>
+        </div>
+
+        <div className="bg-white p-6 rounded-lg shadow-sm mb-6">
+          <h2 className="text-xl font-semibold mb-3 text-blue-600">5. Data Usage</h2>
+          <ul className="text-gray-700 list-disc list-inside space-y-2">
+            <li>Arnold accesses only the Google Analytics data you authorize</li>
+            <li>All queries are initiated by you - Arnold does not access data proactively</li>
+            <li>See Privacy Policy above for details on data collection and storage</li>
+          </ul>
+        </div>
+
+        <div className="bg-white p-6 rounded-lg shadow-sm mb-6">
+          <h2 className="text-xl font-semibold mb-3 text-blue-600">6. Billing and Payments</h2>
+          <ul className="text-gray-700 list-disc list-inside space-y-2">
+            <li>Subscription fees are charged monthly or annually as selected</li>
+            <li>Prices are subject to change with 30 days notice</li>
+            <li>Refunds are handled on a case-by-case basis</li>
+          </ul>
+        </div>
+
+        <div className="bg-white p-6 rounded-lg shadow-sm mb-6">
+          <h2 className="text-xl font-semibold mb-3 text-blue-600">7. Termination</h2>
+          <ul className="text-gray-700 list-disc list-inside space-y-2">
+            <li>You may terminate your use of Arnold at any time by uninstalling the app</li>
+            <li>We reserve the right to terminate access for violations of these terms</li>
+            <li>Upon termination, your data will be deleted as outlined in the Privacy Policy above</li>
+          </ul>
+        </div>
+
+        <div className="bg-white p-6 rounded-lg shadow-sm mb-6">
+          <h2 className="text-xl font-semibold mb-3 text-blue-600">8. Limitation of Liability</h2>
+          <ul className="text-gray-700 list-disc list-inside space-y-2">
+            <li>Arnold is provided without warranties of any kind</li>
+            <li>We are not liable for any indirect, incidental, or consequential damages</li>
+            <li>Our total liability is limited to the amount you paid in the last 12 months</li>
+          </ul>
+        </div>
+
+        <div className="bg-white p-6 rounded-lg shadow-sm mb-6">
+          <h2 className="text-xl font-semibold mb-3 text-blue-600">9. Changes to Terms</h2>
+          <ul className="text-gray-700 list-disc list-inside space-y-2">
+            <li>We may update these terms at any time</li>
+            <li>Continued use after changes constitutes acceptance</li>
+            <li>Material changes will be communicated via email</li>
+          </ul>
+        </div>
+
+        <div className="bg-white p-6 rounded-lg shadow-sm mb-6">
+          <h2 className="text-xl font-semibold mb-3 text-blue-600">10. Contact</h2>
+          <p className="text-gray-700">
+            <span className="font-semibold">Operator:</span> Cian McGovern<br />
+            <span className="font-semibold">Location:</span> Ireland<br />
+            <span className="font-semibold">Contact:</span> <a href="mailto:cian@arnoldtheanalyst.com" className="text-blue-600 hover:underline">cian@arnoldtheanalyst.com</a><br />
+            <span className="font-semibold">Website:</span> <a href="https://arnoldtheanalyst.com" className="text-blue-600 hover:underline">https://arnoldtheanalyst.com</a>
+          </p>
+        </div>
+
+        <div className="bg-white p-6 rounded-lg shadow-sm mb-6">
+          <h2 className="text-xl font-semibold mb-3 text-blue-600">11. Governing Law</h2>
+          <p className="text-gray-700">
+            These terms are governed by the laws of Ireland. Any disputes will be resolved in Irish courts.
+          </p>
+        </div>
+
         {/* Final statement */}
         <div className="bg-blue-50 border-l-4 border-blue-600 p-6 rounded-lg mb-6">
           <p className="text-gray-800 font-medium">
-            By using Arnold The Analyst, you acknowledge that you have read, understood, and agree to be bound by this Privacy Policy.
+            By using Arnold The Analyst, you acknowledge that you have read, understood, and agree to be bound by this Privacy Policy and Terms of Service.
           </p>
         </div>
 
         {/* Version info */}
         <div className="text-center text-gray-500 text-sm">
-          <p>This privacy policy was last updated on November 14, 2025.</p>
+          <p>This document was last updated on January 14, 2025.</p>
         </div>
       </div>
     </div>
