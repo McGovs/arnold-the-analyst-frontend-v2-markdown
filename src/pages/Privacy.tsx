@@ -507,8 +507,7 @@ export default function Privacy() {
           <h2 className="text-xl font-semibold mb-3 text-blue-600">2. Service Description</h2>
           <p className="text-gray-700">
             Arnold is a Slack-based assistant that helps users query Google Analytics 4 data using 
-            natural language. Arnold translates queries into SQL and executes them against the user's 
-            BigQuery dataset.
+            natural language.
           </p>
         </div>
 
@@ -526,7 +525,7 @@ export default function Privacy() {
           <h2 className="text-xl font-semibold mb-3 text-blue-600">4. Service Availability</h2>
           <ul className="text-gray-700 list-disc list-inside space-y-2">
             <li>Arnold is provided "as is" without guarantees of uptime</li>
-            <li>We strive for 99% uptime but do not guarantee continuous availability</li>
+            <li>We strive for 99.99% uptime but do not guarantee continuous availability</li>
             <li>Scheduled maintenance will be communicated in advance when possible</li>
           </ul>
         </div>
