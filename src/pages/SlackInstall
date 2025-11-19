@@ -7,11 +7,7 @@ export default function SlackInstall() {
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-gray-100 p-8">
       <div className="max-w-4xl mx-auto">
         <div className="bg-white rounded-lg shadow-xl p-12 text-center mb-8">
-          <div className="w-20 h-20 bg-blue-600 rounded-full mx-auto mb-6 flex items-center justify-center">
-            <svg className="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
-            </svg>
-          </div>
+          <div className="text-6xl mb-6">💬</div>
           
           <h1 className="text-4xl font-bold text-gray-900 mb-4">
             Install Arnold The Analyst for Slack
@@ -30,7 +26,7 @@ export default function SlackInstall() {
             <img 
               src="https://platform.slack-edge.com/img/add_to_slack.png" 
               alt="Add to Slack"
-              style={{ height: '48px' }}
+              className="h-12"
             />
           </a>
 
@@ -44,9 +40,7 @@ export default function SlackInstall() {
 
         <div className="grid md:grid-cols-2 gap-6 mb-8">
           <div className="bg-white rounded-lg shadow-md p-6">
-            <div className="w-12 h-12 bg-blue-100 rounded-lg mb-4 flex items-center justify-center">
-              <span className="text-2xl">⚡</span>
-            </div>
+            <div className="text-4xl mb-4">⚡</div>
             <h3 className="text-xl font-semibold text-gray-900 mb-2">
               Instant Insights
             </h3>
@@ -56,9 +50,7 @@ export default function SlackInstall() {
           </div>
 
           <div className="bg-white rounded-lg shadow-md p-6">
-            <div className="w-12 h-12 bg-blue-100 rounded-lg mb-4 flex items-center justify-center">
-              <span className="text-2xl">🔒</span>
-            </div>
+            <div className="text-4xl mb-4">🔒</div>
             <h3 className="text-xl font-semibold text-gray-900 mb-2">
               Secure & Private
             </h3>
@@ -68,9 +60,7 @@ export default function SlackInstall() {
           </div>
 
           <div className="bg-white rounded-lg shadow-md p-6">
-            <div className="w-12 h-12 bg-blue-100 rounded-lg mb-4 flex items-center justify-center">
-              <span className="text-2xl">📊</span>
-            </div>
+            <div className="text-4xl mb-4">📊</div>
             <h3 className="text-xl font-semibold text-gray-900 mb-2">
               Export to Sheets
             </h3>
@@ -80,9 +70,7 @@ export default function SlackInstall() {
           </div>
 
           <div className="bg-white rounded-lg shadow-md p-6">
-            <div className="w-12 h-12 bg-blue-100 rounded-lg mb-4 flex items-center justify-center">
-              <span className="text-2xl">💬</span>
-            </div>
+            <div className="text-4xl mb-4">💬</div>
             <h3 className="text-xl font-semibold text-gray-900 mb-2">
               Works in Slack
             </h3>
@@ -104,7 +92,7 @@ export default function SlackInstall() {
               </div>
               <div>
                 <h4 className="font-semibold text-gray-900 mb-1">Install Arnold</h4>
-                <p className="text-gray-600">Click "Add to Slack" and authorize Arnold to access your workspace.</p>
+                <p className="text-gray-600">Click Add to Slack and authorize Arnold to access your workspace.</p>
               </div>
             </div>
 
@@ -114,7 +102,7 @@ export default function SlackInstall() {
               </div>
               <div>
                 <h4 className="font-semibold text-gray-900 mb-1">Connect Google Analytics</h4>
-                <p className="text-gray-600">Use the <code className="bg-gray-100 px-2 py-1 rounded text-sm">/arnold-connect</code> command to link your GA4 account.</p>
+                <p className="text-gray-600">Use the /arnold-connect command to link your GA4 account.</p>
               </div>
             </div>
 
@@ -124,7 +112,7 @@ export default function SlackInstall() {
               </div>
               <div>
                 <h4 className="font-semibold text-gray-900 mb-1">Start Querying</h4>
-                <p className="text-gray-600">Ask Arnold questions like "What were my top pages last week?" and get instant answers.</p>
+                <p className="text-gray-600">Ask Arnold questions like What were my top pages last week and get instant answers.</p>
               </div>
             </div>
           </div>
@@ -137,23 +125,23 @@ export default function SlackInstall() {
           
           <div className="space-y-3">
             <div className="bg-gray-50 border border-gray-200 rounded-lg p-4">
-              <p className="text-gray-700 font-mono text-sm">
-                "What were my top 10 pages by pageviews last month?"
+              <p className="text-gray-700 text-sm">
+                What were my top 10 pages by pageviews last month?
               </p>
             </div>
             <div className="bg-gray-50 border border-gray-200 rounded-lg p-4">
-              <p className="text-gray-700 font-mono text-sm">
-                "Show me traffic sources for the last 7 days"
+              <p className="text-gray-700 text-sm">
+                Show me traffic sources for the last 7 days
               </p>
             </div>
             <div className="bg-gray-50 border border-gray-200 rounded-lg p-4">
-              <p className="text-gray-700 font-mono text-sm">
-                "What's my conversion rate by device category this week?"
+              <p className="text-gray-700 text-sm">
+                What is my conversion rate by device category this week?
               </p>
             </div>
             <div className="bg-gray-50 border border-gray-200 rounded-lg p-4">
-              <p className="text-gray-700 font-mono text-sm">
-                "Compare sessions this month vs last month"
+              <p className="text-gray-700 text-sm">
+                Compare sessions this month vs last month
               </p>
             </div>
           </div>
@@ -165,15 +153,15 @@ export default function SlackInstall() {
           </h3>
           <ul className="space-y-2 text-gray-700">
             <li className="flex items-start gap-2">
-              <span className="text-blue-600">✓</span>
+              <span className="text-blue-600 font-bold">✓</span>
               <span>Google Analytics 4 property with BigQuery export enabled</span>
             </li>
             <li className="flex items-start gap-2">
-              <span className="text-blue-600">✓</span>
-              <span>Slack workspace (free or paid)</span>
+              <span className="text-blue-600 font-bold">✓</span>
+              <span>Slack workspace free or paid</span>
             </li>
             <li className="flex items-start gap-2">
-              <span className="text-blue-600">✓</span>
+              <span className="text-blue-600 font-bold">✓</span>
               <span>Google account with access to your GA4 data</span>
             </li>
           </ul>
@@ -195,11 +183,10 @@ export default function SlackInstall() {
             <img 
               src="https://platform.slack-edge.com/img/add_to_slack.png" 
               alt="Add to Slack"
-              style={{ height: '48px' }}
+              className="h-12"
             />
           </a>
         </div>
-
 
         <div className="text-center mt-8">
           <p className="text-gray-600">
