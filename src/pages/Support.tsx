@@ -105,7 +105,6 @@ export default function Support() {
                 You need:
               </p>
               <ul className="list-disc list-inside text-gray-700 space-y-1 ml-4">
-                <li>A Google Analytics 4 property with BigQuery export enabled</li>
                 <li>A Slack workspace (free or paid)</li>
                 <li>A Google account with access to your GA4 data</li>
               </ul>
