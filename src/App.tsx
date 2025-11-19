@@ -5,19 +5,22 @@ import ChatInterface from './components/ChatInterface';
 import Description from './pages/Description';
 import Privacy from './pages/Privacy';
 import SlackInstall from './pages/SlackInstall';
+import Support from './pages/Support';
 import { MessageCircle } from 'lucide-react';
 
 // Main App Component with Tabs (for homepage)
 function AppWithTabs() {
-  const [currentPage, setCurrentPage] = useState<'chat' | 'description' | 'privacy' | 'slack-install'>('chat');
+  const [currentPage, setCurrentPage] = useState<'chat' | 'description' | 'privacy' | 'slack-install' | 'support'>('chat');
   const navigate = useNavigate();
 
   // Handle tab clicks
-  const handleTabClick = (page: 'chat' | 'description' | 'privacy' | 'slack-install') => {
+  const handleTabClick = (page: 'chat' | 'description' | 'privacy' | 'slack-install' | 'support') => {
     if (page === 'privacy') {
       navigate('/privacy-terms');
     } else if (page === 'slack-install') {
       navigate('/slack-install');
+    } else if (page === 'support') {
+      navigate('/support');
     } else {
       setCurrentPage(page);
     }
@@ -58,6 +61,12 @@ function AppWithTabs() {
                 className="px-3 py-2 text-sm font-medium rounded-md transition-colors text-gray-600 hover:text-gray-900 hover:bg-gray-100"
               >
                 Download Slack App
+              </button>
+              <button
+                onClick={() => handleTabClick('support')}
+                className="px-3 py-2 text-sm font-medium rounded-md transition-colors text-gray-600 hover:text-gray-900 hover:bg-gray-100"
+              >
+                Support
               </button>
               <button
                 onClick={() => handleTabClick('privacy')}
@@ -134,6 +143,33 @@ function SlackInstallPage() {
   );
 }
 
+// Standalone Support Page
+function SupportPage() {
+  const navigate = useNavigate();
+  
+  return (
+    <div>
+      <nav className="bg-white shadow-sm border-b">
+        <div className="max-w-4xl mx-auto px-4">
+          <div className="flex items-center justify-between h-16">
+            <div className="flex items-center gap-2">
+              <MessageCircle className="w-6 h-6 text-blue-600" />
+              <span className="font-semibold text-gray-900">GA4 Analytics Assistant</span>
+            </div>
+            <button
+              onClick={() => navigate('/')}
+              className="px-3 py-2 text-sm font-medium rounded-md transition-colors text-gray-600 hover:text-gray-900 hover:bg-gray-100"
+            >
+              ← Back to Home
+            </button>
+          </div>
+        </div>
+      </nav>
+      <Support />
+    </div>
+  );
+}
+
 // Main App with Router
 function App() {
   return (
@@ -142,6 +178,7 @@ function App() {
         <Route path="/" element={<AppWithTabs />} />
         <Route path="/privacy-terms" element={<PrivacyPage />} />
         <Route path="/slack-install" element={<SlackInstallPage />} />
+        <Route path="/support" element={<SupportPage />} />
       </Routes>
     </Router>
   );
