@@ -1,5 +1,4 @@
 import React from 'react';
-import { MessageCircle, Zap, Shield, TrendingUp, CheckCircle } from 'lucide-react';
 
 export default function SlackInstall() {
   const slackInstallUrl = "https://slack.com/oauth/v2/authorize?client_id=134528973318.9712045945332&scope=app_mentions:read,channels:history,channels:join,channels:read,chat:write,chat:write.public,commands,groups:history,groups:read,im:history,im:write,mpim:history,users:read&user_scope=";
@@ -7,9 +6,12 @@ export default function SlackInstall() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-gray-100 p-8">
       <div className="max-w-4xl mx-auto">
-        {/* Hero Section */}
         <div className="bg-white rounded-lg shadow-xl p-12 text-center mb-8">
-          <MessageCircle className="w-20 h-20 text-blue-600 mx-auto mb-6" />
+          <div className="w-20 h-20 bg-blue-600 rounded-full mx-auto mb-6 flex items-center justify-center">
+            <svg className="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+            </svg>
+          </div>
           
           <h1 className="text-4xl font-bold text-gray-900 mb-4">
             Install Arnold The Analyst for Slack
@@ -19,7 +21,6 @@ export default function SlackInstall() {
             Query your Google Analytics 4 data using plain English directly in Slack
           </p>
 
-          {/* Install Button */}
           
             href={slackInstallUrl}
             target="_blank"
@@ -41,10 +42,11 @@ export default function SlackInstall() {
           </p>
         </div>
 
-        {/* Features Grid */}
         <div className="grid md:grid-cols-2 gap-6 mb-8">
           <div className="bg-white rounded-lg shadow-md p-6">
-            <Zap className="w-12 h-12 text-blue-600 mb-4" />
+            <div className="w-12 h-12 bg-blue-100 rounded-lg mb-4 flex items-center justify-center">
+              <span className="text-2xl">⚡</span>
+            </div>
             <h3 className="text-xl font-semibold text-gray-900 mb-2">
               Instant Insights
             </h3>
@@ -54,7 +56,9 @@ export default function SlackInstall() {
           </div>
 
           <div className="bg-white rounded-lg shadow-md p-6">
-            <Shield className="w-12 h-12 text-blue-600 mb-4" />
+            <div className="w-12 h-12 bg-blue-100 rounded-lg mb-4 flex items-center justify-center">
+              <span className="text-2xl">🔒</span>
+            </div>
             <h3 className="text-xl font-semibold text-gray-900 mb-2">
               Secure & Private
             </h3>
@@ -64,7 +68,9 @@ export default function SlackInstall() {
           </div>
 
           <div className="bg-white rounded-lg shadow-md p-6">
-            <TrendingUp className="w-12 h-12 text-blue-600 mb-4" />
+            <div className="w-12 h-12 bg-blue-100 rounded-lg mb-4 flex items-center justify-center">
+              <span className="text-2xl">📊</span>
+            </div>
             <h3 className="text-xl font-semibold text-gray-900 mb-2">
               Export to Sheets
             </h3>
@@ -74,7 +80,9 @@ export default function SlackInstall() {
           </div>
 
           <div className="bg-white rounded-lg shadow-md p-6">
-            <MessageCircle className="w-12 h-12 text-blue-600 mb-4" />
+            <div className="w-12 h-12 bg-blue-100 rounded-lg mb-4 flex items-center justify-center">
+              <span className="text-2xl">💬</span>
+            </div>
             <h3 className="text-xl font-semibold text-gray-900 mb-2">
               Works in Slack
             </h3>
@@ -84,7 +92,6 @@ export default function SlackInstall() {
           </div>
         </div>
 
-        {/* How It Works */}
         <div className="bg-white rounded-lg shadow-xl p-8 mb-8">
           <h2 className="text-2xl font-bold text-gray-900 mb-6 text-center">
             How It Works
@@ -107,7 +114,7 @@ export default function SlackInstall() {
               </div>
               <div>
                 <h4 className="font-semibold text-gray-900 mb-1">Connect Google Analytics</h4>
-                <p className="text-gray-600">Use the <code className="bg-gray-100 px-2 py-1 rounded">/arnold-connect</code> command to link your GA4 account.</p>
+                <p className="text-gray-600">Use the <code className="bg-gray-100 px-2 py-1 rounded text-sm">/arnold-connect</code> command to link your GA4 account.</p>
               </div>
             </div>
 
@@ -123,7 +130,6 @@ export default function SlackInstall() {
           </div>
         </div>
 
-        {/* Example Queries */}
         <div className="bg-white rounded-lg shadow-xl p-8 mb-8">
           <h2 className="text-2xl font-bold text-gray-900 mb-6 text-center">
             Example Queries
@@ -153,28 +159,26 @@ export default function SlackInstall() {
           </div>
         </div>
 
-        {/* Requirements */}
         <div className="bg-blue-50 border border-blue-200 rounded-lg p-6 mb-8">
           <h3 className="text-lg font-semibold text-gray-900 mb-3">
             Requirements
           </h3>
           <ul className="space-y-2 text-gray-700">
             <li className="flex items-start gap-2">
-              <CheckCircle className="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" />
+              <span className="text-blue-600">✓</span>
               <span>Google Analytics 4 property with BigQuery export enabled</span>
             </li>
             <li className="flex items-start gap-2">
-              <CheckCircle className="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" />
+              <span className="text-blue-600">✓</span>
               <span>Slack workspace (free or paid)</span>
             </li>
             <li className="flex items-start gap-2">
-              <CheckCircle className="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" />
+              <span className="text-blue-600">✓</span>
               <span>Google account with access to your GA4 data</span>
             </li>
           </ul>
         </div>
 
-        {/* CTA Section */}
         <div className="bg-gradient-to-r from-blue-600 to-blue-700 rounded-lg shadow-xl p-12 text-center text-white">
           <h2 className="text-3xl font-bold mb-4">
             Ready to Get Started?
@@ -196,7 +200,6 @@ export default function SlackInstall() {
           </a>
         </div>
 
-        {/* Support */}
         <div className="text-center mt-8">
           <p className="text-gray-600">
             Need help? Email us at{' '}
