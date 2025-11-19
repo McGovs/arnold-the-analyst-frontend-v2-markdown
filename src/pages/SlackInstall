@@ -1,14 +1,10 @@
 import React from 'react';
 
 export default function SlackInstall() {
-  const slackInstallUrl = "https://slack.com/oauth/v2/authorize?client_id=134528973318.9712045945332&scope=app_mentions:read,channels:history,channels:join,channels:read,chat:write,chat:write.public,commands,groups:history,groups:read,im:history,im:write,mpim:history,users:read&user_scope=";
-
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-gray-100 p-8">
+    <div className="min-h-screen bg-gray-50 p-8">
       <div className="max-w-4xl mx-auto">
         <div className="bg-white rounded-lg shadow-xl p-12 text-center mb-8">
-          <div className="text-6xl mb-6">💬</div>
-          
           <h1 className="text-4xl font-bold text-gray-900 mb-4">
             Install Arnold The Analyst for Slack
           </h1>
@@ -18,182 +14,63 @@ export default function SlackInstall() {
           </p>
 
           
-            href={slackInstallUrl}
+            href="https://slack.com/oauth/v2/authorize?client_id=134528973318.9712045945332&scope=app_mentions:read,channels:history,channels:join,channels:read,chat:write,chat:write.public,commands,groups:history,groups:read,im:history,im:write,mpim:history,users:read&user_scope="
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block transition-transform hover:scale-105"
           >
             <img 
               src="https://platform.slack-edge.com/img/add_to_slack.png" 
               alt="Add to Slack"
-              className="h-12"
             />
           </a>
 
           <p className="text-sm text-gray-500 mt-6">
-            By installing Arnold, you agree to our{' '}
-            <a href="/privacy-terms" className="text-blue-600 hover:underline">
-              Privacy Policy & Terms of Service
-            </a>
+            By installing Arnold, you agree to our Privacy Policy and Terms of Service
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-6 mb-8">
-          <div className="bg-white rounded-lg shadow-md p-6">
-            <div className="text-4xl mb-4">⚡</div>
-            <h3 className="text-xl font-semibold text-gray-900 mb-2">
-              Instant Insights
-            </h3>
-            <p className="text-gray-600">
-              Ask questions in plain English and get GA4 data back in seconds. No SQL knowledge required.
-            </p>
-          </div>
-
-          <div className="bg-white rounded-lg shadow-md p-6">
-            <div className="text-4xl mb-4">🔒</div>
-            <h3 className="text-xl font-semibold text-gray-900 mb-2">
-              Secure & Private
-            </h3>
-            <p className="text-gray-600">
-              Your data stays private. Arnold only accesses your GA4 data when you explicitly request it.
-            </p>
-          </div>
-
-          <div className="bg-white rounded-lg shadow-md p-6">
-            <div className="text-4xl mb-4">📊</div>
-            <h3 className="text-xl font-semibold text-gray-900 mb-2">
-              Export to Sheets
-            </h3>
-            <p className="text-gray-600">
-              Automatically export your query results to Google Sheets for deeper analysis and sharing.
-            </p>
-          </div>
-
-          <div className="bg-white rounded-lg shadow-md p-6">
-            <div className="text-4xl mb-4">💬</div>
-            <h3 className="text-xl font-semibold text-gray-900 mb-2">
-              Works in Slack
-            </h3>
-            <p className="text-gray-600">
-              No context switching. Query your analytics data right where your team already works.
-            </p>
-          </div>
-        </div>
-
-        <div className="bg-white rounded-lg shadow-xl p-8 mb-8">
-          <h2 className="text-2xl font-bold text-gray-900 mb-6 text-center">
-            How It Works
+        <div className="bg-white rounded-lg shadow-md p-8 mb-8">
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">
+            Features
           </h2>
-          
-          <div className="space-y-4">
-            <div className="flex items-start gap-4">
-              <div className="flex-shrink-0 w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold">
-                1
-              </div>
-              <div>
-                <h4 className="font-semibold text-gray-900 mb-1">Install Arnold</h4>
-                <p className="text-gray-600">Click Add to Slack and authorize Arnold to access your workspace.</p>
-              </div>
-            </div>
-
-            <div className="flex items-start gap-4">
-              <div className="flex-shrink-0 w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold">
-                2
-              </div>
-              <div>
-                <h4 className="font-semibold text-gray-900 mb-1">Connect Google Analytics</h4>
-                <p className="text-gray-600">Use the /arnold-connect command to link your GA4 account.</p>
-              </div>
-            </div>
-
-            <div className="flex items-start gap-4">
-              <div className="flex-shrink-0 w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold">
-                3
-              </div>
-              <div>
-                <h4 className="font-semibold text-gray-900 mb-1">Start Querying</h4>
-                <p className="text-gray-600">Ask Arnold questions like What were my top pages last week and get instant answers.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="bg-white rounded-lg shadow-xl p-8 mb-8">
-          <h2 className="text-2xl font-bold text-gray-900 mb-6 text-center">
-            Example Queries
-          </h2>
-          
-          <div className="space-y-3">
-            <div className="bg-gray-50 border border-gray-200 rounded-lg p-4">
-              <p className="text-gray-700 text-sm">
-                What were my top 10 pages by pageviews last month?
-              </p>
-            </div>
-            <div className="bg-gray-50 border border-gray-200 rounded-lg p-4">
-              <p className="text-gray-700 text-sm">
-                Show me traffic sources for the last 7 days
-              </p>
-            </div>
-            <div className="bg-gray-50 border border-gray-200 rounded-lg p-4">
-              <p className="text-gray-700 text-sm">
-                What is my conversion rate by device category this week?
-              </p>
-            </div>
-            <div className="bg-gray-50 border border-gray-200 rounded-lg p-4">
-              <p className="text-gray-700 text-sm">
-                Compare sessions this month vs last month
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div className="bg-blue-50 border border-blue-200 rounded-lg p-6 mb-8">
-          <h3 className="text-lg font-semibold text-gray-900 mb-3">
-            Requirements
-          </h3>
           <ul className="space-y-2 text-gray-700">
-            <li className="flex items-start gap-2">
-              <span className="text-blue-600 font-bold">✓</span>
-              <span>Google Analytics 4 property with BigQuery export enabled</span>
-            </li>
-            <li className="flex items-start gap-2">
-              <span className="text-blue-600 font-bold">✓</span>
-              <span>Slack workspace free or paid</span>
-            </li>
-            <li className="flex items-start gap-2">
-              <span className="text-blue-600 font-bold">✓</span>
-              <span>Google account with access to your GA4 data</span>
-            </li>
+            <li>Ask questions in plain English and get GA4 data back in seconds</li>
+            <li>Your data stays private and secure</li>
+            <li>Export results to Google Sheets automatically</li>
+            <li>Works directly in Slack - no context switching</li>
           </ul>
         </div>
 
-        <div className="bg-gradient-to-r from-blue-600 to-blue-700 rounded-lg shadow-xl p-12 text-center text-white">
-          <h2 className="text-3xl font-bold mb-4">
+        <div className="bg-white rounded-lg shadow-md p-8 mb-8">
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">
+            How It Works
+          </h2>
+          <ol className="space-y-2 text-gray-700 list-decimal list-inside">
+            <li>Click Add to Slack and authorize Arnold</li>
+            <li>Use /arnold-connect to link your GA4 account</li>
+            <li>Start asking questions about your analytics data</li>
+          </ol>
+        </div>
+
+        <div className="bg-blue-600 rounded-lg p-8 text-center text-white">
+          <h2 className="text-2xl font-bold mb-4">
             Ready to Get Started?
           </h2>
-          <p className="text-xl mb-8 text-blue-100">
-            Install Arnold in your Slack workspace today
-          </p>
           
-            href={slackInstallUrl}
+            href="https://slack.com/oauth/v2/authorize?client_id=134528973318.9712045945332&scope=app_mentions:read,channels:history,channels:join,channels:read,chat:write,chat:write.public,commands,groups:history,groups:read,im:history,im:write,mpim:history,users:read&user_scope="
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block transition-transform hover:scale-105"
           >
             <img 
               src="https://platform.slack-edge.com/img/add_to_slack.png" 
               alt="Add to Slack"
-              className="h-12"
             />
           </a>
         </div>
 
         <div className="text-center mt-8">
           <p className="text-gray-600">
-            Need help? Email us at{' '}
-            <a href="mailto:cian@arnoldtheanalyst.com" className="text-blue-600 hover:underline">
-              cian@arnoldtheanalyst.com
-            </a>
+            Need help? Email us at cian@arnoldtheanalyst.com
           </p>
         </div>
       </div>
