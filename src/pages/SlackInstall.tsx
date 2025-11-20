@@ -16,9 +16,11 @@ export default function SlackInstall() {
             Query your Google Analytics 4 data using plain English directly in Slack
           </p>
 
-          <a href={slackUrl} target="_blank" rel="noopener noreferrer">
-            <img src="https://platform.slack-edge.com/img/add_to_slack.png" alt="Add to Slack" />
-          </a>
+          <div className="flex justify-center">
+            <a href={slackUrl} target="_blank" rel="noopener noreferrer">
+              <img src="https://platform.slack-edge.com/img/add_to_slack.png" alt="Add to Slack" />
+            </a>
+          </div>
 
           <p className="text-sm text-gray-500 mt-6">
             By installing Arnold, you agree to our Privacy Policy and Terms of Service
@@ -52,9 +54,12 @@ export default function SlackInstall() {
         <div className="bg-blue-600 rounded-lg p-8 text-center text-white mb-8">
           <h2 className="text-2xl font-bold mb-4">Ready to Get Started?</h2>
           <p className="mb-6">Install Arnold in your Slack workspace today</p>
-          <a href={slackUrl} target="_blank" rel="noopener noreferrer">
-            <img src="https://platform.slack-edge.com/img/add_to_slack.png" alt="Add to Slack" />
-          </a>
+          
+          <div className="flex justify-center">
+            <a href={slackUrl} target="_blank" rel="noopener noreferrer">
+              <img src="https://platform.slack-edge.com/img/add_to_slack.png" alt="Add to Slack" />
+            </a>
+          </div>
         </div>
 
         <div className="text-center mt-8">
