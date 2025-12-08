@@ -8,6 +8,9 @@ export default function Homepage() {
   
   const slackInstallUrl = "https://slack.com/oauth/v2/authorize?client_id=134528973318.9712045945332&scope=app_mentions:read,channels:history,channels:join,channels:manage,channels:read,chat:write,chat:write.public,commands,groups:history,groups:read,im:history,im:write,mpim:history,users:read&user_scope=";
 
+  // TODO: Replace with your actual video walkthrough URL
+  const videoWalkthroughUrl = "/demo";
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-slate-50 via-white to-blue-50/30">
       {/* Navigation */}
@@ -48,11 +51,21 @@ export default function Homepage() {
               </button>
             </div>
 
+            {/* Slack-style Add to Slack button (nav) */}
             <a
               href={slackInstallUrl}
-              className="hidden sm:inline-flex items-center gap-2 bg-slate-900 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-slate-800 transition-colors"
+              className="hidden sm:inline-flex items-center gap-2 bg-white text-slate-800 px-4 py-2 rounded border border-slate-300 text-sm font-medium hover:bg-slate-50 transition-colors shadow-sm"
             >
-              <Slack className="w-4 h-4" />
+              <svg width="16" height="16" viewBox="0 0 123 123" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M25.8 77.6C25.8 84.7 20 90.5 12.9 90.5C5.8 90.5 0 84.7 0 77.6C0 70.5 5.8 64.7 12.9 64.7H25.8V77.6Z" fill="#E01E5A"/>
+                <path d="M32.3 77.6C32.3 70.5 38.1 64.7 45.2 64.7C52.3 64.7 58.1 70.5 58.1 77.6V109.9C58.1 117 52.3 122.8 45.2 122.8C38.1 122.8 32.3 117 32.3 109.9V77.6Z" fill="#E01E5A"/>
+                <path d="M45.2 25.8C38.1 25.8 32.3 20 32.3 12.9C32.3 5.8 38.1 0 45.2 0C52.3 0 58.1 5.8 58.1 12.9V25.8H45.2Z" fill="#36C5F0"/>
+                <path d="M45.2 32.3C52.3 32.3 58.1 38.1 58.1 45.2C58.1 52.3 52.3 58.1 45.2 58.1H12.9C5.8 58.1 0 52.3 0 45.2C0 38.1 5.8 32.3 12.9 32.3H45.2Z" fill="#36C5F0"/>
+                <path d="M97 45.2C97 38.1 102.8 32.3 109.9 32.3C117 32.3 122.8 38.1 122.8 45.2C122.8 52.3 117 58.1 109.9 58.1H97V45.2Z" fill="#2EB67D"/>
+                <path d="M90.5 45.2C90.5 52.3 84.7 58.1 77.6 58.1C70.5 58.1 64.7 52.3 64.7 45.2V12.9C64.7 5.8 70.5 0 77.6 0C84.7 0 90.5 5.8 90.5 12.9V45.2Z" fill="#2EB67D"/>
+                <path d="M77.6 97C84.7 97 90.5 102.8 90.5 109.9C90.5 117 84.7 122.8 77.6 122.8C70.5 122.8 64.7 117 64.7 109.9V97H77.6Z" fill="#ECB22E"/>
+                <path d="M77.6 90.5C70.5 90.5 64.7 84.7 64.7 77.6C64.7 70.5 70.5 64.7 77.6 64.7H109.9C117 64.7 122.8 70.5 122.8 77.6C122.8 84.7 117 90.5 109.9 90.5H77.6Z" fill="#ECB22E"/>
+              </svg>
               Add to Slack
             </a>
           </div>
@@ -60,24 +73,24 @@ export default function Homepage() {
       </nav>
 
       {/* Hero Section - Compact to fit above fold */}
-      <main className="pt-20 pb-6 px-6">
+      <main className="pt-20 pb-4 px-6">
         <div className="max-w-4xl mx-auto text-center">
           {/* Social Proof Badge */}
-          <div className="inline-flex items-center gap-2 bg-white border border-slate-200 rounded-full px-3 py-1.5 mb-4 shadow-sm">
+          <div className="inline-flex items-center gap-2 bg-white border border-slate-200 rounded-full px-3 py-1.5 mb-3 shadow-sm">
             <span className="w-2 h-2 bg-emerald-500 rounded-full animate-pulse"></span>
             <span className="text-xs text-slate-600">Trusted by digital marketing agencies</span>
           </div>
 
-          {/* Main Headline - Reduced size */}
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 tracking-tight leading-[1.15] mb-6">
+          {/* Main Headline - Smaller with proper line height for descenders */}
+          <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-slate-900 tracking-tight leading-normal mb-5">
             Ask your GA4 data anything
-            <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">
+            <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600 pb-1">
               — insights in 20 seconds
             </span>
           </h1>
 
           {/* GIF Placeholder - Reduced size */}
-          <div className="relative max-w-2xl mx-auto mb-6">
+          <div className="relative max-w-2xl mx-auto mb-5">
             <div className="aspect-video bg-gradient-to-br from-slate-100 to-slate-200 rounded-xl border border-slate-200 shadow-xl shadow-slate-200/50 overflow-hidden">
               {/* Replace this div with your actual GIF */}
               <div className="absolute inset-0 flex flex-col items-center justify-center text-slate-400">
@@ -99,28 +112,38 @@ export default function Homepage() {
             <div className="absolute -bottom-3 -left-3 w-24 h-24 bg-indigo-500/10 rounded-full blur-2xl"></div>
           </div>
 
-          {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-3 mb-4">
+          {/* CTA Buttons - Both blue style */}
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-3 mb-3">
+            {/* Slack-style Add to Slack button (main CTA) */}
             <a
               href={slackInstallUrl}
-              className="inline-flex items-center gap-2.5 bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-6 py-3 rounded-xl text-base font-semibold hover:from-blue-700 hover:to-indigo-700 transition-all shadow-lg shadow-blue-500/25 hover:shadow-xl hover:shadow-blue-500/30 hover:-translate-y-0.5"
+              className="inline-flex items-center gap-2 bg-white text-slate-800 px-5 py-2.5 rounded border border-slate-300 text-base font-medium hover:bg-slate-50 transition-colors shadow-sm"
             >
-              <Slack className="w-4 h-4" />
+              <svg width="20" height="20" viewBox="0 0 123 123" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M25.8 77.6C25.8 84.7 20 90.5 12.9 90.5C5.8 90.5 0 84.7 0 77.6C0 70.5 5.8 64.7 12.9 64.7H25.8V77.6Z" fill="#E01E5A"/>
+                <path d="M32.3 77.6C32.3 70.5 38.1 64.7 45.2 64.7C52.3 64.7 58.1 70.5 58.1 77.6V109.9C58.1 117 52.3 122.8 45.2 122.8C38.1 122.8 32.3 117 32.3 109.9V77.6Z" fill="#E01E5A"/>
+                <path d="M45.2 25.8C38.1 25.8 32.3 20 32.3 12.9C32.3 5.8 38.1 0 45.2 0C52.3 0 58.1 5.8 58.1 12.9V25.8H45.2Z" fill="#36C5F0"/>
+                <path d="M45.2 32.3C52.3 32.3 58.1 38.1 58.1 45.2C58.1 52.3 52.3 58.1 45.2 58.1H12.9C5.8 58.1 0 52.3 0 45.2C0 38.1 5.8 32.3 12.9 32.3H45.2Z" fill="#36C5F0"/>
+                <path d="M97 45.2C97 38.1 102.8 32.3 109.9 32.3C117 32.3 122.8 38.1 122.8 45.2C122.8 52.3 117 58.1 109.9 58.1H97V45.2Z" fill="#2EB67D"/>
+                <path d="M90.5 45.2C90.5 52.3 84.7 58.1 77.6 58.1C70.5 58.1 64.7 52.3 64.7 45.2V12.9C64.7 5.8 70.5 0 77.6 0C84.7 0 90.5 5.8 90.5 12.9V45.2Z" fill="#2EB67D"/>
+                <path d="M77.6 97C84.7 97 90.5 102.8 90.5 109.9C90.5 117 84.7 122.8 77.6 122.8C70.5 122.8 64.7 117 64.7 109.9V97H77.6Z" fill="#ECB22E"/>
+                <path d="M77.6 90.5C70.5 90.5 64.7 84.7 64.7 77.6C64.7 70.5 70.5 64.7 77.6 64.7H109.9C117 64.7 122.8 70.5 122.8 77.6C122.8 84.7 117 90.5 109.9 90.5H77.6Z" fill="#ECB22E"/>
+              </svg>
               Add to Slack
-              <ArrowRight className="w-4 h-4" />
             </a>
             
-            <button
-              onClick={() => navigate('/demo')}
-              className="inline-flex items-center gap-2 bg-white text-slate-700 px-5 py-3 rounded-xl text-base font-medium border border-slate-200 hover:border-slate-300 hover:bg-slate-50 transition-all"
+            {/* Watch Video Walkthrough button - Blue gradient style */}
+            <a
+              href={videoWalkthroughUrl}
+              className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-5 py-2.5 rounded-lg text-base font-medium hover:from-blue-700 hover:to-indigo-700 transition-all shadow-md hover:shadow-lg"
             >
               <Play className="w-4 h-4" />
-              Try Live Demo
-            </button>
+              Watch Video Walkthrough
+            </a>
           </div>
 
           <p className="text-sm text-slate-500">
-            Free to try • Works with any GA4 property • No BigQuery required
+            Free to try • Works with any GA4 property
           </p>
         </div>
       </main>
