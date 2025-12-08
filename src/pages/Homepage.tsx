@@ -13,7 +13,7 @@ export default function Homepage() {
       {/* Navigation */}
       <nav className="fixed top-0 left-0 right-0 bg-white/80 backdrop-blur-md border-b border-slate-100 z-50">
         <div className="max-w-6xl mx-auto px-6">
-          <div className="flex items-center justify-between h-16">
+          <div className="flex items-center justify-between h-14">
             <div className="flex items-center gap-2.5">
               <div className="w-8 h-8 bg-gradient-to-br from-blue-600 to-indigo-600 rounded-lg flex items-center justify-center">
                 <BarChart3 className="w-4 h-4 text-white" />
@@ -59,35 +59,29 @@ export default function Homepage() {
         </div>
       </nav>
 
-      {/* Hero Section */}
-      <main className="pt-32 pb-20 px-6">
+      {/* Hero Section - Compact to fit above fold */}
+      <main className="pt-20 pb-6 px-6">
         <div className="max-w-4xl mx-auto text-center">
           {/* Social Proof Badge */}
-          <div className="inline-flex items-center gap-2 bg-white border border-slate-200 rounded-full px-4 py-2 mb-8 shadow-sm">
+          <div className="inline-flex items-center gap-2 bg-white border border-slate-200 rounded-full px-3 py-1.5 mb-4 shadow-sm">
             <span className="w-2 h-2 bg-emerald-500 rounded-full animate-pulse"></span>
-            <span className="text-sm text-slate-600">Trusted by digital marketing agencies</span>
+            <span className="text-xs text-slate-600">Trusted by digital marketing agencies</span>
           </div>
 
-          {/* Main Headline */}
-          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-slate-900 tracking-tight leading-[1.1] mb-6">
+          {/* Main Headline - Reduced size */}
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 tracking-tight leading-[1.15] mb-6">
             Ask your GA4 data anything
             <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">
               — insights in 20 seconds
             </span>
           </h1>
 
-          {/* Subheadline */}
-          <p className="text-xl text-slate-600 max-w-2xl mx-auto mb-12 leading-relaxed">
-            Arnold is an AI analyst that lives in Slack. Ask questions in plain English, 
-            get accurate GA4 insights without touching BigQuery or writing SQL.
-          </p>
-
-          {/* GIF Placeholder */}
-          <div className="relative max-w-3xl mx-auto mb-12">
-            <div className="aspect-video bg-gradient-to-br from-slate-100 to-slate-200 rounded-2xl border border-slate-200 shadow-2xl shadow-slate-200/50 overflow-hidden">
+          {/* GIF Placeholder - Reduced size */}
+          <div className="relative max-w-2xl mx-auto mb-6">
+            <div className="aspect-video bg-gradient-to-br from-slate-100 to-slate-200 rounded-xl border border-slate-200 shadow-xl shadow-slate-200/50 overflow-hidden">
               {/* Replace this div with your actual GIF */}
               <div className="absolute inset-0 flex flex-col items-center justify-center text-slate-400">
-                <Play className="w-16 h-16 mb-4 opacity-50" />
+                <Play className="w-12 h-12 mb-2 opacity-50" />
                 <span className="text-sm font-medium">Demo GIF goes here</span>
                 <span className="text-xs mt-1">Place your GIF in /public/demo.gif</span>
               </div>
@@ -101,26 +95,26 @@ export default function Homepage() {
             </div>
             
             {/* Decorative elements */}
-            <div className="absolute -top-4 -right-4 w-24 h-24 bg-blue-500/10 rounded-full blur-2xl"></div>
-            <div className="absolute -bottom-4 -left-4 w-32 h-32 bg-indigo-500/10 rounded-full blur-2xl"></div>
+            <div className="absolute -top-3 -right-3 w-20 h-20 bg-blue-500/10 rounded-full blur-2xl"></div>
+            <div className="absolute -bottom-3 -left-3 w-24 h-24 bg-indigo-500/10 rounded-full blur-2xl"></div>
           </div>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-3 mb-4">
             <a
               href={slackInstallUrl}
-              className="inline-flex items-center gap-3 bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-8 py-4 rounded-xl text-lg font-semibold hover:from-blue-700 hover:to-indigo-700 transition-all shadow-lg shadow-blue-500/25 hover:shadow-xl hover:shadow-blue-500/30 hover:-translate-y-0.5"
+              className="inline-flex items-center gap-2.5 bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-6 py-3 rounded-xl text-base font-semibold hover:from-blue-700 hover:to-indigo-700 transition-all shadow-lg shadow-blue-500/25 hover:shadow-xl hover:shadow-blue-500/30 hover:-translate-y-0.5"
             >
-              <Slack className="w-5 h-5" />
+              <Slack className="w-4 h-4" />
               Add to Slack
-              <ArrowRight className="w-5 h-5" />
+              <ArrowRight className="w-4 h-4" />
             </a>
             
             <button
               onClick={() => navigate('/demo')}
-              className="inline-flex items-center gap-2 bg-white text-slate-700 px-6 py-4 rounded-xl text-lg font-medium border border-slate-200 hover:border-slate-300 hover:bg-slate-50 transition-all"
+              className="inline-flex items-center gap-2 bg-white text-slate-700 px-5 py-3 rounded-xl text-base font-medium border border-slate-200 hover:border-slate-300 hover:bg-slate-50 transition-all"
             >
-              <Play className="w-5 h-5" />
+              <Play className="w-4 h-4" />
               Try Live Demo
             </button>
           </div>
@@ -132,7 +126,7 @@ export default function Homepage() {
       </main>
 
       {/* Features Section */}
-      <section className="py-20 px-6 border-t border-slate-100">
+      <section className="py-16 px-6 border-t border-slate-100">
         <div className="max-w-5xl mx-auto">
           <div className="grid md:grid-cols-3 gap-8">
             <div className="text-center p-6">
