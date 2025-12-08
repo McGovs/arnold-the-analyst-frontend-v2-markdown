@@ -75,7 +75,7 @@ export default function Homepage() {
         </div>
       </nav>
 
-      {/* Hero Section - Increased spacing between blocks */}
+      {/* Hero Section */}
       <main className="pt-24 pb-4 px-6">
         <div className="max-w-4xl mx-auto text-center">
           {/* Social Proof Badge */}
@@ -117,10 +117,10 @@ export default function Homepage() {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3 mb-3">
-            {/* Slack-style Add to Slack button (main CTA) */}
+            {/* Slack-style Add to Slack button (main CTA) - more visible border */}
             <a
               href={slackInstallUrl}
-              className="inline-flex items-center gap-2 bg-white text-slate-800 px-5 py-2.5 rounded border border-slate-300 text-base font-medium hover:bg-slate-50 transition-colors shadow-sm"
+              className="inline-flex items-center gap-2 bg-white text-slate-800 px-5 py-2.5 rounded border-2 border-slate-300 text-base font-medium hover:bg-slate-50 hover:border-slate-400 transition-colors shadow-sm"
             >
               <svg width="18" height="18" viewBox="0 0 123 123" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M25.8 77.6C25.8 84.7 20 90.5 12.9 90.5C5.8 90.5 0 84.7 0 77.6C0 70.5 5.8 64.7 12.9 64.7H25.8V77.6Z" fill="#E01E5A"/>
@@ -135,10 +135,10 @@ export default function Homepage() {
               Add Arnold to Slack
             </a>
             
-            {/* Arnold In Action button - softer blue, smaller */}
+            {/* Arnold In Action button - softer sky blue */}
             <a
               href={videoWalkthroughUrl}
-              className="inline-flex items-center gap-1.5 bg-slate-500 text-white px-4 py-2.5 rounded-lg text-sm font-medium hover:bg-slate-600 transition-all shadow-sm"
+              className="inline-flex items-center gap-1.5 bg-blue-400 text-white px-4 py-2.5 rounded-lg text-sm font-medium hover:bg-blue-500 transition-all shadow-sm"
             >
               <Play className="w-3.5 h-3.5" />
               Arnold In Action
@@ -149,10 +149,10 @@ export default function Homepage() {
             Free to try • Works with any GA4 property
           </p>
 
-          {/* Contact CTA - Fyxer style */}
+          {/* Contact CTA - more visible border */}
           <a
             href={contactUrl}
-            className="inline-flex items-center justify-center bg-white text-slate-700 px-8 py-2 rounded-full text-sm font-medium border border-slate-200 hover:border-slate-300 hover:bg-slate-50 transition-all"
+            className="inline-flex items-center justify-center bg-white text-slate-700 px-8 py-2 rounded-full text-sm font-medium border-2 border-slate-300 hover:border-slate-400 hover:bg-slate-50 transition-all"
           >
             Want more info? Let's chat
           </a>
