@@ -75,8 +75,8 @@ export default function Homepage() {
         </div>
       </nav>
 
-      {/* Hero Section - Compact to fit above fold */}
-      <main className="pt-18 pb-3 px-6">
+      {/* Hero Section - Restored proper top padding */}
+      <main className="pt-20 pb-3 px-6">
         <div className="max-w-4xl mx-auto text-center">
           {/* Social Proof Badge */}
           <div className="inline-flex items-center gap-2 bg-white border border-slate-200 rounded-full px-3 py-1 mb-3 shadow-sm">
