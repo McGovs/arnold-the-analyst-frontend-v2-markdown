@@ -169,7 +169,7 @@ export default function Homepage() {
               </div>
               <h3 className="text-lg font-semibold text-slate-900 mb-2">Natural Language</h3>
               <p className="text-slate-600">
-                Ask questions the way you'd ask a colleague. No SQL or technical knowledge needed.
+                Ask questions the way you'd ask a colleague. No SQL or technical GA4 knowledge needed.
               </p>
             </div>
             
@@ -179,7 +179,7 @@ export default function Homepage() {
               </div>
               <h3 className="text-lg font-semibold text-slate-900 mb-2">Instant Answers</h3>
               <p className="text-slate-600">
-                Get insights in seconds, not hours. Complex queries answered in under 3 minutes.
+                Get insights in seconds, not hours. Queries answered in 20 seconds on average.
               </p>
             </div>
             
@@ -189,7 +189,7 @@ export default function Homepage() {
               </div>
               <h3 className="text-lg font-semibold text-slate-900 mb-2">Always Available</h3>
               <p className="text-slate-600">
-                Arnold lives in Slack. Your team can get answers 24/7 without waiting for analysts.
+                Arnold lives in Slack. Marketers & account managers don't have to wait on analysts. Analysts can focus on more meaningful work.
               </p>
             </div>
           </div>
