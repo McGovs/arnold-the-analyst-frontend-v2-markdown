@@ -1,172 +1,88 @@
 // src/App.tsx
-import React, { useState } from 'react';
+import React from 'react';
 import { BrowserRouter as Router, Routes, Route, useNavigate } from 'react-router-dom';
+import Homepage from './pages/Homepage';
 import ChatInterface from './components/ChatInterface';
 import Description from './pages/Description';
 import Privacy from './pages/Privacy';
 import SlackInstall from './pages/SlackInstall';
 import Support from './pages/Support';
-import { MessageCircle } from 'lucide-react';
+import { MessageCircle, BarChart3 } from 'lucide-react';
 
-// Main App Component with Tabs (for homepage)
-function AppWithTabs() {
-  const [currentPage, setCurrentPage] = useState<'chat' | 'description' | 'privacy' | 'slack-install' | 'support'>('chat');
+// Wrapper for pages that need the simple nav with back button
+function PageWrapper({ children }: { children: React.ReactNode }) {
   const navigate = useNavigate();
-
-  // Handle tab clicks
-  const handleTabClick = (page: 'chat' | 'description' | 'privacy' | 'slack-install' | 'support') => {
-    if (page === 'privacy') {
-      navigate('/privacy-terms');
-    } else if (page === 'slack-install') {
-      navigate('/slack-install');
-    } else if (page === 'support') {
-      navigate('/support');
-    } else {
-      setCurrentPage(page);
-    }
-  };
-
+  
   return (
-    <div className="min-h-screen">
-      <nav className="bg-white shadow-sm border-b">
+    <div className="min-h-screen bg-slate-50">
+      <nav className="bg-white shadow-sm border-b border-slate-100">
         <div className="max-w-4xl mx-auto px-4">
           <div className="flex items-center justify-between h-16">
-            <div className="flex items-center gap-2">
-              <MessageCircle className="w-6 h-6 text-blue-600" />
-              <span className="font-semibold text-gray-900">GA4 Analytics Assistant</span>
-            </div>
-            <div className="flex gap-4">
-              <button
-                onClick={() => handleTabClick('chat')}
-                className={`px-3 py-2 text-sm font-medium rounded-md transition-colors ${
-                  currentPage === 'chat'
-                    ? 'bg-blue-100 text-blue-700'
-                    : 'text-gray-600 hover:text-gray-900 hover:bg-gray-100'
-                }`}
-              >
-                Arnold
-              </button>
-              <button
-                onClick={() => handleTabClick('description')}
-                className={`px-3 py-2 text-sm font-medium rounded-md transition-colors ${
-                  currentPage === 'description'
-                    ? 'bg-blue-100 text-blue-700'
-                    : 'text-gray-600 hover:text-gray-900 hover:bg-gray-100'
-                }`}
-              >
-                About Arnold
-              </button>
-              <button
-                onClick={() => handleTabClick('slack-install')}
-                className="px-3 py-2 text-sm font-medium rounded-md transition-colors text-gray-600 hover:text-gray-900 hover:bg-gray-100"
-              >
-                Download Slack App
-              </button>
-              <button
-                onClick={() => handleTabClick('support')}
-                className="px-3 py-2 text-sm font-medium rounded-md transition-colors text-gray-600 hover:text-gray-900 hover:bg-gray-100"
-              >
-                Support
-              </button>
-              <button
-                onClick={() => handleTabClick('privacy')}
-                className="px-3 py-2 text-sm font-medium rounded-md transition-colors text-gray-600 hover:text-gray-900 hover:bg-gray-100"
-              >
-                Privacy, Terms
-              </button>
-            </div>
+            <button 
+              onClick={() => navigate('/')}
+              className="flex items-center gap-2.5 hover:opacity-80 transition-opacity"
+            >
+              <div className="w-8 h-8 bg-gradient-to-br from-blue-600 to-indigo-600 rounded-lg flex items-center justify-center">
+                <BarChart3 className="w-4 h-4 text-white" />
+              </div>
+              <span className="font-semibold text-slate-900 tracking-tight">Arnold</span>
+            </button>
+            <button
+              onClick={() => navigate('/')}
+              className="px-3 py-2 text-sm font-medium rounded-md transition-colors text-slate-600 hover:text-slate-900 hover:bg-slate-100"
+            >
+              ← Back to Home
+            </button>
           </div>
         </div>
       </nav>
-
-      <div className={currentPage === 'chat' ? '' : 'hidden'}>
-        <ChatInterface />
-      </div>
-      <div className={currentPage === 'description' ? '' : 'hidden'}>
-        <Description />
-      </div>
+      {children}
     </div>
   );
 }
 
-// Standalone Privacy & Terms Page
+// Demo page - shows the ChatInterface
+function DemoPage() {
+  return (
+    <PageWrapper>
+      <ChatInterface />
+    </PageWrapper>
+  );
+}
+
+// About page
+function AboutPage() {
+  return (
+    <PageWrapper>
+      <Description />
+    </PageWrapper>
+  );
+}
+
+// Privacy & Terms page
 function PrivacyPage() {
-  const navigate = useNavigate();
-  
   return (
-    <div>
-      <nav className="bg-white shadow-sm border-b">
-        <div className="max-w-4xl mx-auto px-4">
-          <div className="flex items-center justify-between h-16">
-            <div className="flex items-center gap-2">
-              <MessageCircle className="w-6 h-6 text-blue-600" />
-              <span className="font-semibold text-gray-900">GA4 Analytics Assistant</span>
-            </div>
-            <button
-              onClick={() => navigate('/')}
-              className="px-3 py-2 text-sm font-medium rounded-md transition-colors text-gray-600 hover:text-gray-900 hover:bg-gray-100"
-            >
-              ← Back to Home
-            </button>
-          </div>
-        </div>
-      </nav>
+    <PageWrapper>
       <Privacy />
-    </div>
+    </PageWrapper>
   );
 }
 
-// Standalone Slack Install Page
+// Slack Install page
 function SlackInstallPage() {
-  const navigate = useNavigate();
-  
   return (
-    <div>
-      <nav className="bg-white shadow-sm border-b">
-        <div className="max-w-4xl mx-auto px-4">
-          <div className="flex items-center justify-between h-16">
-            <div className="flex items-center gap-2">
-              <MessageCircle className="w-6 h-6 text-blue-600" />
-              <span className="font-semibold text-gray-900">GA4 Analytics Assistant</span>
-            </div>
-            <button
-              onClick={() => navigate('/')}
-              className="px-3 py-2 text-sm font-medium rounded-md transition-colors text-gray-600 hover:text-gray-900 hover:bg-gray-100"
-            >
-              ← Back to Home
-            </button>
-          </div>
-        </div>
-      </nav>
+    <PageWrapper>
       <SlackInstall />
-    </div>
+    </PageWrapper>
   );
 }
 
-// Standalone Support Page
+// Support page
 function SupportPage() {
-  const navigate = useNavigate();
-  
   return (
-    <div>
-      <nav className="bg-white shadow-sm border-b">
-        <div className="max-w-4xl mx-auto px-4">
-          <div className="flex items-center justify-between h-16">
-            <div className="flex items-center gap-2">
-              <MessageCircle className="w-6 h-6 text-blue-600" />
-              <span className="font-semibold text-gray-900">GA4 Analytics Assistant</span>
-            </div>
-            <button
-              onClick={() => navigate('/')}
-              className="px-3 py-2 text-sm font-medium rounded-md transition-colors text-gray-600 hover:text-gray-900 hover:bg-gray-100"
-            >
-              ← Back to Home
-            </button>
-          </div>
-        </div>
-      </nav>
+    <PageWrapper>
       <Support />
-    </div>
+    </PageWrapper>
   );
 }
 
@@ -175,7 +91,9 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<AppWithTabs />} />
+        <Route path="/" element={<Homepage />} />
+        <Route path="/demo" element={<DemoPage />} />
+        <Route path="/about" element={<AboutPage />} />
         <Route path="/privacy-terms" element={<PrivacyPage />} />
         <Route path="/slack-install" element={<SlackInstallPage />} />
         <Route path="/support" element={<SupportPage />} />
