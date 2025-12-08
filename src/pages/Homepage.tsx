@@ -75,25 +75,25 @@ export default function Homepage() {
         </div>
       </nav>
 
-      {/* Hero Section - Restored proper top padding */}
-      <main className="pt-20 pb-3 px-6">
+      {/* Hero Section - Increased spacing between blocks */}
+      <main className="pt-24 pb-4 px-6">
         <div className="max-w-4xl mx-auto text-center">
           {/* Social Proof Badge */}
-          <div className="inline-flex items-center gap-2 bg-white border border-slate-200 rounded-full px-3 py-1 mb-3 shadow-sm">
+          <div className="inline-flex items-center gap-2 bg-white border border-slate-200 rounded-full px-3 py-1 mb-4 shadow-sm">
             <span className="w-2 h-2 bg-emerald-500 rounded-full animate-pulse"></span>
             <span className="text-xs text-slate-600">Purpose-built for digital agencies</span>
           </div>
 
           {/* Main Headline */}
-          <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-slate-900 tracking-tight leading-normal mb-4">
+          <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-slate-900 tracking-tight leading-normal mb-5">
             Ask your GA4 data anything
             <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600 pb-1">
               — insights in 20 seconds
             </span>
           </h1>
 
-          {/* GIF Placeholder - Smaller to fit everything above fold */}
-          <div className="relative max-w-xl mx-auto mb-4">
+          {/* GIF Placeholder */}
+          <div className="relative max-w-xl mx-auto mb-5">
             <div className="aspect-video bg-gradient-to-br from-slate-100 to-slate-200 rounded-xl border border-slate-200 shadow-xl shadow-slate-200/50 overflow-hidden">
               {/* Replace this div with your actual GIF */}
               <div className="absolute inset-0 flex flex-col items-center justify-center text-slate-400">
@@ -116,7 +116,7 @@ export default function Homepage() {
           </div>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-3 mb-2">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-3 mb-3">
             {/* Slack-style Add to Slack button (main CTA) */}
             <a
               href={slackInstallUrl}
@@ -135,17 +135,17 @@ export default function Homepage() {
               Add Arnold to Slack
             </a>
             
-            {/* Video Walkthrough button */}
+            {/* Arnold In Action button - softer blue, smaller */}
             <a
               href={videoWalkthroughUrl}
-              className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-5 py-2.5 rounded-lg text-base font-medium hover:from-blue-700 hover:to-indigo-700 transition-all shadow-md hover:shadow-lg"
+              className="inline-flex items-center gap-1.5 bg-slate-500 text-white px-4 py-2.5 rounded-lg text-sm font-medium hover:bg-slate-600 transition-all shadow-sm"
             >
-              <Play className="w-4 h-4" />
-              Video Walkthrough
+              <Play className="w-3.5 h-3.5" />
+              Arnold In Action
             </a>
           </div>
 
-          <p className="text-sm text-slate-500 mb-2">
+          <p className="text-sm text-slate-500 mb-3">
             Free to try • Works with any GA4 property
           </p>
 
