@@ -117,7 +117,7 @@ export default function Homepage() {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3 mb-3">
-            {/* Slack-style Add to Slack button (main CTA) - more visible border */}
+            {/* Slack-style Add to Slack button (main CTA) */}
             <a
               href={slackInstallUrl}
               className="inline-flex items-center gap-2 bg-white text-slate-800 px-5 py-2.5 rounded border-2 border-slate-300 text-base font-medium hover:bg-slate-50 hover:border-slate-400 transition-colors shadow-sm"
@@ -135,10 +135,10 @@ export default function Homepage() {
               Add Arnold to Slack
             </a>
             
-            {/* Arnold In Action button - softer sky blue */}
+            {/* Arnold In Action button - permanent blue-500 */}
             <a
               href={videoWalkthroughUrl}
-              className="inline-flex items-center gap-1.5 bg-blue-400 text-white px-4 py-2.5 rounded-lg text-sm font-medium hover:bg-blue-500 transition-all shadow-sm"
+              className="inline-flex items-center gap-1.5 bg-blue-500 text-white px-4 py-2.5 rounded-lg text-sm font-medium shadow-sm"
             >
               <Play className="w-3.5 h-3.5" />
               Arnold In Action
@@ -149,7 +149,7 @@ export default function Homepage() {
             Free to try • Works with any GA4 property
           </p>
 
-          {/* Contact CTA - more visible border */}
+          {/* Contact CTA */}
           <a
             href={contactUrl}
             className="inline-flex items-center justify-center bg-white text-slate-700 px-8 py-2 rounded-full text-sm font-medium border-2 border-slate-300 hover:border-slate-400 hover:bg-slate-50 transition-all"
