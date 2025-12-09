@@ -4,7 +4,7 @@ A production-ready chatbot interface that connects to n8n workflows for BigQuery
 
 ## Features
 
-### 🤖 AI-Powered Analytics 
+### 🤖 AI-Powered Analytics
 - Natural language queries for BigQuery data
 - Intelligent responses via n8n workflow integration
 - Real-time data analysis and insights
