@@ -62,9 +62,11 @@ export default function Homepage() {
               </button>
             </div>
 
-            {/* Slack-style Add to Slack button (nav) - now bold */}
+            {/* Slack-style Add to Slack button (nav) - opens in new tab */}
             <a
               href={slackInstallUrl}
+              target="_blank"
+              rel="noopener noreferrer"
               className="hidden sm:inline-flex items-center gap-2 bg-white text-slate-800 px-3 py-1.5 rounded border border-slate-300 text-sm font-bold hover:bg-slate-50 transition-colors shadow-sm"
             >
               <svg width="14" height="14" viewBox="0 0 123 123" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -127,9 +129,11 @@ export default function Homepage() {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3 mb-3">
-            {/* Slack-style Add to Slack button (main CTA) - now bold */}
+            {/* Slack-style Add to Slack button (main CTA) - opens in new tab */}
             <a
               href={slackInstallUrl}
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-white text-slate-800 px-5 py-2.5 rounded border-2 border-slate-300 text-base font-bold hover:bg-slate-50 hover:border-slate-400 transition-colors shadow-sm"
             >
               <svg width="18" height="18" viewBox="0 0 123 123" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -145,7 +149,7 @@ export default function Homepage() {
               Add Arnold to Slack
             </a>
             
-            {/* Arnold In Action button - now bold */}
+            {/* Arnold In Action button */}
             <a
               href={videoWalkthroughUrl}
               className="inline-flex items-center gap-1.5 bg-blue-500 text-white px-4 py-2.5 rounded-lg text-sm font-bold shadow-sm"
@@ -159,9 +163,11 @@ export default function Homepage() {
             Free to try • Works with any GA4 property
           </p>
 
-          {/* Contact CTA - now bold */}
+          {/* Contact CTA - opens in new tab */}
           <a
             href={contactUrl}
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center justify-center bg-white text-slate-700 px-8 py-2 rounded-full text-sm font-bold border-2 border-slate-300 hover:border-slate-400 hover:bg-slate-50 transition-all"
           >
             Want more info? Let's chat
