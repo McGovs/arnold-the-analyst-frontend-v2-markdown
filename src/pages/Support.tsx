@@ -106,10 +106,10 @@ export default function Support() {
               </h2>
               <div className="space-y-8">
                 {[
-                  { q: "How do I install Arnold in my Slack workspace?", a: "Visit our homepage and click the big "Add Arnold to Slack" button. You need admin rights in your workspace." },
-                  { q: "How do I connect my Google Analytics account?", a: "After installing, type `/arnold-connect` in any channel — Arnold will guide you through OAuth." },
+                  { q: "How do I install Arnold in my Slack workspace?", a: 'Visit our homepage and click the big "Add Arnold to Slack" button. You need admin rights in your workspace.' },
+                  { q: "How do I connect my Google Analytics account?", a: "After installing, type /arnold-connect in any channel — Arnold will guide you through OAuth." },
                   { q: "What data does Arnold access?", a: "Read-only access to your GA4 properties and (optionally) BigQuery export. Nothing is stored permanently." },
-                  { q: "Can I export results?", a: "Yes! Just say "export this" or "send to Sheets" — Arnold creates a Google Sheet instantly." },
+                  { q: "Can I export results?", a: 'Yes! Just say "export this" or "send to Sheets" — Arnold creates a Google Sheet instantly.' },
                   { q: "How much does it cost?", a: "Currently free during beta. Paid plans coming 2026 with generous grandfathering for early users." },
                 ].map((faq, i) => (
                   <div key={i} className="border-b border-slate-100 pb-6 last:border-0">
