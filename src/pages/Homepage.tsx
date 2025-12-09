@@ -86,9 +86,9 @@ export default function Homepage() {
 
           {/* Main Headline */}
           <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold tracking-tight leading-normal mb-5">
-            <span className="block text-slate-900">Ask your Google Analytics data anything.</span>
+            <span className="block text-slate-900">Ask Google Analytics anything.</span>
             <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600 pb-1">
-              Receive insights in 20 seconds.
+              Get insights in 20 seconds.
             </span>
           </h1>
 
