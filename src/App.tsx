@@ -60,15 +60,6 @@ function AboutPage() {
   );
 }
 
-// Privacy page
-function PrivacyPage() {
-  return (
-    <PageWrapper>
-      <Privacy />
-    </PageWrapper>
-  );
-}
-
 // Slack Install page
 function SlackInstallPage() {
   return (
@@ -95,7 +86,7 @@ function App() {
         <Route path="/" element={<Homepage />} />
         <Route path="/demo" element={<DemoPage />} />
         <Route path="/about" element={<AboutPage />} />
-        <Route path="/privacy-terms" element={<PrivacyPage />} />
+        <Route path="/privacy-terms" element={<Privacy />} />
         <Route path="/slack-install" element={<SlackInstallPage />} />
         <Route path="/support" element={<Support />} />
         <Route path="/video-tour" element={<VideoPage />} />
