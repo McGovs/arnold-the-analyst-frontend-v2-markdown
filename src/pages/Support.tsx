@@ -19,10 +19,10 @@ export default function Support() {
       />
 
       <div
-        className="min-h-screen bg-gradient-to-b from-slate-50 via-white to-blue-50/30"
+        className="min-h-screen bg-slate-50"
         style={{ fontFamily: "'Playfair Display', serif" }}
       >
-        {/* NAV BAR — now 100% identical to homepage */}
+        {/* NAV BAR */}
         <nav className="fixed top-0 left-0 right-0 bg-white/80 backdrop-blur-md border-b border-slate-100 z-50">
           <div className="max-w-6xl mx-auto px-6">
             <div className="flex items-center justify-between h-14">
@@ -76,65 +76,65 @@ export default function Support() {
           </div>
         </nav>
 
-        {/* MAIN CONTENT — Contact Us at the very top */}
-        <main className="pt-32 pb-20 px-6">
+        {/* MAIN CONTENT — Moved up closer to nav */}
+        <main className="pt-20 pb-16 px-6">
           <div className="max-w-4xl mx-auto">
-            {/* Contact Card — now first thing user sees */}
-            <div className="bg-white rounded-2xl shadow-lg p-12 text-center mb-16">
-              <Mail className="w-16 h-16 text-blue-600 mx-auto mb-6" />
-              <h1 className="text-5xl md:text-6xl font-bold text-slate-900 mb-6">
+            {/* Contact Card */}
+            <div className="bg-white rounded-2xl shadow-lg p-10 text-center mb-12">
+              <Mail className="w-12 h-12 text-blue-600 mx-auto mb-4" />
+              <h1 className="text-4xl md:text-5xl font-bold text-slate-900 mb-4">
                 Arnold The Analyst <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">Support</span>
               </h1>
-              <p className="text-xl text-slate-600 mb-8 max-w-2xl mx-auto">
+              <p className="text-lg text-slate-600 mb-6 max-w-2xl mx-auto">
                 For support questions, feature requests, or technical issues, please email:
               </p>
               <a
                 href="mailto:cian@arnoldtheanalyst.com"
-                className="text-3xl font-bold text-blue-600 hover:underline block mb-4"
+                className="text-2xl font-bold text-blue-600 hover:underline block mb-3"
               >
                 cian@arnoldtheanalyst.com
               </a>
-              <p className="text-lg text-slate-500">
+              <p className="text-base text-slate-500">
                 We typically respond within 24 hours on business days.
               </p>
             </div>
 
             {/* FAQ Section */}
-            <div className="bg-white rounded-2xl shadow-lg p-12">
-              <h2 className="text-4xl font-bold text-slate-900 mb-10 text-center">
+            <div className="bg-white rounded-2xl shadow-lg p-10">
+              <h2 className="text-3xl font-bold text-slate-900 mb-8 text-center">
                 Frequently Asked Questions
               </h2>
-              <div className="space-y-10">
+              <div className="space-y-8">
                 {[
-                  { q: "How do I install Arnold in my Slack workspace?", a: "Visit our homepage and click the big “Add Arnold to Slack” button. You need admin rights in your workspace." },
+                  { q: "How do I install Arnold in my Slack workspace?", a: "Visit our homepage and click the big "Add Arnold to Slack" button. You need admin rights in your workspace." },
                   { q: "How do I connect my Google Analytics account?", a: "After installing, type `/arnold-connect` in any channel — Arnold will guide you through OAuth." },
                   { q: "What data does Arnold access?", a: "Read-only access to your GA4 properties and (optionally) BigQuery export. Nothing is stored permanently." },
-                  { q: "Can I export results?", a: "Yes! Just say “export this” or “send to Sheets” — Arnold creates a Google Sheet instantly." },
+                  { q: "Can I export results?", a: "Yes! Just say "export this" or "send to Sheets" — Arnold creates a Google Sheet instantly." },
                   { q: "How much does it cost?", a: "Currently free during beta. Paid plans coming 2026 with generous grandfathering for early users." },
                 ].map((faq, i) => (
-                  <div key={i} className="border-b border-slate-100 pb-8 last:border-0">
-                    <h3 className="text-xl font-semibold text-slate-900 mb-3">{faq.q}</h3>
-                    <p className="text-lg text-slate-600 leading-relaxed">{faq.a}</p>
+                  <div key={i} className="border-b border-slate-100 pb-6 last:border-0">
+                    <h3 className="text-lg font-semibold text-slate-900 mb-2">{faq.q}</h3>
+                    <p className="text-base text-slate-600 leading-relaxed">{faq.a}</p>
                   </div>
                 ))}
               </div>
             </div>
 
             {/* Final CTA */}
-            <div className="text-center py-16">
-              <p className="text-xl text-slate-600 mb-8">Still stuck?</p>
+            <div className="text-center py-12">
+              <p className="text-lg text-slate-600 mb-6">Still stuck?</p>
               <a
                 href="mailto:cian@arnoldtheanalyst.com"
-                className="inline-flex items-center gap-3 bg-blue-600 text-white px-10 py-5 rounded-xl text-xl font-bold hover:bg-blue-700 transition-shadow shadow-xl"
+                className="inline-flex items-center gap-2 bg-blue-600 text-white px-8 py-4 rounded-xl text-lg font-bold hover:bg-blue-700 transition-shadow shadow-lg"
               >
-                Email Support <ArrowRight className="w-6 h-6" />
+                Email Support <ArrowRight className="w-5 h-5" />
               </a>
             </div>
           </div>
         </main>
 
         {/* Footer */}
-        <footer className="py-8 px-6 border-t border-slate-100">
+        <footer className="py-8 px-6 border-t border-slate-100 bg-white">
           <div className="max-w-5xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
             <div className="flex items-center gap-2">
               <div className="w-6 h-6 bg-gradient-to-br from-blue-600 to-indigo-600 rounded-md flex items-center justify-center">
