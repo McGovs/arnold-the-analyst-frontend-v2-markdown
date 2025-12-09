@@ -40,7 +40,7 @@ export default function Homepage() {
                 onClick={() => navigate('/demo')}
                 className="text-sm text-slate-600 hover:text-slate-900 transition-colors"
               >
-                Live Demo
+                Video Tour
               </button>
               <button 
                 onClick={() => navigate('/about')}
@@ -58,7 +58,7 @@ export default function Homepage() {
                 onClick={() => navigate('/privacy-terms')}
                 className="text-sm text-slate-600 hover:text-slate-900 transition-colors"
               >
-                Privacy
+                Privacy &amp; Terms
               </button>
             </div>
 
@@ -227,7 +227,7 @@ export default function Homepage() {
               Support
             </button>
             <button onClick={() => navigate('/privacy-terms')} className="hover:text-slate-700 transition-colors">
-              Privacy & Terms
+              Privacy &amp; Terms
             </button>
           </div>
         </div>
