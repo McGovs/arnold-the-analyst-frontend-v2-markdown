@@ -106,11 +106,11 @@ export default function Support() {
               </h2>
               <div className="space-y-8">
                 {[
-                  { q: "How do I install Arnold in my Slack workspace?", a: 'Visit our homepage and click the big "Add Arnold to Slack" button. You need admin rights in your workspace.' },
-                  { q: "How do I connect my Google Analytics account?", a: "After installing, type /arnold-connect in any channel — Arnold will guide you through OAuth." },
-                  { q: "What data does Arnold access?", a: "Read-only access to your GA4 properties and (optionally) BigQuery export. Nothing is stored permanently." },
-                  { q: "Can I export results?", a: 'Yes! Just say "export this" or "send to Sheets" — Arnold creates a Google Sheet instantly.' },
-                  { q: "How much does it cost?", a: "Currently free during beta. Paid plans coming 2026 with generous grandfathering for early users." },
+                  { q: "How do I install Arnold in my Slack workspace?", a: 'Click the  "Add Arnold to Slack" button at the top right of any page or on the homepage. You need admin rights in your workspace.' },
+                  { q: "How do I connect my Google Analytics account?", a: "After installing Arnold, execute the '/arnold-connect' command — Arnold will guide you through OAuth." },
+                  { q: "What data does Arnold access?", a: "Read-only access to your GA4 properties. Nothing is stored permanently." },
+                  { q: "Can I export results?", a: 'Yes! Arnold provides a Google Sheets export along with every answer provided.' },
+                  { q: "How much does it cost?", a: "Currently free during beta. Paid plans coming in Q1 2026 with generous grandfathering for early users." },
                 ].map((faq, i) => (
                   <div key={i} className="border-b border-slate-100 pb-6 last:border-0">
                     <h3 className="text-lg font-semibold text-slate-900 mb-2">{faq.q}</h3>
@@ -122,7 +122,7 @@ export default function Support() {
 
             {/* Final CTA */}
             <div className="text-center py-12">
-              <p className="text-lg text-slate-600 mb-6">Still stuck?</p>
+              <p className="text-lg text-slate-600 mb-6">Still have questions?</p>
               <a
                 href="mailto:cian@arnoldtheanalyst.com"
                 className="inline-flex items-center gap-2 bg-blue-600 text-white px-8 py-4 rounded-xl text-lg font-bold hover:bg-blue-700 transition-shadow shadow-lg"
