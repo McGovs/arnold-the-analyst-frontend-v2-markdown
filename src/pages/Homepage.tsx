@@ -110,16 +110,19 @@ export default function Homepage() {
             </span>
           </h1>
 
-          {/* GIF Placeholder */}
+          {/* Demo Video */}
           <div className="relative max-w-xl mx-auto mb-5">
             <div className="aspect-video bg-gradient-to-br from-slate-100 to-slate-200 rounded-xl border border-slate-200 shadow-xl shadow-slate-200/50 overflow-hidden">
-
-              <img 
-                src="/demo.gif" 
-                alt="Arnold answering a GA4 question in Slack"
+              <video 
+                autoPlay 
+                loop 
+                muted 
+                playsInline
                 className="w-full h-full object-cover"
-              />
-
+              >
+                <source src="/demo.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
             </div>
             
             {/* Decorative elements */}
