@@ -109,7 +109,7 @@ export default function Support() {
                   { q: "How do I install Arnold in my Slack workspace?", a: 'Click the  "Add Arnold to Slack" button at the top right of any page or on the homepage. You need admin rights in your workspace.' },
                   { q: "How do I connect my Google Analytics account?", a: "After installing Arnold, execute the '/arnold-connect' command — Arnold will guide you through OAuth." },
                   { q: "What data does Arnold access?", a: "Read-only access to your GA4 properties. Nothing is stored permanently." },
-                  { q: "Can I export results?", a: 'Yes! Arnold provides a Google Sheets export along with every answer provided.' },
+                  { q: "Can I export results?", a: 'Yes! Arnold provides a Google Sheets export along with every answer.' },
                   { q: "How much does it cost?", a: "Currently free during beta. Paid plans coming in Q1 2026 with generous grandfathering for early users." },
                 ].map((faq, i) => (
                   <div key={i} className="border-b border-slate-100 pb-6 last:border-0">
