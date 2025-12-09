@@ -8,9 +8,6 @@ export default function Homepage() {
   
   const slackInstallUrl = "https://slack.com/oauth/v2/authorize?client_id=134528973318.9712045945332&scope=app_mentions:read,channels:history,channels:join,channels:manage,channels:read,chat:write,chat:write.public,commands,groups:history,groups:read,im:history,im:write,mpim:history,users:read&user_scope=";
 
-  // TODO: Replace with your actual video walkthrough URL
-  const videoWalkthroughUrl = "https://www.arnoldtheanalyst.com/video-tour";
-
   // TODO: Replace with your actual contact/calendly URL
   const contactUrl = "https://calendly.com/cian-arnoldtheanalyst/30min";
 
@@ -41,12 +38,6 @@ export default function Homepage() {
                 className="text-sm font-medium text-blue-600"
               >
                 Home
-              </button>
-              <button 
-                onClick={() => window.location.href = "https://www.arnoldtheanalyst.com/video-tour"}
-                className="text-sm text-slate-600 hover:text-slate-900 transition-colors"
-              >
-                Video Tour
               </button>
               <button 
                 onClick={() => navigate('/pricing')}
@@ -106,7 +97,7 @@ export default function Homepage() {
             <br />
             <span className="text-slate-900 font-bold">Go from question to insights in </span>
             <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">
-              20 seconds
+              20 seconds.
             </span>
           </h1>
 
@@ -150,15 +141,6 @@ export default function Homepage() {
                 <path d="M77.6 90.5C70.5 90.5 64.7 84.7 64.7 77.6C64.7 70.5 70.5 64.7 77.6 64.7H109.9C117 64.7 122.8 70.5 122.8 77.6C122.8 84.7 117 90.5 109.9 90.5H77.6Z" fill="#ECB22E"/>
               </svg>
               Add Arnold to Slack
-            </a>
-            
-            {/* Arnold In Action button */}
-            <a
-              href={videoWalkthroughUrl}
-              className="inline-flex items-center gap-1.5 bg-blue-500 text-white px-4 py-2.5 rounded-lg text-sm font-bold shadow-sm"
-            >
-              <Play className="w-3.5 h-3.5" />
-              Arnold In Action
             </a>
           </div>
 
