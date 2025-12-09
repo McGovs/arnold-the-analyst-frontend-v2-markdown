@@ -205,7 +205,7 @@ export default function Homepage() {
               </div>
               <h3 className="text-lg font-semibold text-slate-900 mb-2">Always Available</h3>
               <p className="text-slate-600">
-                Arnold lives in Slack. Marketers & account managers don't have to wait on analysts. Analysts can focus on more meaningful work.
+                Arnold lives in Slack. Marketers & account managers get instant answers. Analysts get their time back.
               </p>
             </div>
           </div>
