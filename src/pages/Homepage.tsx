@@ -119,13 +119,13 @@ export default function Homepage() {
                 <span className="text-sm font-medium">Demo GIF goes here</span>
                 <span className="text-xs mt-1">Place your GIF in /public/demo.gif</span>
               </div>
-              {/* Uncomment this when you have your GIF ready:
+
               <img 
                 src="/demo.gif" 
                 alt="Arnold answering a GA4 question in Slack"
                 className="w-full h-full object-cover"
               />
-              */}
+
             </div>
             
             {/* Decorative elements */}
