@@ -164,16 +164,16 @@ export default function Homepage() {
           </p>
 
           {/* Contact CTA - opens in new tab */}
-          <a
-            href={contactUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center justify-center bg-white text-slate-700 px-8 py-2 rounded-full text-sm font-bold border-2 border-slate-300 hover:border-slate-400 hover:bg-slate-50 transition-all"
-          >
-            Want more info? Let's chat
-          </a>
-        </div>
-      </main>
+<a
+  href="https://calendly.com/cian-arnoldtheanalyst/30min"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="inline-flex items-center justify-center bg-white text-slate-700 px-8 py-2 rounded-full text-sm font-bold border-2 border-slate-300 hover:border-slate-400 hover:bg-slate-50 transition-all"
+>
+  Want more info? Let's chat
+</a>
+</div>
+</main>
 
       {/* Features Section */}
       <section className="py-16 px-6 border-t border-slate-100">
