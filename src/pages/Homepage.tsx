@@ -180,7 +180,7 @@ export default function Homepage() {
               </div>
               <h3 className="text-lg font-semibold text-slate-900 mb-2">Instant Answers</h3>
               <p className="text-slate-600">
-                Cut time to insights by 90%. Your queries are answered in 20 seconds on average.
+                Cut time to insights by 90%. Your questions are answered in 20 seconds on average.
               </p>
             </div>
             
