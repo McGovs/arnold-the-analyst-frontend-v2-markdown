@@ -1,7 +1,7 @@
 // src/pages/Support.tsx
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import { ArrowRight, Mail } from 'lucide-react';
+import { ArrowRight, Mail, BarChart3 } from 'lucide-react';
 
 export default function Support() {
   const navigate = useNavigate();
@@ -22,13 +22,13 @@ export default function Support() {
         className="min-h-screen bg-gradient-to-b from-slate-50 via-white to-blue-50/30"
         style={{ fontFamily: "'Playfair Display', serif" }}
       >
-        {/* NAV BAR — identical to homepage */}
+        {/* NAV BAR — now 100% identical to homepage */}
         <nav className="fixed top-0 left-0 right-0 bg-white/80 backdrop-blur-md border-b border-slate-100 z-50">
           <div className="max-w-6xl mx-auto px-6">
             <div className="flex items-center justify-between h-14">
               <div className="flex items-center gap-2.5">
                 <div className="w-8 h-8 bg-gradient-to-br from-blue-600 to-indigo-600 rounded-lg flex items-center justify-center">
-                  <Mail className className="w-4 h-4 text-white" />
+                  <BarChart3 className="w-4 h-4 text-white" />
                 </div>
                 <span className="font-semibold text-slate-900 tracking-tight">Arnold</span>
               </div>
@@ -76,49 +76,35 @@ export default function Support() {
           </div>
         </nav>
 
-        {/* Hero Section */}
+        {/* MAIN CONTENT — Contact Us at the very top */}
         <main className="pt-32 pb-20 px-6">
-          <div className="max-w-4xl mx-auto text-center">
-            <div className="inline-flex items-center gap-2 bg-white border border-slate-200 rounded-full px-3 py-1 mb-6 shadow-sm">
-              <span className="w-2 h-2 bg-emerald-500 rounded-full animate-pulse"></span>
-              <span className="text-xs text-slate-600">We usually reply in less than 24h</span>
-            </div>
-            <h1 className="text-5xl md:text-6xl font-bold text-slate-900 mb-6 leading-tight">
-              Arnold The Analyst <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">Support</span>
-            </h1>
-            <p className="text-xl text-slate-600 max-w-2xl mx-auto">
-              Get help with Arnold and your Google Analytics 4 queries
-            </p>
-          </div>
-        </main>
-
-        {/* Content */}
-        <section className="px-6 pb-20">
-          <div className="max-w-4xl mx-auto space-y-12">
-            {/* Contact Card */}
-            <div className="bg-white rounded-2xl shadow-lg p-10 text-center">
-              <Mail className="w-12 h-12 text-blue-600 mx-auto mb-4" />
-              <h2 className="text-2xl font-bold text-slate-900 mb-3">Contact Us</h2>
-              <p className="text-lg text-slate-600 mb-6">
+          <div className="max-w-4xl mx-auto">
+            {/* Contact Card — now first thing user sees */}
+            <div className="bg-white rounded-2xl shadow-lg p-12 text-center mb-16">
+              <Mail className="w-16 h-16 text-blue-600 mx-auto mb-6" />
+              <h1 className="text-5xl md:text-6xl font-bold text-slate-900 mb-6">
+                Arnold The Analyst <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">Support</span>
+              </h1>
+              <p className="text-xl text-slate-600 mb-8 max-w-2xl mx-auto">
                 For support questions, feature requests, or technical issues, please email:
               </p>
               <a
                 href="mailto:cian@arnoldtheanalyst.com"
-                className="text-2xl font-bold text-blue-600 hover:underline"
+                className="text-3xl font-bold text-blue-600 hover:underline block mb-4"
               >
                 cian@arnoldtheanalyst.com
               </a>
-              <p className="text-sm text-slate-500 mt-4">
+              <p className="text-lg text-slate-500">
                 We typically respond within 24 hours on business days.
               </p>
             </div>
 
-            {/* FAQ */}
-            <div className="bg-white rounded-2xl shadow-lg p-10">
-              <h2 className="text-3xl font-bold text-slate-900 mb-8 text-center">
+            {/* FAQ Section */}
+            <div className="bg-white rounded-2xl shadow-lg p-12">
+              <h2 className="text-4xl font-bold text-slate-900 mb-10 text-center">
                 Frequently Asked Questions
               </h2>
-              <div className="space-y-8">
+              <div className="space-y-10">
                 {[
                   { q: "How do I install Arnold in my Slack workspace?", a: "Visit our homepage and click the big “Add Arnold to Slack” button. You need admin rights in your workspace." },
                   { q: "How do I connect my Google Analytics account?", a: "After installing, type `/arnold-connect` in any channel — Arnold will guide you through OAuth." },
@@ -126,33 +112,33 @@ export default function Support() {
                   { q: "Can I export results?", a: "Yes! Just say “export this” or “send to Sheets” — Arnold creates a Google Sheet instantly." },
                   { q: "How much does it cost?", a: "Currently free during beta. Paid plans coming 2026 with generous grandfathering for early users." },
                 ].map((faq, i) => (
-                  <div key={i} className="border-b border-slate-100 pb-6 last:border-0">
-                    <h3 className="text-lg font-semibold text-slate-900 mb-2">{faq.q}</h3>
-                    <p className="text-slate-600 leading-relaxed">{faq.a}</p>
+                  <div key={i} className="border-b border-slate-100 pb-8 last:border-0">
+                    <h3 className="text-xl font-semibold text-slate-900 mb-3">{faq.q}</h3>
+                    <p className="text-lg text-slate-600 leading-relaxed">{faq.a}</p>
                   </div>
                 ))}
               </div>
             </div>
 
             {/* Final CTA */}
-            <div className="text-center py-12">
-              <p className="text-lg text-slate-600 mb-6">Still stuck?</p>
+            <div className="text-center py-16">
+              <p className="text-xl text-slate-600 mb-8">Still stuck?</p>
               <a
                 href="mailto:cian@arnoldtheanalyst.com"
-                className="inline-flex items-center gap-2 bg-blue-600 text-white px-8 py-4 rounded-xl text-lg font-bold hover:bg-blue-700 transition-shadow shadow-lg"
+                className="inline-flex items-center gap-3 bg-blue-600 text-white px-10 py-5 rounded-xl text-xl font-bold hover:bg-blue-700 transition-shadow shadow-xl"
               >
-                Email Support <ArrowRight className="w-5 h-5" />
+                Email Support <ArrowRight className="w-6 h-6" />
               </a>
             </div>
           </div>
-        </section>
+        </main>
 
         {/* Footer */}
         <footer className="py-8 px-6 border-t border-slate-100">
           <div className="max-w-5xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
             <div className="flex items-center gap-2">
               <div className="w-6 h-6 bg-gradient-to-br from-blue-600 to-indigo-600 rounded-md flex items-center justify-center">
-                <Mail className="w-3 h-3 text-white" />
+                <BarChart3 className="w-3 h-3 text-white" />
               </div>
               <span className="text-sm text-slate-600">Arnold The Analyst</span>
             </div>
