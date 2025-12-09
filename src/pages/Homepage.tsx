@@ -113,10 +113,6 @@ export default function Homepage() {
           {/* GIF Placeholder */}
           <div className="relative max-w-xl mx-auto mb-5">
             <div className="aspect-video bg-gradient-to-br from-slate-100 to-slate-200 rounded-xl border border-slate-200 shadow-xl shadow-slate-200/50 overflow-hidden">
-              {/* Replace this div with your actual GIF */}
-              <div className="absolute inset-0 flex flex-col items-center justify-center text-slate-400">
-                <Play className="w-10 h-10 mb-2 opacity-50" />
-              </div>
 
               <img 
                 src="/demo.gif" 
