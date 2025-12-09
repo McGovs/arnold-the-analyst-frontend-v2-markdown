@@ -1,186 +1,172 @@
+// src/pages/Support.tsx
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
+import { ArrowRight, Mail, MessageCircle } from 'lucide-react';
 
 export default function Support() {
+  const navigate = useNavigate();
+
+  const slackInstallUrl = "https://slack.com/oauth/v2/authorize?client_id=134528973318.9712045945332&scope=app_mentions:read,channels:history,channels:join,channels:manage,channels:read,chat:write,chat:write.public,commands,groups:history,groups:read,im:history,im:write,mpim:history,users:read&user_scope=";
+
   return (
-    <div className="min-h-screen bg-gray-50 p-8">
-      <div className="max-w-4xl mx-auto">
-        
-        <div className="bg-white rounded-lg shadow-xl p-12 mb-8">
-          <h1 className="text-4xl font-bold text-gray-900 mb-4">
-            Arnold The Analyst Support
-          </h1>
-          
-          <p className="text-xl text-gray-600 mb-8">
-            Get help with Arnold and your Google Analytics 4 queries
-          </p>
+    <>
+      {/* Google Fonts – same as homepage */}
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+      <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,700&display=swap" rel="stylesheet" />
 
-          <div className="bg-blue-50 border-l-4 border-blue-600 p-6 rounded">
-            <h3 className="font-semibold text-gray-900 mb-2">Contact Us</h3>
-            <p className="text-gray-700 mb-4">
-              For support questions, feature requests, or technical issues, please email:
+      <div
+        className="min-h-screen bg-gradient-to-b from-slate-50 via-white to-blue-50/30"
+        style={{ fontFamily: "'Playfair Display', serif" }}
+      >
+        {/* === IDENTICAL NAV BAR FROM HOMEPAGE === */}
+        <nav className="fixed top-0 left-0 right-0 bg-white/80 backdrop-blur-md border-b border-slate-100 z-50">
+          <div className="max-w-6xl mx-auto px-6">
+            <div className="flex items-center justify-between h-14">
+              <div className="flex items-center gap-2.5">
+                <div className="w-8 h-8 bg-gradient-to-br from-blue-600 to-indigo-600 rounded-lg flex items-center justify-center">
+                  <MessageCircle className="w-4 h-4 text-white" />
+                </div>
+                <span className="font-semibold text-slate-900 tracking-tight">Arnold</span>
+              </div>
+
+              <div className="hidden md:flex items-center gap-8">
+                <button
+                  onClick={() => window.location.href = "https://www.arnoldtheanalyst.com/video-tour"}
+                  className="text-sm text-slate-600 hover:text-slate-900 transition-colors"
+                >
+                  Video Tour
+                </button>
+                <button
+                  onClick={() => navigate('/support')}
+                  className="text-sm font-medium text-blue-600"
+                >
+                  Support
+                </button>
+                <button
+                  onClick={() => navigate('/privacy-terms')}
+                  className="text-sm text-slate-600 hover:text-slate-900 transition-colors"
+                >
+                  Privacy & Terms
+                </button>
+              </div>
+
+              <a
+                href={slackInstallUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hidden sm:inline-flex items-center gap-2 bg-white text-slate-800 px-3 py-1.5 rounded border border-slate-300 text-sm font-bold hover:bg-slate-50 transition-colors shadow-sm"
+              >
+                <svg width="14" height="14" viewBox="0 0 123 123" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M25.8 77.6C25.8 84.7 20 90.5 12.9 90.5C5.8 90.5 0 84.7 0 77.6C0 70.5 5.8 64.7 12.9 64.7H25.8V77.6Z" fill="#E01E5A"/>
+                  <path d="M32.3 77.6C32.3 70.5 38.1 64.7 45.2 64.7C52.3 64.7 58.Concurrent 70.5 58.1 77.6V109.9C58.1 117 52.3 122.8 45.2 122.8C38.1 122.8 32.3 117 32.3 109.9V77.6Z" fill="#E01E5A"/>
+                  <path d="M45.2 25.8C38.1 25.8 32.3 20 32.3 12.9C32.3 5.8 38.1 0 45.2 0C52.3 0 58.1 5.8 58.1 12.9V25.8H45.2Z" fill="#36C5F0"/>
+                  <path d="M45.2 32.3C52.3 32.3 58.1 38.1 58.1 45.2C58.1 52.3 52.3 58.1 45.2 58.1H12.9C5.8 58.1 0 52.3 0 45.2C0 38.1 5.8 32.3 12.9 32.3H45.2Z" fill="#36C5F0"/>
+                  <path d="M97 45.2C97 38.1 102.8 32.3 109.9 32.3C117 32.3 122.8 38.1 122.8 45.2C122.8 52.3 117 58.1 109.9 58.1H97V45.2Z" fill="#2EB67D"/>
+                  <path d="M90.5 45.2C90.5 52.3 84.7 58.1 77.6 58.1C70.5 58.1 64.7 52.3 64.7 45.2V12.9C64.7 5.8 70.5 0 77.6 0C84.7 0 90.5 5.8 90.5 12.9V45.2Z" fill="#2EB67D"/>
+                  <path d="M77.6 97C84.7 97 90.5 102.8 90.5 109.9C90.5 117 84.7 122.8 77.6 122.8C70.5 122.8 64.7 117 64.7 109.9V97H77.6Z" fill="#ECB22E"/>
+                  <path d="M77.6 90.5C70.5 90.5 64.7 84.7 64.7 77.6C64.7 70.5 70.5 64.7 77.6 64.7H109.9C117 64.7 122.8 70.5 122.8 77.6C122.8 84.7 117 90.5 109.9 90.5H77.6Z" fill="#ECB22E"/>
+                </svg>
+                Add Arnold to Slack
+              </a>
+            </div>
+          </div>
+        </nav>
+
+        {/* Hero-style Support Header */}
+        <main className="pt-32 pb-20 px-6">
+          <div className className="max-w-4xl mx-auto text-center">
+            <div className="inline-flex items-center gap-2 bg-white border border-slate-200 rounded-full px-3 py-1 mb-6 shadow-sm">
+              <span className="w-2 h-2 bg-emerald-500 rounded-full animate-pulse"></span>
+              <span className="text-xs text-slate-600">We usually reply in &lt;24h</span>
+            </div>
+
+            <h1 className="text-5xl md:text-6xl font-bold text-slate-900 mb-6 leading-tight">
+              Arnold The Analyst <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">Support</span>
+            </h1>
+
+            <p className="text-xl text-slate-600 max-w-2xl mx-auto">
+              Get help with Arnold and your Google Analytics 4 queries
             </p>
-            <a 
-              href="mailto:cian@arnoldtheanalyst.com" 
-              className="text-xl font-semibold text-blue-600 hover:underline"
-            >
-              cian@arnoldtheanalyst.com
-            </a>
-            <p className="text-sm text-gray-600 mt-4">
-              We typically respond within 24 hours during business days.
-            </p>
           </div>
-        </div>
+        </main>
 
-        <div className="bg-white rounded-lg shadow-md p-8 mb-8">
-          <h2 className="text-2xl font-bold text-gray-900 mb-6">
-            Frequently Asked Questions
-          </h2>
-
-          <div className="space-y-6">
-            <div>
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                How do I install Arnold in my Slack workspace?
-              </h3>
-              <p className="text-gray-700">
-                Visit our <a href="/slack-install" className="text-blue-600 hover:underline">installation page</a> and click the Add to Slack button. You will need admin permissions in your Slack workspace to install Arnold.
+        {/* Main Content – clean cards like homepage features */}
+        <section className="px-6 pb-20">
+          <div className="max-w-4xl mx-auto space-y-12">
+            {/* Contact Card */}
+            <div className="bg-white rounded-2xl shadow-lg p-10 text-center">
+              <Mail className="w-12 h-12 text-blue-600 mx-auto mb-4" />
+              <h2 className="text-2xl font-bold text-slate-900 mb-3">Contact Us</h2>
+              <p className="text-lg text-slate-600 mb-6">
+                For support questions, feature requests, or technical issues, please email:
+              </p>
+              <a
+                href="mailto:cian@arnoldtheanalyst.com"
+                className="text-2xl font-bold text-blue-600 hover:underline"
+              >
+                cian@arnoldtheanalyst.com
+              </a>
+              <p className="text-sm text-slate-500 mt-4">
+                We typically respond within 24 hours on business days.
               </p>
             </div>
 
-            <div>
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                How do I connect my Google Analytics account?
-              </h3>
-              <p className="text-gray-700">
-                After installing Arnold in Slack, use the <code className="bg-gray-100 px-2 py-1 rounded">/arnold-connect</code> command. Arnold will guide you through authorizing access to your GA4 data.
-              </p>
+            {/* FAQ Section */}
+            <div className="bg-white rounded-2xl shadow-lg p-10">
+              <h2 className="text-3xl font-bold text-slate-900 mb-8 text-center">
+                Frequently Asked Questions
+              </h2>
+              <div className="space-y-8">
+                {/* Repeat this block for each FAQ */}
+                {[
+                  { q: "How do I install Arnold in my Slack workspace?", a: "Visit our homepage and click the big “Add Arnold to Slack” button. You need admin rights in your workspace." },
+                  { q: "How do I connect my Google Analytics account?", a: "After installing, type `/arnold-connect` in any channel — Arnold will guide you through OAuth." },
+                  { q: "What data does Arnold access?", a: "Read-only access to your GA4 properties and (optionally) BigQuery export. Nothing is stored permanently." },
+                  { q: "Can I export results?", a: "Yes! Just say “export this” or “send to Sheets” — Arnold creates a Google Sheet instantly." },
+                  { q: "How much does it cost?", a: "Currently free during beta. Paid plans coming 2026 with generous grandfathering for early users." },
+                ].map((faq, i) => (
+                  <div key={i} className="border-b border-slate-100 pb-6 last:border-0">
+                    <h3 className="text-lg font-semibold text-slate-900 mb-2">{faq.q}</h3>
+                    <p className="text-slate-600 leading-relaxed">{faq.a}</p>
+                  </div>
+                ))}
+              </div>
             </div>
 
-            <div>
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                What Google Analytics data does Arnold need access to?
-              </h3>
-              <p className="text-gray-700">
-                Arnold needs read-only access to your Google Analytics 4 properties and BigQuery datasets. Arnold only accesses your data when you explicitly ask a question.
-              </p>
-            </div>
-
-            <div>
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                What kind of questions can I ask Arnold?
-              </h3>
-              <p className="text-gray-700 mb-2">
-                You can ask Arnold about your GA4 metrics in plain English. Examples:
-              </p>
-              <ul className="list-disc list-inside text-gray-700 space-y-1 ml-4">
-                <li>What were my top 10 pages last month?</li>
-                <li>Show me traffic sources for the last 7 days</li>
-                <li>What is my conversion rate by device?</li>
-                <li>Compare sessions this month vs last month</li>
-              </ul>
-            </div>
-
-            <div>
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                How do I disconnect Arnold from my Google Analytics?
-              </h3>
-              <p className="text-gray-700">
-                Use the <code className="bg-gray-100 px-2 py-1 rounded">/arnold-disconnect</code> command in Slack. This will immediately revoke Arnold's access to your GA4 data.
-              </p>
-            </div>
-
-            <div>
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                Does Arnold store my analytics data?
-              </h3>
-              <p className="text-gray-700">
-                No. Arnold queries your data in real-time and does not store your analytics data. We only store your OAuth tokens (encrypted) and query logs for 30 days for troubleshooting. See our <a href="/privacy-terms" className="text-blue-600 hover:underline">Privacy Policy</a> for details.
-              </p>
-            </div>
-
-            <div>
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                What are the requirements to use Arnold?
-              </h3>
-              <p className="text-gray-700 mb-2">
-                You need:
-              </p>
-              <ul className="list-disc list-inside text-gray-700 space-y-1 ml-4">
-                <li>A Slack workspace (free or paid)</li>
-                <li>A Google account with access to your GA4 data</li>
-              </ul>
-            </div>
-
-            <div>
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                How much does Arnold cost?
-              </h3>
-              <p className="text-gray-700">
-                Arnold is currently free during our beta period. Pricing will be announced before any charges are introduced, and existing users will be grandfathered into preferential rates.
-              </p>
-            </div>
-
-            <div>
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                Arnold is not responding. What should I do?
-              </h3>
-              <p className="text-gray-700">
-                First, check that Arnold has been invited to the Slack channel where you are asking questions. If Arnold still does not respond, please email us at <a href="mailto:cian@arnoldtheanalyst.com" className="text-blue-600 hover:underline">cian@arnoldtheanalyst.com</a> with details about the issue.
-              </p>
-            </div>
-
-            <div>
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                Can I export my query results?
-              </h3>
-              <p className="text-gray-700">
-                Yes! Arnold can automatically export query results to Google Sheets. Just ask Arnold to export your results after receiving an answer.
-              </p>
+            {/* Final CTA */}
+            <div className="text-center py-12">
+              <p className="text-lg text-slate-600 mb-6">Still stuck?</p>
+              <a
+                href="mailto:cian@arnoldtheanalyst.com"
+                className="inline-flex items-center gap-2 bg-blue-600 text-white px-8 py-4 rounded-xl text-lg font-bold hover:bg-blue-700 transition-shadow shadow-lg"
+              >
+                Email Support <ArrowRight className="w-5 h-5" />
+              </a>
             </div>
           </div>
-        </div>
+        </section>
 
-        <div className="bg-white rounded-lg shadow-md p-8 mb-8">
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">
-            Common Commands
-          </h2>
-          <div className="space-y-3">
-            <div className="bg-gray-50 border border-gray-200 rounded-lg p-4">
-              <code className="text-blue-600 font-semibold">/arnold-connect</code>
-              <p className="text-gray-700 mt-1">Connect Arnold to your Google Analytics account</p>
+        {/* Same footer as homepage */}
+        <footer className="py-8 px-6 border-t border-slate-100">
+          <div className="max-w-5xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div className="flex items-center gap-2">
+              <div className="w-6 h-6 bg-gradient-to-br from-blue-600 to-indigo-600 rounded-md flex items-center justify-center">
+                MessageCircle className="w-3 h-3 text-white" />
+              </div>
+              <span className="text-sm text-slate-600">Arnold The Analyst</span>
             </div>
-            <div className="bg-gray-50 border border-gray-200 rounded-lg p-4">
-              <code className="text-blue-600 font-semibold">/arnold-disconnect</code>
-              <p className="text-gray-700 mt-1">Disconnect Arnold from your Google Analytics account</p>
-            </div>
-            <div className="bg-gray-50 border border-gray-200 rounded-lg p-4">
-              <code className="text-blue-600 font-semibold">@Arnold [your question]</code>
-              <p className="text-gray-700 mt-1">Ask Arnold a question about your analytics data</p>
+            <div className="flex items-center gap-6 text-sm text-slate-500">
+              <button onClick={() => navigate('/support')} className="hover:text-slate-700 transition-colors">
+                Support
+              </button>
+              <button onClick={() => navigate('/privacy-terms')} className="hover:text-slate-700 transition-colors">
+                Privacy & Terms
+              </button>
             </div>
           </div>
-        </div>
-
-        <div className="bg-blue-600 rounded-lg p-8 text-center text-white mb-8">
-          <h2 className="text-2xl font-bold mb-4">
-            Still Need Help?
-          </h2>
-          <p className="text-xl mb-6">
-            We are here to help you get the most out of Arnold
-          </p>
-          <a 
-            href="mailto:cian@arnoldtheanalyst.com"
-            className="inline-block bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
-          >
-            Email Support
-          </a>
-        </div>
-
-        <div className="text-center">
-          <p className="text-gray-600">
-            <a href="/" className="text-blue-600 hover:underline">Back to Home</a> | <a href="/privacy-terms" className="text-blue-600 hover:underline">Privacy Policy</a> | <a href="/slack-install" className="text-blue-600 hover:underline">Install Arnold</a>
-          </p>
-        </div>
-
+        </footer>
       </div>
-    </div>
+    </>
   );
 }
