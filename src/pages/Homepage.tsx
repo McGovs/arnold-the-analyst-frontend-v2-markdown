@@ -190,7 +190,7 @@ export default function Homepage() {
               </div>
               <h3 className="text-lg font-semibold text-slate-900 mb-2">Lives In Slack 24/7</h3>
               <p className="text-slate-600">
-                Marketers & account managers don't have to wait on analysts. Analysts can claim back their time.
+                Marketers and account managers don't have to wait on analysts. Analysts can claim back their time.
               </p>
             </div>
           </div>
@@ -209,10 +209,10 @@ export default function Homepage() {
           
           <div className="flex items-center gap-6 text-sm text-slate-500">
             <button onClick={() => navigate('/support')} className="hover:text-slate-700 transition-colors">
-              Support & FAQs
+              Support
             </button>
             <button onClick={() => navigate('/privacy-terms')} className="hover:text-slate-700 transition-colors">
-              Privacy & Terms
+              Privacy
             </button>
           </div>
         </div>
