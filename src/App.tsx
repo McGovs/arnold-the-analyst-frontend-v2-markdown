@@ -1,16 +1,13 @@
 // src/App.tsx
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, useNavigate } from 'react-router-dom';
-
 import Homepage from './pages/Homepage';
 import Description from './pages/Description';
 import Privacy from './pages/Privacy';
 import SlackInstall from './pages/SlackInstall';
 import Support from './pages/Support';
 import Video from './pages/Video';
-
 import ChatInterface from './components/ChatInterface';
-
 import { BarChart3 } from 'lucide-react';
 
 // Wrapper for pages that need the simple nav with back button
@@ -40,7 +37,6 @@ function PageWrapper({ children }: { children: React.ReactNode }) {
           </div>
         </div>
       </nav>
-
       {children}
     </div>
   );
@@ -82,15 +78,6 @@ function SlackInstallPage() {
   );
 }
 
-// Support page
-function SupportPage() {
-  return (
-    <PageWrapper>
-      <Support />
-    </PageWrapper>
-  );
-}
-
 // Video Tour page
 function VideoPage() {
   return (
@@ -110,7 +97,7 @@ function App() {
         <Route path="/about" element={<AboutPage />} />
         <Route path="/privacy-terms" element={<PrivacyPage />} />
         <Route path="/slack-install" element={<SlackInstallPage />} />
-        <Route path="/support" element={<SupportPage />} />
+        <Route path="/support" element={<Support />} />
         <Route path="/video-tour" element={<VideoPage />} />
       </Routes>
     </Router>
