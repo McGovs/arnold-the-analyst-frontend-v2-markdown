@@ -42,12 +42,14 @@ export default function Homepage() {
               >
                 Video Tour
               </button>
+              {/*
               <button 
                 onClick={() => navigate('/about')}
                 className="text-sm text-slate-600 hover:text-slate-900 transition-colors"
               >
                 About
               </button>
+              */}
               <button 
                 onClick={() => navigate('/support')}
                 className="text-sm text-slate-600 hover:text-slate-900 transition-colors"
