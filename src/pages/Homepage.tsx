@@ -76,7 +76,7 @@ export default function Homepage() {
                 <path d="M77.6 97C84.7 97 90.5 102.8 90.5 109.9C90.5 117 84.7 122.8 77.6 122.8C70.5 122.8 64.7 117 64.7 109.9V97H77.6Z" fill="#ECB22E"/>
                 <path d="M77.6 90.5C70.5 90.5 64.7 84.7 64.7 77.6C64.7 70.5 70.5 64.7 77.6 64.7H109.9C117 64.7 122.8 70.5 122.8 77.6C122.8 84.7 117 90.5 109.9 90.5H77.6Z" fill="#ECB22E"/>
               </svg>
-              Add Arnold to Slack
+              Try Arnold In Slack
             </a>
           </div>
         </div>
@@ -97,7 +97,7 @@ export default function Homepage() {
             <br />
             <span className="text-slate-900 font-bold">Go from question to insights in </span>
             <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">
-              20 seconds.
+              20 seconds
             </span>
           </h1>
 
@@ -140,12 +140,12 @@ export default function Homepage() {
                 <path d="M77.6 97C84.7 97 90.5 102.8 90.5 109.9C90.5 117 84.7 122.8 77.6 122.8C70.5 122.8 64.7 117 64.7 109.9V97H77.6Z" fill="#ECB22E"/>
                 <path d="M77.6 90.5C70.5 90.5 64.7 84.7 64.7 77.6C64.7 70.5 70.5 64.7 77.6 64.7H109.9C117 64.7 122.8 70.5 122.8 77.6C122.8 84.7 117 90.5 109.9 90.5H77.6Z" fill="#ECB22E"/>
               </svg>
-              Add Arnold to Slack
+              Try Arnold In Slack
             </a>
           </div>
 
           <p className="text-sm text-slate-500 mb-3">
-            Free to try • Works with any GA4 property
+            Free to try • Works with any GA4 property • Google OAuth sign in
           </p>
 
           {/* Contact CTA - opens in new tab */}
@@ -155,7 +155,7 @@ export default function Homepage() {
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center bg-white text-slate-700 px-8 py-2 rounded-full text-sm font-bold border-2 border-slate-300 hover:border-slate-400 hover:bg-slate-50 transition-all"
           >
-            Want more info? Let's chat
+            Questions? Let's chat
           </a>
         </div>
       </main>
