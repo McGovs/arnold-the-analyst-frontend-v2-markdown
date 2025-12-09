@@ -9,7 +9,7 @@ export default function Homepage() {
   const slackInstallUrl = "https://slack.com/oauth/v2/authorize?client_id=134528973318.9712045945332&scope=app_mentions:read,channels:history,channels:join,channels:manage,channels:read,chat:write,chat:write.public,commands,groups:history,groups:read,im:history,im:write,mpim:history,users:read&user_scope=";
 
   // TODO: Replace with your actual video walkthrough URL
-  const videoWalkthroughUrl = "https://www.arnoldtheanalyst.com/video-tour";
+  const videoWalkthroughUrl = "/demo";
 
   // TODO: Replace with your actual contact/calendly URL
   const contactUrl = "/support";
@@ -37,30 +37,34 @@ export default function Homepage() {
             
             <div className="hidden md:flex items-center gap-8">
               <button 
+                onClick={() => navigate('/')}
+                className="text-sm font-medium text-blue-600"
+              >
+                Home
+              </button>
+              <button 
                 onClick={() => window.location.href = "https://www.arnoldtheanalyst.com/video-tour"}
                 className="text-sm text-slate-600 hover:text-slate-900 transition-colors"
               >
                 Video Tour
               </button>
-              {/*
               <button 
-                onClick={() => navigate('/about')}
+                onClick={() => navigate('/pricing')}
                 className="text-sm text-slate-600 hover:text-slate-900 transition-colors"
               >
-                About
+                Pricing
               </button>
-              */}
               <button 
                 onClick={() => navigate('/support')}
                 className="text-sm text-slate-600 hover:text-slate-900 transition-colors"
               >
-                Support
+                Support & FAQs
               </button>
               <button 
                 onClick={() => navigate('/privacy-terms')}
                 className="text-sm text-slate-600 hover:text-slate-900 transition-colors"
               >
-                Privacy &amp; Terms
+                Privacy & Terms
               </button>
             </div>
 
@@ -101,7 +105,7 @@ export default function Homepage() {
             <span className="text-slate-900 font-bold">Ask Google Analytics anything.</span>
             <br />
             <span className="text-slate-900 font-bold">Get insights in </span>
-            <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">
+            <span className="font-bold italic text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">
               20 seconds.
             </span>
           </h1>
@@ -166,16 +170,16 @@ export default function Homepage() {
           </p>
 
           {/* Contact CTA - opens in new tab */}
-<a
-  href="https://calendly.com/cian-arnoldtheanalyst/30min"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="inline-flex items-center justify-center bg-white text-slate-700 px-8 py-2 rounded-full text-sm font-bold border-2 border-slate-300 hover:border-slate-400 hover:bg-slate-50 transition-all"
->
-  Want more info? Let's chat
-</a>
-</div>
-</main>
+          <a
+            href={contactUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center bg-white text-slate-700 px-8 py-2 rounded-full text-sm font-bold border-2 border-slate-300 hover:border-slate-400 hover:bg-slate-50 transition-all"
+          >
+            Want more info? Let's chat
+          </a>
+        </div>
+      </main>
 
       {/* Features Section */}
       <section className="py-16 px-6 border-t border-slate-100">
@@ -187,7 +191,7 @@ export default function Homepage() {
               </div>
               <h3 className="text-lg font-semibold text-slate-900 mb-2">Natural Language</h3>
               <p className="text-slate-600">
-                Ask questions the way you'd ask a colleague. No technical GA4 knowledge or SQL needed.
+                Ask questions the way you'd ask a colleague. No SQL or technical GA4 knowledge needed.
               </p>
             </div>
             
@@ -205,9 +209,9 @@ export default function Homepage() {
               <div className="w-12 h-12 bg-amber-100 rounded-xl flex items-center justify-center mx-auto mb-4">
                 <Zap className="w-6 h-6 text-amber-600" />
               </div>
-              <h3 className="text-lg font-semibold text-slate-900 mb-2">In Slack 24/7</h3>
+              <h3 className="text-lg font-semibold text-slate-900 mb-2">Always Available</h3>
               <p className="text-slate-600">
-                Marketers & account managers get instant answers. Analysts get their time back.
+                Arnold lives in Slack. Marketers & account managers don't have to wait on analysts. Analysts can focus on more meaningful work.
               </p>
             </div>
           </div>
@@ -226,10 +230,10 @@ export default function Homepage() {
           
           <div className="flex items-center gap-6 text-sm text-slate-500">
             <button onClick={() => navigate('/support')} className="hover:text-slate-700 transition-colors">
-              Support
+              Support & FAQs
             </button>
             <button onClick={() => navigate('/privacy-terms')} className="hover:text-slate-700 transition-colors">
-              Privacy &amp; Terms
+              Privacy & Terms
             </button>
           </div>
         </div>
