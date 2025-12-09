@@ -153,7 +153,7 @@ export default function Homepage() {
             href={contactUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center bg-white text-slate-700 px-8 py-2 rounded-full text-sm font-bold border-2 border-slate-300 hover:border-slate-400 hover:bg-slate-50 transition-all"
+            className="inline-flex items-center justify-center bg-white text-slate-700 px-4 py-2 rounded-full text-sm font-bold border-2 border-slate-300 hover:border-slate-400 hover:bg-slate-50 transition-all"
           >
             Questions? Let's chat
           </a>
