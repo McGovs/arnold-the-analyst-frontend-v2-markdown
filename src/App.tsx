@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route, useNavigate } from 'react-route
 import Homepage from './pages/Homepage';
 import Description from './pages/Description';
 import Privacy from './pages/Privacy';
+import Pricing from './pages/Pricing';
 import SlackInstall from './pages/SlackInstall';
 import Support from './pages/Support';
 import Video from './pages/Video';
@@ -87,6 +88,7 @@ function App() {
         <Route path="/demo" element={<DemoPage />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/privacy-terms" element={<Privacy />} />
+        <Route path="/pricing" element={<Pricing />} />
         <Route path="/slack-install" element={<SlackInstallPage />} />
         <Route path="/support" element={<Support />} />
         <Route path="/video-tour" element={<VideoPage />} />
