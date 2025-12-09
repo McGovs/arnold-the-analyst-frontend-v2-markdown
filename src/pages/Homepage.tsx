@@ -116,8 +116,6 @@ export default function Homepage() {
               {/* Replace this div with your actual GIF */}
               <div className="absolute inset-0 flex flex-col items-center justify-center text-slate-400">
                 <Play className="w-10 h-10 mb-2 opacity-50" />
-                <span className="text-sm font-medium">Demo GIF goes here</span>
-                <span className="text-xs mt-1">Place your GIF in /public/demo.gif</span>
               </div>
 
               <img 
