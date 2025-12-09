@@ -1,7 +1,7 @@
 // src/pages/Support.tsx
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import { ArrowRight, Mail, MessageCircle } from 'lucide-react';
+import { ArrowRight, Mail } from 'lucide-react';
 
 export default function Support() {
   const navigate = useNavigate();
@@ -10,7 +10,6 @@ export default function Support() {
 
   return (
     <>
-      {/* Google Fonts – same as homepage */}
       <link rel="preconnect" href="https://fonts.googleapis.com" />
       <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
       <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,700&display=swap" rel="stylesheet" />
@@ -19,13 +18,13 @@ export default function Support() {
         className="min-h-screen bg-gradient-to-b from-slate-50 via-white to-blue-50/30"
         style={{ fontFamily: "'Playfair Display', serif" }}
       >
-        {/* === IDENTICAL NAV BAR FROM HOMEPAGE === */}
+        {/* === NAV BAR — identical to homepage === */}
         <nav className="fixed top-0 left-0 right-0 bg-white/80 backdrop-blur-md border-b border-slate-100 z-50">
           <div className="max-w-6xl mx-auto px-6">
             <div className="flex items-center justify-between h-14">
               <div className="flex items-center gap-2.5">
                 <div className="w-8 h-8 bg-gradient-to-br from-blue-600 to-indigo-600 rounded-lg flex items-center justify-center">
-                  <MessageCircle className="w-4 h-4 text-white" />
+                  <Mail className="w-4 h-4 text-white" />
                 </div>
                 <span className="font-semibold text-slate-900 tracking-tight">Arnold</span>
               </div>
@@ -59,7 +58,7 @@ export default function Support() {
               >
                 <svg width="14" height="14" viewBox="0 0 123 123" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M25.8 77.6C25.8 84.7 20 90.5 12.9 90.5C5.8 90.5 0 84.7 0 77.6C0 70.5 5.8 64.7 12.9 64.7H25.8V77.6Z" fill="#E01E5A"/>
-                  <path d="M32.3 77.6C32.3 70.5 38.1 64.7 45.2 64.7C52.3 64.7 58.Concurrent 70.5 58.1 77.6V109.9C58.1 117 52.3 122.8 45.2 122.8C38.1 122.8 32.3 117 32.3 109.9V77.6Z" fill="#E01E5A"/>
+                  <path d="M32.3 77.6C32.3 70.5 38.1 64.7 45.2 64.7C52.3 64.7 58.1 70.5 58.1 77.6V109.9C58.1 117 52.3 122.8 45.2 122.8C38.1 122.8 32.3 117 32.3 109.9V77.6Z" fill="#E01E5A"/>
                   <path d="M45.2 25.8C38.1 25.8 32.3 20 32.3 12.9C32.3 5.8 38.1 0 45.2 0C52.3 0 58.1 5.8 58.1 12.9V25.8H45.2Z" fill="#36C5F0"/>
                   <path d="M45.2 32.3C52.3 32.3 58.1 38.1 58.1 45.2C58.1 52.3 52.3 58.1 45.2 58.1H12.9C5.8 58.1 0 52.3 0 45.2C0 38.1 5.8 32.3 12.9 32.3H45.2Z" fill="#36C5F0"/>
                   <path d="M97 45.2C97 38.1 102.8 32.3 109.9 32.3C117 32.3 122.8 38.1 122.8 45.2C122.8 52.3 117 58.1 109.9 58.1H97V45.2Z" fill="#2EB67D"/>
@@ -75,22 +74,19 @@ export default function Support() {
 
         {/* Hero-style Support Header */}
         <main className="pt-32 pb-20 px-6">
-          <div className className="max-w-4xl mx-auto text-center">
+          <div className="max-w-4xl mx-auto text-center">
             <div className="inline-flex items-center gap-2 bg-white border border-slate-200 rounded-full px-3 py-1 mb-6 shadow-sm">
               <span className="w-2 h-2 bg-emerald-500 rounded-full animate-pulse"></span>
               <span className="text-xs text-slate-600">We usually reply in &lt;24h</span>
             </div>
-
             <h1 className="text-5xl md:text-6xl font-bold text-slate-900 mb-6 leading-tight">
               Arnold The Analyst <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">Support</span>
             </h1>
-
             <p className="text-xl text-slate-600 max-w-2xl mx-auto">
               Get help with Arnold and your Google Analytics 4 queries
             </p>
           </div>
         </main>
-
         {/* Main Content – clean cards like homepage features */}
         <section className="px-6 pb-20">
           <div className="max-w-4xl mx-auto space-y-12">
@@ -111,7 +107,6 @@ export default function Support() {
                 We typically respond within 24 hours on business days.
               </p>
             </div>
-
             {/* FAQ Section */}
             <div className="bg-white rounded-2xl shadow-lg p-10">
               <h2 className="text-3xl font-bold text-slate-900 mb-8 text-center">
@@ -133,7 +128,6 @@ export default function Support() {
                 ))}
               </div>
             </div>
-
             {/* Final CTA */}
             <div className="text-center py-12">
               <p className="text-lg text-slate-600 mb-6">Still stuck?</p>
@@ -146,13 +140,12 @@ export default function Support() {
             </div>
           </div>
         </section>
-
         {/* Same footer as homepage */}
         <footer className="py-8 px-6 border-t border-slate-100">
           <div className="max-w-5xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
             <div className="flex items-center gap-2">
               <div className="w-6 h-6 bg-gradient-to-br from-blue-600 to-indigo-600 rounded-md flex items-center justify-center">
-                MessageCircle className="w-3 h-3 text-white" />
+                Mail className="w-3 h-3 text-white" />
               </div>
               <span className="text-sm text-slate-600">Arnold The Analyst</span>
             </div>
