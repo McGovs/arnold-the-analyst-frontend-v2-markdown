@@ -205,7 +205,7 @@ export default function Homepage() {
               </div>
               <h3 className="text-lg font-semibold text-slate-900 mb-2">In Slack 24/7</h3>
               <p className="text-slate-600">
-                Marketers & managers get instant answers. Analysts get their time back.
+                Marketers & account managers get instant answers. Analysts get their time back.
               </p>
             </div>
           </div>
