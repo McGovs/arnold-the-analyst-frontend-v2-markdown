@@ -94,11 +94,11 @@ export default function Homepage() {
             className="text-2xl md:text-3xl lg:text-4xl tracking-tight leading-normal mb-5"
             style={{ fontFamily: "'Playfair Display', serif" }}
           >
-            <span className="text-slate-900 font-normal">Ask Google Analytics anything.</span>
+            <span className="text-slate-900 font-bold">Ask Google Analytics anything.</span>
             <br />
-            <span className="text-slate-900 font-normal">Get insights in </span>
+            <span className="text-slate-900 font-bold">Get insights in </span>
             <span 
-              className="font-bold italic text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600"
+              className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600"
             >
               20 seconds.
             </span>
