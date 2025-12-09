@@ -6,25 +6,29 @@ import { ArrowRight, Mail } from 'lucide-react';
 export default function Support() {
   const navigate = useNavigate();
 
-  const slackInstallUrl = "https://slack.com/oauth/v2/authorize?client_id=134528973318.9712045945332&scope=app_mentions:read,channels:history,channels:join,channels:manage,channels:read,chat:write,chat:write.public,commands,groups:history,groups:read,im:history,im:write,mpim:history,users:read&user_scope=";
+  const slackInstallUrl =
+    "https://slack.com/oauth/v2/authorize?client_id=134528973318.9712045945332&scope=app_mentions:read,channels:history,channels:join,channels:manage,channels:read,chat:write,chat:write.public,commands,groups:history,groups:read,im:history,im:write,mpim:history,users:read&user_scope=";
 
   return (
     <>
       <link rel="preconnect" href="https://fonts.googleapis.com" />
       <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-      <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,700&display=swap" rel="stylesheet" />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,700&display=swap"
+        rel="stylesheet"
+      />
 
       <div
         className="min-h-screen bg-gradient-to-b from-slate-50 via-white to-blue-50/30"
         style={{ fontFamily: "'Playfair Display', serif" }}
       >
-        {/* === NAV BAR — identical to homepage === */}
+        {/* NAV BAR — identical to homepage */}
         <nav className="fixed top-0 left-0 right-0 bg-white/80 backdrop-blur-md border-b border-slate-100 z-50">
           <div className="max-w-6xl mx-auto px-6">
             <div className="flex items-center justify-between h-14">
               <div className="flex items-center gap-2.5">
                 <div className="w-8 h-8 bg-gradient-to-br from-blue-600 to-indigo-600 rounded-lg flex items-center justify-center">
-                  <Mail className="w-4 h-4 text-white" />
+                  <Mail className className="w-4 h-4 text-white" />
                 </div>
                 <span className="font-semibold text-slate-900 tracking-tight">Arnold</span>
               </div>
@@ -72,12 +76,12 @@ export default function Support() {
           </div>
         </nav>
 
-        {/* Hero-style Support Header */}
+        {/* Hero Section */}
         <main className="pt-32 pb-20 px-6">
           <div className="max-w-4xl mx-auto text-center">
             <div className="inline-flex items-center gap-2 bg-white border border-slate-200 rounded-full px-3 py-1 mb-6 shadow-sm">
               <span className="w-2 h-2 bg-emerald-500 rounded-full animate-pulse"></span>
-              <span className="text-xs text-slate-600">We usually reply in &lt;24h</span>
+              <span className="text-xs text-slate-600">We usually reply in less than 24h</span>
             </div>
             <h1 className="text-5xl md:text-6xl font-bold text-slate-900 mb-6 leading-tight">
               Arnold The Analyst <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">Support</span>
@@ -87,7 +91,8 @@ export default function Support() {
             </p>
           </div>
         </main>
-        {/* Main Content – clean cards like homepage features */}
+
+        {/* Content */}
         <section className="px-6 pb-20">
           <div className="max-w-4xl mx-auto space-y-12">
             {/* Contact Card */}
@@ -107,13 +112,13 @@ export default function Support() {
                 We typically respond within 24 hours on business days.
               </p>
             </div>
-            {/* FAQ Section */}
+
+            {/* FAQ */}
             <div className="bg-white rounded-2xl shadow-lg p-10">
               <h2 className="text-3xl font-bold text-slate-900 mb-8 text-center">
                 Frequently Asked Questions
               </h2>
               <div className="space-y-8">
-                {/* Repeat this block for each FAQ */}
                 {[
                   { q: "How do I install Arnold in my Slack workspace?", a: "Visit our homepage and click the big “Add Arnold to Slack” button. You need admin rights in your workspace." },
                   { q: "How do I connect my Google Analytics account?", a: "After installing, type `/arnold-connect` in any channel — Arnold will guide you through OAuth." },
@@ -128,6 +133,7 @@ export default function Support() {
                 ))}
               </div>
             </div>
+
             {/* Final CTA */}
             <div className="text-center py-12">
               <p className="text-lg text-slate-600 mb-6">Still stuck?</p>
@@ -140,12 +146,13 @@ export default function Support() {
             </div>
           </div>
         </section>
-        {/* Same footer as homepage */}
+
+        {/* Footer */}
         <footer className="py-8 px-6 border-t border-slate-100">
           <div className="max-w-5xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
             <div className="flex items-center gap-2">
               <div className="w-6 h-6 bg-gradient-to-br from-blue-600 to-indigo-600 rounded-md flex items-center justify-center">
-                Mail className="w-3 h-3 text-white" />
+                <Mail className="w-3 h-3 text-white" />
               </div>
               <span className="text-sm text-slate-600">Arnold The Analyst</span>
             </div>
