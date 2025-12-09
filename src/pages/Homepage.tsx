@@ -16,10 +16,10 @@ export default function Homepage() {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-slate-50 via-white to-blue-50/30">
-      {/* Google Fonts - Playfair Display */}
+      {/* Google Fonts - Playfair Display with regular, bold, and italic variants */}
       <link rel="preconnect" href="https://fonts.googleapis.com" />
       <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-      <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+      <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,700&display=swap" rel="stylesheet" />
 
       {/* Navigation */}
       <nav className="fixed top-0 left-0 right-0 bg-white/80 backdrop-blur-md border-b border-slate-100 z-50">
@@ -89,14 +89,18 @@ export default function Homepage() {
             <span className="text-xs text-slate-600">Purpose-built for digital agencies</span>
           </div>
 
-          {/* Main Headline - Playfair Display */}
+          {/* Main Headline - Playfair Display with mixed styling */}
           <h1 
             className="text-2xl md:text-3xl lg:text-4xl tracking-tight leading-normal mb-5"
             style={{ fontFamily: "'Playfair Display', serif" }}
           >
-            <span className="block text-slate-900 font-bold">Ask Google Analytics anything.</span>
-            <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600 font-bold pb-1">
-              Get insights in 20 seconds.
+            <span className="text-slate-900 font-normal">Ask Google Analytics anything.</span>
+            <br />
+            <span className="text-slate-900 font-normal">Get insights in </span>
+            <span 
+              className="font-bold italic text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600"
+            >
+              20 seconds.
             </span>
           </h1>
 
