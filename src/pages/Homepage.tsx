@@ -9,10 +9,10 @@ export default function Homepage() {
   const slackInstallUrl = "https://slack.com/oauth/v2/authorize?client_id=134528973318.9712045945332&scope=app_mentions:read,channels:history,channels:join,channels:manage,channels:read,chat:write,chat:write.public,commands,groups:history,groups:read,im:history,im:write,mpim:history,users:read&user_scope=";
 
   // TODO: Replace with your actual video walkthrough URL
-  const videoWalkthroughUrl = "/demo";
+  const videoWalkthroughUrl = "https://www.arnoldtheanalyst.com/video-tour";
 
   // TODO: Replace with your actual contact/calendly URL
-  const contactUrl = "/support";
+  const contactUrl = "https://calendly.com/cian-arnoldtheanalyst/30min";
 
   return (
     <div 
