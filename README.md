@@ -16,7 +16,7 @@ A production-ready chatbot interface that connects to n8n workflows for BigQuery
 - **Visual progress indicators** with elapsed time tracking
 
 ### 🔄 Smart Session Management
-- **Session-based chat history** using sessionStorage
+- **Session-based chat history** using sessionStorage 
 - **Automatic cleanup** when browser tab closes
 - **Persistent within session** across page refreshes
 - **Unique session IDs** for tracking individual conversations
