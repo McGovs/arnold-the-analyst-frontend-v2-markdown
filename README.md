@@ -65,7 +65,7 @@ The chatbot can be embedded on any website as a floating widget. See the "Embed 
 
 ## Technical Architecture
 
-### Timeout Handling
+### Timeout Handling 
 - **5-minute fetch timeout** accommodates complex BigQuery operations
 - **AbortController** enables clean request cancellation
 - **Keepalive option** maintains connections during tab switches
