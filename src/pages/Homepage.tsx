@@ -203,9 +203,9 @@ export default function Homepage() {
               <div className="w-12 h-12 bg-amber-100 rounded-xl flex items-center justify-center mx-auto mb-4">
                 <Zap className="w-6 h-6 text-amber-600" />
               </div>
-              <h3 className="text-lg font-semibold text-slate-900 mb-2">Always Available</h3>
+              <h3 className="text-lg font-semibold text-slate-900 mb-2">In Slack 24/7</h3>
               <p className="text-slate-600">
-                Arnold lives in Slack. Marketers & managers get instant answers. Analysts get their time back.
+                Marketers & managers get instant answers. Analysts get their time back.
               </p>
             </div>
           </div>
