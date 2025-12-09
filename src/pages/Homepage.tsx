@@ -105,7 +105,7 @@ export default function Homepage() {
             <span className="text-slate-900 font-bold">Ask Google Analytics anything.</span>
             <br />
             <span className="text-slate-900 font-bold">Get insights in </span>
-            <span className="font-bold italic text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">
+            <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">
               20 seconds.
             </span>
           </h1>
