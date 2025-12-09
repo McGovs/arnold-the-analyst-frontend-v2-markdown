@@ -106,7 +106,7 @@ export default function Homepage() {
             <br />
             <span className="text-slate-900 font-bold">Go from question to insights in </span>
             <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">
-              20 seconds.
+              20 seconds
             </span>
           </h1>
 
