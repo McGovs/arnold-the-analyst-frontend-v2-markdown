@@ -185,7 +185,7 @@ export default function Homepage() {
               </div>
               <h3 className="text-lg font-semibold text-slate-900 mb-2">Natural Language</h3>
               <p className="text-slate-600">
-                Ask questions the way you'd ask a colleague. No SQL or technical GA4 knowledge needed.
+                Ask questions the way you'd ask a colleague. No technical GA4 knowledge or SQL needed.
               </p>
             </div>
             
