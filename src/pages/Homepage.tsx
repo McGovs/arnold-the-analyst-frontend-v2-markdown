@@ -199,7 +199,7 @@ export default function Homepage() {
               <div className="w-12 h-12 bg-emerald-100 rounded-xl flex items-center justify-center mx-auto mb-4">
                 <Clock className="w-6 h-6 text-emerald-600" />
               </div>
-              <h3 className="text-lg font-semibold text-slate-900 mb-2">Instant Answers</h3>
+              <h3 className="text-lg font-semibold text-slate-900 mb-2">Cut time to insight by 90%</h3>
               <p className="text-slate-600">
                 Get insights in seconds, not hours. Queries answered in 20 seconds on average.
               </p>
