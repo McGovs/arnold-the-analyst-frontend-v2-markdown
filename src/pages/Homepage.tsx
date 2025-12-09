@@ -9,7 +9,7 @@ export default function Homepage() {
   const slackInstallUrl = "https://slack.com/oauth/v2/authorize?client_id=134528973318.9712045945332&scope=app_mentions:read,channels:history,channels:join,channels:manage,channels:read,chat:write,chat:write.public,commands,groups:history,groups:read,im:history,im:write,mpim:history,users:read&user_scope=";
 
   // TODO: Replace with your actual video walkthrough URL
-  const videoWalkthroughUrl = "/demo";
+  const videoWalkthroughUrl = "https://www.arnoldtheanalyst.com/video-tour";
 
   // TODO: Replace with your actual contact/calendly URL
   const contactUrl = "/support";
@@ -37,7 +37,7 @@ export default function Homepage() {
             
             <div className="hidden md:flex items-center gap-8">
               <button 
-                onClick={() => navigate('/demo')}
+                onClick={() => window.location.href = "https://www.arnoldtheanalyst.com/video-tour"}
                 className="text-sm text-slate-600 hover:text-slate-900 transition-colors"
               >
                 Video Tour
