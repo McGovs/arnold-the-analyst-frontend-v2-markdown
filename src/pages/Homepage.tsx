@@ -106,7 +106,7 @@ export default function Homepage() {
             <br />
             <span className="text-slate-900 font-bold">Go from question to insights in </span>
             <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">
-              20 seconds
+              20 seconds.
             </span>
           </h1>
 
@@ -118,7 +118,7 @@ export default function Homepage() {
                 loop 
                 muted 
                 playsInline
-                className="w-full h-full object-cover"
+                className="w-full h-full object-contain"
               >
                 <source src="/demo.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
@@ -208,7 +208,7 @@ export default function Homepage() {
               </div>
               <h3 className="text-lg font-semibold text-slate-900 mb-2">Lives In Slack 24/7</h3>
               <p className="text-slate-600">
-                Marketers and account managers don't have to wait on analysts. Analysts can claim back their time.
+                Marketers & account managers don't have to wait on analysts. Analysts can claim back their time.
               </p>
             </div>
           </div>
@@ -227,10 +227,10 @@ export default function Homepage() {
           
           <div className="flex items-center gap-6 text-sm text-slate-500">
             <button onClick={() => navigate('/support')} className="hover:text-slate-700 transition-colors">
-              Support
+              Support & FAQs
             </button>
             <button onClick={() => navigate('/privacy-terms')} className="hover:text-slate-700 transition-colors">
-              Privacy
+              Privacy & Terms
             </button>
           </div>
         </div>
