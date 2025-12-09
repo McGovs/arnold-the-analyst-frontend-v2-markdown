@@ -1,91 +1,87 @@
 // src/pages/Description.tsx
 import React from 'react';
-// import EmbeddableChatbot from '../components/EmbeddableChatbot'; // removed
 
 export default function Description() {
   return (
-    // Force same font as chat: font-sans (optionally antialiased)
-    <div className="min-h-screen bg-gray-100 p-8 font-sans antialiased">
-      <div className="max-w-4xl mx-auto">
-        {/* Main title */}
-        <h1 className="text-3xl font-bold mb-6 text-blue-600">
-          Arnold The Analyst — GA4 Answers on Demand
+    <div className="min-h-screen bg-gray-50 p-8 font-sans antialiased">
+      <div className="max-w-3xl mx-auto space-y-10">
+
+        {/* Page Title */}
+        <h1 className="text-4xl font-bold text-slate-800 text-center">
+          Arnold The Analyst — GA4 Answers in Slack
         </h1>
 
-        <div className="bg-white p-6 rounded-lg shadow-sm mb-6 space-y-4">
-          <p className="text-gray-700">
-            Arnold is an always-on analyst that lets your team <span className="font-medium">ask plain-English questions about GA4 and get accurate
-            answers within minutes</span>. Built by a digital analytics expert with more than eight years of experience navigating Google Analytics' quirks and limitations, <span className="font-medium">Arnold delivers senior-level analyst insights that cannot be answered in the GA4 UI at software speed</span>.
+        {/* Intro Card */}
+        <div className="bg-white p-8 rounded-2xl shadow-sm space-y-4">
+          <p className="text-slate-700 text-lg leading-relaxed">
+            Arnold is your always-on GA4 analyst living directly inside Slack.
+            Ask a plain-English question about your GA4 property and Arnold
+            returns a clean, accurate answer in seconds—no dashboards, no digging,
+            no waiting on an analyst.
           </p>
-
-          <div className="grid md:grid-cols-2 gap-6">
-            <div>
-              <h2 className="text-lg font-semibold mb-2 text-blue-600">What it does</h2>
-              <ul className="text-gray-700 list-disc list-inside space-y-1">
-                <li>Translates natural language → <span className="font-medium">SQL</span></li>
-                <li>Runs queries against your <span className="font-medium">GA4 BigQuery</span> dataset</li>
-                <li>Returns clear answers & the data in <span className="font-medium">Google Sheets</span></li>
-              </ul>
-            </div>
-            <div>
-              <h2 className="text-lg font-semibold mb-2 text-blue-600">Why clients love it</h2>
-              <ul className="text-gray-700 list-disc list-inside space-y-1">
-                <li>Saves hours on manual exports and dashboard edits</li>
-                <li>Bypasses GA4’s convoluted UI and incomplete data</li>
-                <li>Delivers consistent, accurate answers from BigQuery</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <div className="bg-white p-6 rounded-lg shadow-sm mb-6">
-          <h2 className="text-xl font-semibold mb-3 text-blue-600">How it works</h2>
-          <ol className="text-gray-700 list-decimal list-inside space-y-1">
-            <li>We handle your onboarding, <span className="font-medium">including your GA4 BigQuery set up</span>, in 3 working days</li>
-            <li>Type your query</li>
-            <li>Arnold generates and validates SQL</li>
-            <li>The SQL code is executed in BigQuery</li>
-            <li>Arnold outputs a clear, natural language answer along with a Google Sheets export</li>
-          </ol>
-        </div>
-
-        {/* tighter spacing below this card: mb-3 instead of mb-6 */}
-        <div className="bg-white p-6 rounded-lg shadow-sm mb-3">
-          <h2 className="text-xl font-semibold mb-3 text-blue-600">Demo dataset &amp; timing</h2>
-          <p className="text-gray-700">
-            The demo uses the Google Merchandise Store dataset (Nov 1, 2020 → Jan 31, 2021).
-            Typical response time is <span className="font-medium">1–2 minutes</span>; more complex queries can take
-            up to <span className="font-medium">5 minutes</span>.
+          <p className="text-slate-700 text-lg leading-relaxed">
+            Built by an experienced digital analytics specialist, Arnold gives
+            agencies fast, trustworthy insights without ever opening the GA4 UI.
           </p>
-          <div className="mt-4">
-            <h3 className="font-medium mb-2 text-blue-600">Great starter queries</h3>
-            <ul className="text-gray-700 list-disc list-inside space-y-1">
-              <li>Top products by purchase revenue in December 2020</li>
-              <li>Average order value by traffic source in November 2020</li>
-              <li>New vs. returning users by week</li>
-              <li>Conversion rate by device type in January 2021 vs. December 2020</li>
-              <li>User repeat purchase rate within 30 days for December 2020</li>
-            </ul>
-          </div>
         </div>
 
-        {/* sits closer now because previous card's mb is smaller */}
-        <div className="bg-white p-6 rounded-lg shadow-sm">
-          <h2 className="text-xl font-semibold mb-3 text-blue-600">Data &amp; security</h2>
-          <ul className="text-gray-700 list-disc list-inside space-y-1">
-            <li>Your data stays in your <span className="font-medium">Google Cloud</span> project</li>
-            <li>Arnold runs <span className="font-medium">read-only queries</span> that you initiate. <span className="font-medium">Arnold never writes or alters your data</span>.</li>
-            <li>SSO/magic links for <span className="font-medium">access control</span></li>
+        {/* What Arnold Does */}
+        <div className="bg-white p-8 rounded-2xl shadow-sm space-y-6">
+          <h2 className="text-2xl font-semibold text-slate-800">What Arnold Does</h2>
+          <ul className="space-y-3 text-slate-700 list-disc list-inside">
+            <li>Understands natural-language questions in Slack</li>
+            <li>Pulls the right metrics and dimensions from GA4 automatically</li>
+            <li>Returns concise, reliable insights instantly</li>
           </ul>
-          {/* more breathing room before the closing sentence: mt-6 */}
-          <p className="text-gray-700 mt-6">
-            Ready to use Arnold on your data or your clients' data? We can set up your GA4 BigQuery export, connect it to Arnold, and fine-tune according to your dataset before pushing <span className="font-medium">live in three working days</span>.
+        </div>
+
+        {/* Why Agencies Love It */}
+        <div className="bg-white p-8 rounded-2xl shadow-sm space-y-6">
+          <h2 className="text-2xl font-semibold text-slate-800">Why Agencies Love It</h2>
+          <ul className="space-y-3 text-slate-700 list-disc list-inside">
+            <li>Removes the need to click around GA4’s confusing UI</li>
+            <li>Saves hours of reporting and analysis time each week</li>
+            <li>Makes insights accessible to account managers and marketers</li>
+            <li>Keeps teams aligned with fast, consistent answers</li>
+          </ul>
+        </div>
+
+        {/* How It Works */}
+        <div className="bg-white p-8 rounded-2xl shadow-sm space-y-6">
+          <h2 className="text-2xl font-semibold text-slate-800">How It Works</h2>
+          <ol className="space-y-3 text-slate-700 list-decimal list-inside">
+            <li>Add Arnold to your Slack workspace</li>
+            <li>Ask a question about your GA4 property</li>
+            <li>Arnold replies with a clean, contextual, analyst-level insight</li>
+          </ol>
+          <p className="text-slate-700 pt-3">
+            No setup. No configs. No SQL. No BigQuery. Just ask.
           </p>
         </div>
-      </div>
 
-      {/* Floating demo widget intentionally removed */}
-      {/* <EmbeddableChatbot title="Arnold The Analyst" placeholder="Ask about your GA4 data..." position="bottom-right" /> */}
+        {/* Starter Queries */}
+        <div className="bg-white p-8 rounded-2xl shadow-sm space-y-6">
+          <h2 className="text-2xl font-semibold text-slate-800">Great Starter Questions</h2>
+          <ul className="space-y-3 text-slate-700 list-disc list-inside">
+            <li>“Which channels drove the most conversions last week?”</li>
+            <li>“What’s our top page for engaged sessions this month?”</li>
+            <li>“Did our new landing page improve conversion rate?”</li>
+            <li>“How many returning users did we have yesterday?”</li>
+            <li>“What’s the 7-day traffic trend?”</li>
+          </ul>
+        </div>
+
+        {/* Data & Security */}
+        <div className="bg-white p-8 rounded-2xl shadow-sm space-y-6">
+          <h2 className="text-2xl font-semibold text-slate-800">Data &amp; Security</h2>
+          <ul className="space-y-3 text-slate-700 list-disc list-inside">
+            <li>Arnold reads your GA4 data securely</li>
+            <li>No data is stored or written anywhere</li>
+            <li>Your team initiates every request from Slack</li>
+          </ul>
+        </div>
+
+      </div>
     </div>
   );
 }
