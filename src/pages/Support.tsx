@@ -134,7 +134,7 @@ export default function Support() {
               <p className="text-lg text-slate-600 mb-6">Still have questions?</p>
               <a
                 href="mailto:cian@arnoldtheanalyst.com"
-                className="inline-flex items-center gap-2 bg-blue-600 text-white px-8 py-4 rounded-xl text-lg font-bold hover:bg-blue-700 transition-shadow shadow-lg"
+                className="inline-flex items-center gap-2 bg-blue-600 text-white px-4 py-2 rounded-xl text-lg font-bold hover:bg-blue-700 transition-shadow shadow-lg"
               >
                 Email Support <ArrowRight className="w-5 h-5" />
               </a>
