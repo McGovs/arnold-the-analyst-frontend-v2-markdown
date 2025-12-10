@@ -53,7 +53,7 @@ export default function Pricing() {
                   onClick={() => navigate('/support')}
                   className="text-sm text-slate-600 hover:text-slate-900 transition-colors"
                 >
-                  Support & FAQs
+                  Support & FAQ
                 </button>
                 <button
                   onClick={() => navigate('/privacy-terms')}
