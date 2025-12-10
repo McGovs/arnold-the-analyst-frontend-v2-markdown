@@ -209,10 +209,10 @@ export default function Homepage() {
           
           <div className="flex items-center gap-6 text-sm text-slate-500">
             <button onClick={() => navigate('/support')} className="hover:text-slate-700 transition-colors">
-              Support
+              Support & FAQ
             </button>
             <button onClick={() => navigate('/privacy-terms')} className="hover:text-slate-700 transition-colors">
-              Privacy
+              Privacy & Terms
             </button>
           </div>
         </div>
