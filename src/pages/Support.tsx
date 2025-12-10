@@ -44,12 +44,6 @@ export default function Support() {
                   Home
                 </button>
                 <button
-                  onClick={() => window.location.href = "https://www.arnoldtheanalyst.com/video-tour"}
-                  className="text-sm text-slate-600 hover:text-slate-900 transition-colors"
-                >
-                  Video Tour
-                </button>
-                <button
                   onClick={() => navigate('/pricing')}
                   className="text-sm text-slate-600 hover:text-slate-900 transition-colors"
                 >
