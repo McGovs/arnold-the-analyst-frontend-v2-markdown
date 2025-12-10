@@ -136,7 +136,7 @@ export default function Privacy() {
             <div className="bg-white p-6 rounded-2xl shadow-lg mb-6">
               <h2 className="text-xl font-semibold mb-3 text-blue-600">1. Introduction</h2>
               <p className="text-slate-700 mb-4">
-                Welcome to Arnold The Analyst ("Arnold," "we," "us," or "our"). Arnold is a Google Analytics 4 assistant that operates within a web interface and within Slack workspaces to help users query and analyze both their own analytics data and the publicly available Google Merchant Store GA4 BigQuery data using natural language.
+                Welcome to Arnold The Analyst ("Arnold," "we," "us," or "our"). Arnold is a Google Analytics 4 assistant that operates within Slack workspaces to help users query and analyze both their own Google Analytics data using natural language.
               </p>
               <p className="text-slate-700 mb-4">
                 This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use Arnold through Slack. Please read this privacy policy carefully. If you do not agree with the terms of this privacy policy, please do not use Arnold.
@@ -162,7 +162,7 @@ export default function Privacy() {
                 <li><strong>Slack Workspace Information:</strong> Your Slack workspace ID, workspace name, and the user ID of the person who installed Arnold</li>
                 <li><strong>Slack User Information:</strong> Your Slack user ID and username when you interact with Arnold</li>
                 <li><strong>Google Analytics Authorization:</strong> OAuth access tokens and refresh tokens that allow Arnold to access your Google Analytics data on your behalf</li>
-                <li><strong>Analytics Configuration:</strong> The Google Analytics 4 property IDs and BigQuery dataset identifiers you select for Arnold to query</li>
+                <li><strong>Analytics Configuration:</strong> The Google Analytics 4 property IDs you select for Arnold to query</li>
                 <li><strong>Query Information:</strong> The natural language questions and commands you send to Arnold via Slack</li>
               </ul>
 
@@ -170,7 +170,7 @@ export default function Privacy() {
               <ul className="text-slate-700 list-disc list-inside space-y-1 mb-4">
                 <li><strong>Usage Data:</strong> Information about how you interact with Arnold, including timestamps of queries and responses</li>
                 <li><strong>Technical Data:</strong> Server logs, including IP addresses, request types, and error messages for troubleshooting and security purposes</li>
-                <li><strong>Cookies:</strong> Our website (arnoldtheanalyst.com) uses essential cookies to maintain session state and ensure proper functionality</li>
+                <li><strong>Cookies:</strong> Our website, (arnoldtheanalyst.com), uses essential cookies to maintain session state and ensure proper functionality</li>
               </ul>
 
               <h3 className="text-lg font-semibold mb-2 text-slate-800">2.3 Information from Third Parties</h3>
