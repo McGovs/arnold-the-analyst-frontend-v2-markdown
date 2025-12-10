@@ -19,7 +19,7 @@ export default function Pricing() {
       />
 
       <div
-        className="min-h-screen bg-slate-50"
+        className="min-h-screen bg-slate-50 flex flex-col"
         style={{ fontFamily: "'Playfair Display', serif" }}
       >
         {/* NAV BAR */}
@@ -86,7 +86,7 @@ export default function Pricing() {
         </nav>
 
         {/* MAIN CONTENT */}
-        <main className="pt-20 pb-16 px-6">
+        <main className="pt-20 pb-16 px-6 flex-grow">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6">
               Pricing <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">Coming Soon</span>
@@ -98,7 +98,7 @@ export default function Pricing() {
         </main>
 
         {/* Footer */}
-        <footer className="py-8 px-6 border-t border-slate-100 bg-white">
+        <footer className="py-8 px-6 border-t border-slate-100 bg-white mt-auto">
           <div className="max-w-5xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
             <div className="flex items-center gap-2">
               <div className="w-6 h-6 bg-gradient-to-br from-blue-600 to-indigo-600 rounded-md flex items-center justify-center">
