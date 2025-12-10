@@ -53,7 +53,7 @@ export default function Support() {
                   onClick={() => navigate('/support')}
                   className="text-sm font-medium text-blue-600"
                 >
-                  Support & FAQs
+                  Support & FAQ
                 </button>
                 <button
                   onClick={() => navigate('/privacy-terms')}
@@ -153,7 +153,7 @@ export default function Support() {
             </div>
             <div className="flex items-center gap-6 text-sm text-slate-500">
               <button onClick={() => navigate('/support')} className="hover:text-slate-700 transition-colors">
-                Support & FAQs
+                Support & FAQ
               </button>
               <button onClick={() => navigate('/privacy-terms')} className="hover:text-slate-700 transition-colors">
                 Privacy & Terms
