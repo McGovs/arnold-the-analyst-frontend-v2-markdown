@@ -88,7 +88,7 @@ export default function Pricing() {
         {/* MAIN CONTENT */}
         <main className="pt-20 pb-16 px-6 flex-grow">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6">
+            <h1 className="text-2xl md:text-3xl lg:text-4xl tracking-tight leading-normal font-bold text-slate-900 mb-6">
               Pricing <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">Coming Soon</span>
             </h1>
             <p className="text-xl text-slate-600">
