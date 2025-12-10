@@ -131,7 +131,7 @@ export default function Support() {
 
             {/* Final CTA */}
             <div className="text-center py-12">
-              <p className="text-lg text-slate-600 mb-6">Still stuck?</p>
+              <p className="text-lg text-slate-600 mb-6">Still have questions?</p>
               <a
                 href="mailto:cian@arnoldtheanalyst.com"
                 className="inline-flex items-center gap-2 bg-blue-600 text-white px-8 py-4 rounded-xl text-lg font-bold hover:bg-blue-700 transition-shadow shadow-lg"
