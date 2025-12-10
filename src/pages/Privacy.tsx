@@ -128,7 +128,7 @@ export default function Privacy() {
             </div>
 
             {/* ========== PRIVACY POLICY SECTION ========== */}
-            <div className="bg-gradient-to-r from-blue-600 to-indigo-600 p-6 rounded-2xl mb-6">
+            <div className="bg-gradient-to-r from-blue-600 to-indigo-600 p-4 rounded-2xl mb-6">
               <h1 className="text-2xl font-bold text-white">PRIVACY POLICY</h1>
             </div>
 
@@ -258,7 +258,7 @@ export default function Privacy() {
             </div>
 
             {/* ========== TERMS OF SERVICE SECTION ========== */}
-            <div className="bg-gradient-to-r from-blue-600 to-indigo-600 p-6 rounded-2xl mb-6 mt-12">
+            <div className="bg-gradient-to-r from-blue-600 to-indigo-600 p-4 rounded-2xl mb-6 mt-12">
               <h1 className="text-2xl font-bold text-white">TERMS OF SERVICE</h1>
             </div>
 
