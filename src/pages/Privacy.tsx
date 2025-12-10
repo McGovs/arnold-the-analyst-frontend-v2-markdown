@@ -44,12 +44,6 @@ export default function Privacy() {
                   Home
                 </button>
                 <button
-                  onClick={() => window.location.href = "https://www.arnoldtheanalyst.com/video-tour"}
-                  className="text-sm text-slate-600 hover:text-slate-900 transition-colors"
-                >
-                  Video Tour
-                </button>
-                <button
                   onClick={() => navigate('/pricing')}
                   className="text-sm text-slate-600 hover:text-slate-900 transition-colors"
                 >
@@ -59,7 +53,7 @@ export default function Privacy() {
                   onClick={() => navigate('/support')}
                   className="text-sm text-slate-600 hover:text-slate-900 transition-colors"
                 >
-                  Support & FAQs
+                  Support & FAQ
                 </button>
                 <button
                   onClick={() => navigate('/privacy-terms')}
@@ -353,7 +347,7 @@ export default function Privacy() {
             </div>
             <div className="flex items-center gap-6 text-sm text-slate-500">
               <button onClick={() => navigate('/support')} className="hover:text-slate-700 transition-colors">
-                Support & FAQs
+                Support & FAQ
               </button>
               <button onClick={() => navigate('/privacy-terms')} className="hover:text-slate-700 transition-colors">
                 Privacy & Terms
