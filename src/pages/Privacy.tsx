@@ -323,7 +323,7 @@ export default function Privacy() {
             </div>
 
             {/* Final statement */}
-            <div className="bg-gradient-to-r from-blue-600 to-indigo-600 p-6 rounded-2xl mb-6">
+            <div className="bg-gradient-to-r from-blue-600 to-indigo-600 p-4 rounded-2xl mb-6">
               <p className="text-white font-medium">
                 By using Arnold The Analyst, you acknowledge that you have read, understood, and agree to be bound by this Privacy Policy and Terms of Service.
               </p>
