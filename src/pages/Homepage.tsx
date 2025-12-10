@@ -190,7 +190,7 @@ export default function Homepage() {
               </div>
               <h3 className="text-lg font-semibold text-slate-900 mb-2">Lives In Slack 24/7</h3>
               <p className="text-slate-600">
-                Managers and marketers don't have to wait on analysts. Analysts can claim back their time.
+                Managers and marketers don't have to wait on analysts. Analysts claim back their time.
               </p>
             </div>
           </div>
