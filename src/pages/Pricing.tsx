@@ -44,12 +44,6 @@ export default function Pricing() {
                   Home
                 </button>
                 <button
-                  onClick={() => window.location.href = "https://www.arnoldtheanalyst.com/video-tour"}
-                  className="text-sm text-slate-600 hover:text-slate-900 transition-colors"
-                >
-                  Video Tour
-                </button>
-                <button
                   onClick={() => navigate('/pricing')}
                   className="text-sm font-medium text-blue-600"
                 >
@@ -97,20 +91,9 @@ export default function Pricing() {
             <h1 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6">
               Pricing <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">Coming Soon</span>
             </h1>
-            <p className="text-xl text-slate-600 mb-8">
+            <p className="text-xl text-slate-600">
               Arnold is currently free during beta. Paid plans will be announced in 2026.
             </p>
-            <div className="bg-white rounded-2xl shadow-lg p-10">
-              <p className="text-slate-700 mb-6">
-                Want to be notified when pricing is available? Get in touch and we'll keep you updated.
-              </p>
-              <a
-                href="mailto:cian@arnoldtheanalyst.com"
-                className="inline-flex items-center gap-2 bg-blue-600 text-white px-8 py-4 rounded-xl text-lg font-bold hover:bg-blue-700 transition-shadow shadow-lg"
-              >
-                Contact Us
-              </a>
-            </div>
           </div>
         </main>
 
