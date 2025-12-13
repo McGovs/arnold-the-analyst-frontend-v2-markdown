@@ -78,7 +78,7 @@ export default function Support() {
               <p className="text-lg text-slate-600 mb-6 max-w-2xl mx-auto">
                 For support questions, feature requests, or technical issues, please email:
               </p>
-              
+              <a
                 href="mailto:cian@arnoldtheanalyst.com"
                 className="text-2xl font-bold text-blue-600 hover:underline block mb-3"
               >
@@ -113,7 +113,7 @@ export default function Support() {
             {/* Final CTA */}
             <div className="text-center py-12">
               <p className="text-2xl text-slate-600 mb-6">Still have questions?</p>
-              
+              <a
                 href="mailto:cian@arnoldtheanalyst.com"
                 className="inline-flex items-center gap-2 bg-blue-600 text-white px-4 py-2 rounded-xl text-lg font-bold hover:bg-blue-700 transition-shadow shadow-lg"
               >
