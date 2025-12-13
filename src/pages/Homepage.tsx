@@ -69,7 +69,7 @@ export default function Homepage() {
           {/* Social Proof Badge */}
           <div className="inline-flex items-center gap-2 bg-white border border-slate-200 rounded-full px-3 py-1 mb-4 shadow-sm">
             <span className="w-2 h-2 bg-emerald-500 rounded-full animate-pulse"></span>
-            <span className="text-xs text-slate-600">Built for agencies managing multiple GA4 properties</span>
+            <span className="text-xs text-slate-600">Manages multiple GA4 properties effortlessly</span>
           </div>
 
           {/* Main Headline */}
