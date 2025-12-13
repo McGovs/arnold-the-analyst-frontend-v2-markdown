@@ -112,7 +112,7 @@ export default function Homepage() {
           </p>
 
           {/* Contact CTA - opens in new tab */}
-          
+          <a
             href={contactUrl}
             target="_blank"
             rel="noopener noreferrer"
