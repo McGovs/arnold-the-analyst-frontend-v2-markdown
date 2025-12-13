@@ -13,7 +13,7 @@ export default function SlackInstallButton({ className = "" }: SlackInstallButto
     window.dataLayer.push({
       'event': 'slack_button_click',
       'button_location': window.location.pathname,
-      'button_text': 'Try Arnold in Slack'
+      'button_text': 'Try Arnold Free in Slack'
     });
   };
 
