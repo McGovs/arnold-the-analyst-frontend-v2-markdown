@@ -108,7 +108,7 @@ export default function Homepage() {
           </div>
 
           <p className="text-sm text-slate-500 mb-3">
-            Free to try • Works with any GA4 property • Google OAuth sign in
+            Switch clients in one click • Delivered in Slack • Exported to Sheets
           </p>
 
           {/* Contact CTA - opens in new tab */}
