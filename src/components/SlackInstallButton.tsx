@@ -18,7 +18,7 @@ export default function SlackInstallButton({ className = "" }: SlackInstallButto
   };
 
   return (
-    
+    <a
       href={slackInstallUrl}
       target="_blank"
       rel="noopener noreferrer"
