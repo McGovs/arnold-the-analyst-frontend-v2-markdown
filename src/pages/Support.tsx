@@ -115,7 +115,7 @@ export default function Support() {
             </h2>
             <div className="space-y-8">
             {[
-              { q: "How do I install Arnold in my Slack workspace?", a: 'Go to the top navigation bar or the homepage and click the 'Try Arnold In Slack' button. You need admin rights for your Slack workspace.' },
+              { q: "How do I install Arnold in my Slack workspace?", a: "Go to the top navigation bar or the homepage and click the 'Try Arnold In Slack' button. You need admin rights for your Slack workspace." },
               { q: "How do I connect my Google Analytics account?", a: "After installing, execute '/arnold-connect' in Slack — you will then be taken to the Google OAuth sign in." },
               { q: "What data does Arnold access?", a: "Read-only access to your GA4 properties. Google Analytics OAuth access tokens expire after 1 hour and no data is stored permanently." },
               { q: "Can I export results?", a: 'Yes! Arnold links to a Google Sheets file with the data along with every answer.' },
