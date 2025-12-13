@@ -107,7 +107,7 @@ export default function Homepage() {
             <SlackInstallButton className="inline-flex items-center gap-2 bg-white text-slate-800 px-5 py-2.5 rounded border-2 border-slate-300 text-base font-bold hover:bg-slate-50 hover:border-slate-400 transition-colors shadow-sm" />
           </div>
 
-      <p className="text-sm text-slate-500 mb-3">
+          <p className="text-sm text-slate-500 mb-3">
             Free to try • Works with any GA4 property • Google OAuth sign in
           </p>
 
