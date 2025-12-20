@@ -73,7 +73,7 @@ export default function Homepage() {
           </div>
 
         {/* Main Headline */}
-          <h1 className="text-2xl md:text-3xl lg:text-4xl tracking-tight leading-normal mb-5">
+          <h1 className="text-[1.35rem] sm:text-2xl md:text-3xl lg:text-4xl tracking-tight leading-normal mb-5">
             <span className="text-slate-900 font-bold">
               Talk to your GA4 data. Insights in{" "}
             </span>
