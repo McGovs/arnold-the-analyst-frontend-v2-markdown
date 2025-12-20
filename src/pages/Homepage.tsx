@@ -77,14 +77,14 @@ export default function Homepage() {
             <span className="text-slate-900 font-bold">
               Ask Google Analytics questions. Get answers in{" "}
             </span>
-            <span className="font-bold text-blue-600">
+            <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">
               30 seconds
             </span>
             <br />
             <span className="text-slate-900 font-bold">
               Get back{" "}
             </span>
-            <span className="font-bold text-blue-600">
+            <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">
               20 hours a month
             </span>
             <span className="text-slate-900 font-bold">
