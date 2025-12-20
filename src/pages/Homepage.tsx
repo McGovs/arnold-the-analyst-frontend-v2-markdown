@@ -75,20 +75,17 @@ export default function Homepage() {
         {/* Main Headline */}
           <h1 className="text-2xl md:text-3xl lg:text-4xl tracking-tight leading-normal mb-5">
             <span className="text-slate-900 font-bold">
-              Ask Google Analytics questions. Get answers in{" "}
+              Ask GA4 questions. Answers in{" "}
             </span>
             <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">
-              30 seconds
+              30s
             </span>
             <br />
             <span className="text-slate-900 font-bold">
-              Get back{" "}
+              Save{" "}
             </span>
             <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">
               20 hours a month
-            </span>
-            <span className="text-slate-900 font-bold">
-              {" "}on ad-hoc client requests.
             </span>
           </h1>
 
