@@ -75,7 +75,7 @@ export default function Homepage() {
         {/* Main Headline */}
           <h1 className="text-2xl md:text-3xl lg:text-4xl tracking-tight leading-normal mb-5">
             <span className="text-slate-900 font-bold">
-              Talk to your GA4 data. Answers in{" "}
+              Talk to your GA4 data. Insights in{" "}
             </span>
             <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">
               30s.
@@ -88,7 +88,7 @@ export default function Homepage() {
               20 hours{" "}
             </span>
             <span className="text-slate-900 font-bold">
-               every month for your team.
+               every month.
             </span>
           </h1>
 
