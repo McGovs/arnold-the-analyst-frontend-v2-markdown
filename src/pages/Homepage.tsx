@@ -85,10 +85,10 @@ export default function Homepage() {
               Save{" "}
             </span>
             <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">
-              20 hours
+              20 hours{" "}
             </span>
             <span className="text-slate-900 font-bold">
-               every month across your team.
+               every month for your team.
             </span>
           </h1>
 
