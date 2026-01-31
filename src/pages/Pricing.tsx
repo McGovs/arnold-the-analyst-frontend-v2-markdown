@@ -97,7 +97,7 @@ export default function Pricing() {
                     <tr className="bg-slate-50 border-b border-slate-200">
                       <th className="px-6 py-4 text-left text-base font-semibold text-slate-900">Tier</th>
                       <th className="px-6 py-4 text-left text-base font-semibold text-slate-900">Queries/Month</th>
-                      <th className="px-6 py-4 text-left text-base font-semibold text-slate-900">Price</th>
+                      <th className="px-6 py-4 text-left text-base font-semibold text-slate-900">Monthly Price</th>
                       <th className="px-6 py-4 text-left text-base font-semibold text-slate-900">Time Saved</th>
                       <th className="px-6 py-4 text-left text-base font-semibold text-slate-900">Value to You</th>
                     </tr>
@@ -110,7 +110,7 @@ export default function Pricing() {
                       >
                         <td className="px-6 py-4 text-base font-medium text-slate-900">{tier.tier}</td>
                         <td className="px-6 py-4 text-base text-slate-600">{tier.queries}</td>
-                        <td className="px-6 py-4 text-base text-slate-900 font-medium">${tier.price}/mo</td>
+                        <td className="px-6 py-4 text-base text-slate-900 font-medium">${tier.price}</td>
                         <td className="px-6 py-4 text-base text-slate-600">{tier.timeSaved}</td>
                         <td className="px-6 py-4 text-base font-semibold text-green-600">${tier.value.toLocaleString()}</td>
                       </tr>
