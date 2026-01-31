@@ -78,7 +78,7 @@ export default function Homepage() {
               Talk to your GA4 data. Insights in{" "}
             </span>
             <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">
-              30s.
+              20s.
             </span>
             <br />
             <span className="text-slate-900 font-bold">
