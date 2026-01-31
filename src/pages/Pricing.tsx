@@ -1,11 +1,18 @@
 // src/pages/Pricing.tsx
-import React from 'react';
+import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { BarChart3 } from 'lucide-react';
+import { BarChart3, ChevronDown } from 'lucide-react';
 import SlackInstallButton from '../components/SlackInstallButton';
 
 export default function Pricing() {
   const navigate = useNavigate();
+  const [isValueCalcOpen, setIsValueCalcOpen] = useState(false);
+
+  const pricingTiers = [
+    { tier: 'Starter', queries: 150, price: 75, timeSaved: '7.5 hours', value: 300 },
+    { tier: 'Pro', queries: 300, price: 150, timeSaved: '15 hours', value: 600 },
+    { tier: 'Elite', queries: 600, price: 300, timeSaved: '30 hours', value: 1200 },
+  ];
 
   return (
     <>
@@ -68,13 +75,100 @@ export default function Pricing() {
 
         {/* MAIN CONTENT */}
         <main className="pt-20 pb-16 px-6 flex-grow">
-          <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-2xl md:text-3xl lg:text-4xl tracking-tight leading-normal font-bold text-slate-900 mb-6">
-              Pricing <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">Coming Soon</span>
-            </h1>
-            <p className="text-xl text-slate-600">
-              Arnold is currently free during beta. Paid plans will be announced in 2026.
-            </p>
+          <div className="max-w-4xl mx-auto">
+            {/* Header */}
+            <div className="text-center mb-12">
+              <h1 className="text-2xl md:text-3xl lg:text-4xl tracking-tight leading-normal font-bold text-slate-900 mb-4">
+                Simple, Transparent{' '}
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">
+                  Pricing
+                </span>
+              </h1>
+              <p className="text-lg text-slate-600">
+                Every plan delivers a 5x return on your investment.
+              </p>
+            </div>
+
+            {/* Pricing Table */}
+            <div className="bg-white rounded-xl border border-slate-200 shadow-sm overflow-hidden mb-8">
+              <div className="overflow-x-auto">
+                <table className="w-full">
+                  <thead>
+                    <tr className="bg-slate-50 border-b border-slate-200">
+                      <th className="px-6 py-4 text-left text-sm font-semibold text-slate-900">Tier</th>
+                      <th className="px-6 py-4 text-left text-sm font-semibold text-slate-900">Queries/Month</th>
+                      <th className="px-6 py-4 text-left text-sm font-semibold text-slate-900">Price</th>
+                      <th className="px-6 py-4 text-left text-sm font-semibold text-slate-900">Time Saved</th>
+                      <th className="px-6 py-4 text-left text-sm font-semibold text-slate-900">Value to You</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {pricingTiers.map((tier, index) => (
+                      <tr
+                        key={tier.tier}
+                        className={`border-b border-slate-100 ${index % 2 === 1 ? 'bg-slate-50/50' : ''}`}
+                      >
+                        <td className="px-6 py-4 text-sm font-medium text-slate-900">{tier.tier}</td>
+                        <td className="px-6 py-4 text-sm text-slate-600">{tier.queries}</td>
+                        <td className="px-6 py-4 text-sm text-slate-900 font-medium">${tier.price}/mo</td>
+                        <td className="px-6 py-4 text-sm text-slate-600">{tier.timeSaved}</td>
+                        <td className="px-6 py-4 text-sm font-semibold text-green-600">${tier.value.toLocaleString()}</td>
+                      </tr>
+                    ))}
+                    <tr className="bg-gradient-to-r from-blue-50 to-indigo-50">
+                      <td className="px-6 py-4 text-sm font-medium text-slate-900">Enterprise</td>
+                      <td className="px-6 py-4 text-sm text-slate-600">Custom</td>
+                      <td colSpan={3} className="px-6 py-4 text-sm text-slate-600 italic">
+                        Chat to Sales for custom pricing
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            {/* How We Calculate Value - Collapsible */}
+            <div className="bg-white rounded-xl border border-slate-200 shadow-sm overflow-hidden">
+              <button
+                onClick={() => setIsValueCalcOpen(!isValueCalcOpen)}
+                className="w-full px-6 py-4 flex items-center justify-between text-left hover:bg-slate-50 transition-colors"
+              >
+                <h2 className="text-lg font-semibold text-slate-900">How We Calculate Value To You</h2>
+                <ChevronDown
+                  className={`w-5 h-5 text-slate-400 transition-transform duration-200 ${
+                    isValueCalcOpen ? 'rotate-180' : ''
+                  }`}
+                />
+              </button>
+
+              <div
+                className={`overflow-hidden transition-all duration-300 ease-in-out ${
+                  isValueCalcOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+                }`}
+              >
+                <div className="px-6 pb-6 border-t border-slate-100 pt-4">
+                  <ul className="space-y-3 text-slate-600">
+                    <li className="flex items-start gap-3">
+                      <span className="text-blue-600 font-bold">→</span>
+                      <span>3 minutes saved per query</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <span className="text-blue-600 font-bold">→</span>
+                      <span>Analyst time valued at $50/hour</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <span className="text-blue-600 font-bold">→</span>
+                      <span>
+                        <strong>You keep 80% of the value</strong> — Arnold pays for itself 4x over
+                      </span>
+                    </li>
+                  </ul>
+                  <p className="mt-4 text-sm text-slate-500">
+                    Starter pays for itself if Arnold saves your team just 1.5 hours/month — you'll actually save 7.5.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </main>
 
