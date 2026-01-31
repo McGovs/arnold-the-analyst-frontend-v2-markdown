@@ -73,12 +73,12 @@ export default function Homepage() {
           <Feature 
             icon={<MessageCircle />} 
             title="Natural Language" 
-            description="Ask questions just like you would to an analyst. No need to touch the Google Analytics UI or BigQuery."
+            description="Ask questions in plain English. No need to touch the Google Analytics UI or BigQuery."
           />
           <Feature 
             icon={<Zap />} 
             title="Rapid Answers" 
-            description="Data in seconds, not hours. Marketers & account managers don't need to bug analysts. Analysts get their time back."
+            description="Data in seconds, not hours. Overworked analysts get their time back."
           />
           <Feature 
             icon={<Users />} 
