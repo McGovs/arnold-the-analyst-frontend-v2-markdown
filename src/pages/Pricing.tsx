@@ -85,7 +85,7 @@ export default function Pricing() {
                 </span>
               </h1>
               <p className="text-xl text-slate-600">
-                Every plan delivers a 5x return on your investment.
+                Every plan delivers a 4X return on your investment.
               </p>
             </div>
 
@@ -154,12 +154,12 @@ export default function Pricing() {
                     </li>
                     <li className="flex items-start gap-3 text-base">
                       <span className="text-blue-600 font-bold">→</span>
-                      <span>Analyst time valued at $50/hour</span>
+                      <span>Arnold user time valued at $50/hour on average</span>
                     </li>
                     <li className="flex items-start gap-3 text-base">
                       <span className="text-blue-600 font-bold">→</span>
                       <span>
-                        <strong>You keep 80% of the value</strong> — Arnold pays for itself 4x over
+                        <strong>You keep 80% of the value.</strong> Arnold pays for itself 4X over.
                       </span>
                     </li>
                   </ul>
