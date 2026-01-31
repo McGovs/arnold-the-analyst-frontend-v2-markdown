@@ -1,9 +1,10 @@
+// src/pages/Homepage.tsx
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import {
   MessageCircle,
-  Clock,
   Zap,
+  Users,
 } from 'lucide-react';
 // Import the shared button component
 import SlackInstallButton from '../components/SlackInstallButton';
@@ -45,7 +46,6 @@ export default function Homepage() {
             </div>
           </div>
 
-          {/* REPLACED TrialCTA with SlackInstallButton */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3 mb-3">
             <SlackInstallButton 
               className="inline-flex items-center gap-2 bg-white text-slate-800 px-5 py-2.5 rounded border-2 border-slate-300 text-base font-bold hover:bg-slate-50 hover:border-slate-400 transition-colors shadow-sm" 
@@ -70,9 +70,21 @@ export default function Homepage() {
       {/* FEATURES */}
       <section className="py-16 px-6 border-t border-slate-100">
         <div className="max-w-5xl mx-auto grid md:grid-cols-3 gap-8">
-          <Feature icon={<MessageCircle />} title="Natural Language" />
-          <Feature icon={<Clock />} title="Instant Answers" />
-          <Feature icon={<Zap />} title="Lives In Slack 24/7" />
+          <Feature 
+            icon={<MessageCircle />} 
+            title="Natural Language" 
+            description="Ask questions just like you would to an analyst. No need to touch the Google Analytics UI or BigQuery."
+          />
+          <Feature 
+            icon={<Zap />} 
+            title="Rapid Answers" 
+            description="Get your data in seconds, not hours. Marketers and account managers don't need to bug analysts. Analysts get their time back."
+          />
+          <Feature 
+            icon={<Users />} 
+            title="Collaborate With Ease" 
+            description="Insights generation shouldn't be siloed. Arnold works where you do."
+          />
         </div>
       </section>
 
@@ -90,13 +102,14 @@ export default function Homepage() {
   );
 }
 
-function Feature({ icon, title }: { icon: React.ReactNode; title: string }) {
+function Feature({ icon, title, description }: { icon: React.ReactNode; title: string; description: string }) {
   return (
     <div className="text-center p-6">
       <div className="w-12 h-12 bg-slate-100 rounded-xl flex items-center justify-center mx-auto mb-4 text-blue-600">
         {icon}
       </div>
       <h3 className="text-lg font-bold text-slate-900 mb-2">{title}</h3>
+      <p className="text-slate-600 text-sm leading-relaxed">{description}</p>
     </div>
   );
 }
