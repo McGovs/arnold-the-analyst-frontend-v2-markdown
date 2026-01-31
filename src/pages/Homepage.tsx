@@ -72,7 +72,7 @@ export default function Homepage() {
             <span className="text-xs text-slate-600">Built for digital agencies</span>
           </div>
 
-        {/* Main Headline */}
+          {/* Main Headline */}
           <h1 className="text-[1.35rem] sm:text-2xl md:text-3xl lg:text-4xl tracking-tight leading-normal mb-5">
             <span className="text-slate-900 font-bold">
               Talk to your GA4 data.{" "}
@@ -85,9 +85,9 @@ export default function Homepage() {
               Insights in{" "}
             </span>
             <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">
-              20s.{" "}
+              20s.
             </span>
-
+          </h1>
 
           {/* Demo Video */}
           <div className="relative max-w-xl mx-auto mb-5">
@@ -119,7 +119,7 @@ export default function Homepage() {
           </p>
 
           {/* Contact CTA - opens in new tab */}
-          <a
+          
             href={contactUrl}
             target="_blank"
             rel="noopener noreferrer"
