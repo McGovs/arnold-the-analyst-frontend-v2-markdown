@@ -9,9 +9,9 @@ export default function Pricing() {
   const [isValueCalcOpen, setIsValueCalcOpen] = useState(false);
 
   const pricingTiers = [
-    { tier: 'Starter', queries: 150, price: 75, timeSaved: '7.5 hours', value: 3,600 },
-    { tier: 'Pro', queries: 300, price: 150, timeSaved: '15 hours', value: 7,200 },
-    { tier: 'Elite', queries: 600, price: 300, timeSaved: '30 hours', value: 14,400 },
+    { tier: 'Starter', queries: 150, price: 75, timeSaved: '7.5 hours', value: 3600 },
+    { tier: 'Pro', queries: 300, price: 150, timeSaved: '15 hours', value: 7200 },
+    { tier: 'Elite', queries: 600, price: 300, timeSaved: '30 hours', value: 14400 },
   ];
 
   return (
