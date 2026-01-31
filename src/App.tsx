@@ -53,11 +53,12 @@ function PageWrapper({ children }: { children: React.ReactNode }) {
               </a>
             </div>
 
-            {/* Mobile Menu Button */}
+            {/* Mobile Menu Button (Burger) */}
             <div className="md:hidden flex items-center">
               <button
                 onClick={toggleMenu}
-                className="text-slate-600 hover:text-slate-900 focus:outline-none"
+                className="text-slate-600 hover:text-slate-900 focus:outline-none p-2"
+                aria-label="Toggle menu"
               >
                 {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
               </button>
@@ -67,7 +68,7 @@ function PageWrapper({ children }: { children: React.ReactNode }) {
 
         {/* Mobile Menu Overlay */}
         {isMenuOpen && (
-          <div className="md:hidden bg-white border-b border-slate-100 px-4 pt-2 pb-6 space-y-4 shadow-lg">
+          <div className="md:hidden bg-white border-b border-slate-100 px-4 pt-2 pb-6 space-y-4 shadow-lg animate-in slide-in-from-top duration-200">
             <Link 
               to="/pricing" 
               className="block px-3 py-2 text-base font-medium text-slate-700 hover:bg-slate-50 rounded-md"
@@ -97,10 +98,20 @@ function PageWrapper({ children }: { children: React.ReactNode }) {
           </div>
         )}
       </nav>
-      <main>
-        {children}
-      </main>
+      {/* Note: If your Homepage.tsx also contains a <nav>, 
+          you should remove it from that file to avoid double-navs.
+      */}
+      {children}
     </div>
+  );
+}
+
+// Helper components to wrap pages in the PageWrapper
+function WrappedHomepage() {
+  return (
+    <PageWrapper>
+      <Homepage />
+    </PageWrapper>
   );
 }
 
@@ -140,7 +151,8 @@ export default function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Homepage />} />
+        {/* ✅ FIXED: Now using WrappedHomepage */}
+        <Route path="/" element={<WrappedHomepage />} />
         <Route path="/demo" element={<DemoPage />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/privacy-terms" element={<Privacy />} />
