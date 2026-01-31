@@ -99,7 +99,7 @@ export default function Pricing() {
                       <th className="px-6 py-4 text-center text-lg font-semibold text-slate-900">Queries Per Month</th>
                       <th className="px-6 py-4 text-center text-lg font-semibold text-slate-900">Price Per Month</th>
                       <th className="px-6 py-4 text-center text-lg font-semibold text-slate-900">Time Saved Per Month</th>
-                      <th className="px-6 py-4 text-center text-lg font-semibold text-slate-900">Annual Value to You</th>
+                      <th className="px-6 py-4 text-center text-lg font-semibold text-slate-900">Annual Value Passed to You</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -159,7 +159,7 @@ export default function Pricing() {
                     <li className="flex items-start gap-3 text-base">
                       <span className="text-blue-600 font-bold">→</span>
                       <span>
-                        <strong>You keep 80% of the value.</strong> Arnold pays for itself 4X over.
+                        <strong>You keep 80% of the value generated with a 4X ROI.</strong>
                       </span>
                     </li>
                   </ul>
