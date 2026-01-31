@@ -78,7 +78,7 @@ export default function Homepage() {
           <Feature 
             icon={<Zap />} 
             title="Rapid Answers" 
-            description="Get your data in seconds, not hours. Marketers and account managers don't need to bug analysts. Analysts get their time back."
+            description="Data in seconds, not hours. Marketers & account managers don't need to bug analysts. Analysts get their time back."
           />
           <Feature 
             icon={<Users />} 
