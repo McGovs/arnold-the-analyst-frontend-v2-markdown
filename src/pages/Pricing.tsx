@@ -119,7 +119,7 @@ export default function Pricing() {
                       <td className="px-6 py-4 text-base font-medium text-slate-900">Enterprise</td>
                       <td className="px-6 py-4 text-base text-slate-600">Custom</td>
                       <td colSpan={3} className="px-6 py-4 text-base text-slate-600 italic">
-                        Chat to Sales for custom pricing
+                        Speak To Sales For Custom Pricing
                       </td>
                     </tr>
                   </tbody>
@@ -150,7 +150,7 @@ export default function Pricing() {
                   <ul className="space-y-3 text-slate-600">
                     <li className="flex items-start gap-3 text-base">
                       <span className="text-blue-600 font-bold">→</span>
-                      <span>3 minutes saved per query</span>
+                      <span>Conservative estimate of 3 minutes saved per query</span>
                     </li>
                     <li className="flex items-start gap-3 text-base">
                       <span className="text-blue-600 font-bold">→</span>
