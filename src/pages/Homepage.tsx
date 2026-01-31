@@ -116,7 +116,7 @@ export default function Homepage() {
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center bg-white text-slate-700 px-4 py-2 rounded-full text-sm font-bold border-2 border-slate-300 hover:border-slate-400 hover:bg-slate-50 transition-all"
           >
-            Questions? Let's chat
+            {"Questions? Let's chat"}
           </a>
         </div>
       </main>
@@ -131,7 +131,7 @@ export default function Homepage() {
               </div>
               <h3 className="text-lg font-semibold text-slate-900 mb-2">Natural Language</h3>
               <p className="text-slate-600">
-                Ask questions the way you'd ask a colleague. No SQL or technical GA4 knowledge needed.
+                {"Ask questions the way you'd ask a colleague. No SQL or technical GA4 knowledge needed."}
               </p>
             </div>
             
@@ -151,7 +151,7 @@ export default function Homepage() {
               </div>
               <h3 className="text-lg font-semibold text-slate-900 mb-2">Lives In Slack 24/7</h3>
               <p className="text-slate-600">
-                Managers and marketers don't have to wait on analysts. Analysts claim back their time.
+                {"Managers and marketers don't have to wait on analysts. Analysts claim back their time."}
               </p>
             </div>
           </div>
