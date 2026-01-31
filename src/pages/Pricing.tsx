@@ -9,9 +9,9 @@ export default function Pricing() {
   const [isValueCalcOpen, setIsValueCalcOpen] = useState(false);
 
   const pricingTiers = [
-    { tier: 'Starter', queries: 150, price: 75, timeSaved: '7.5 hours', value: 300 },
-    { tier: 'Pro', queries: 300, price: 150, timeSaved: '15 hours', value: 600 },
-    { tier: 'Elite', queries: 600, price: 300, timeSaved: '30 hours', value: 1200 },
+    { tier: 'Starter', queries: 150, price: 75, timeSaved: '7.5 hours', value: 3,600 },
+    { tier: 'Pro', queries: 300, price: 150, timeSaved: '15 hours', value: 7,200 },
+    { tier: 'Elite', queries: 600, price: 300, timeSaved: '30 hours', value: 14,400 },
   ];
 
   return (
@@ -97,9 +97,9 @@ export default function Pricing() {
                     <tr className="bg-slate-50 border-b border-slate-200">
                       <th className="px-6 py-4 text-center text-base font-semibold text-slate-900">Tier</th>
                       <th className="px-6 py-4 text-center text-base font-semibold text-slate-900">Queries/Month</th>
-                      <th className="px-6 py-4 text-center text-base font-semibold text-slate-900">Monthly Price</th>
-                      <th className="px-6 py-4 text-center text-base font-semibold text-slate-900">Time Saved</th>
-                      <th className="px-6 py-4 text-center text-base font-semibold text-slate-900">Value to You</th>
+                      <th className="px-6 py-4 text-center text-base font-semibold text-slate-900">Price Per Month</th>
+                      <th className="px-6 py-4 text-center text-base font-semibold text-slate-900">Time Saved Per Month</th>
+                      <th className="px-6 py-4 text-center text-base font-semibold text-slate-900">Annual Value to You</th>
                     </tr>
                   </thead>
                   <tbody>
