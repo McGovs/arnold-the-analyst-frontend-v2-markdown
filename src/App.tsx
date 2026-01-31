@@ -102,12 +102,21 @@ function PageWrapper({ children }: { children: React.ReactNode }) {
 
           {/* Mobile Menu Overlay */}
           {isMenuOpen && (
-            <div className="md:hidden bg-white border-b border-slate-100 px-6 py-4 space-y-4 shadow-lg">
-              <Link to="/" className="block text-base text-slate-700 font-medium" onClick={() => setIsMenuOpen(false)}>Home</Link>
-              <Link to="/pricing" className="block text-base text-slate-700 font-medium" onClick={() => setIsMenuOpen(false)}>Pricing</Link>
-              <Link to="/support" className="block text-base text-slate-700 font-medium" onClick={() => setIsMenuOpen(false)}>Support & FAQ</Link>
-              <div className="pt-2">
-                <SlackInstallButton className="w-full justify-center bg-slate-900 text-white px-4 py-3 rounded-lg text-sm font-bold" />
+            <div className="md:hidden bg-white border-b border-slate-100 px-6 py-4 space-y-4 shadow-lg animate-in slide-in-from-top duration-200">
+              <Link to="/" className="block text-base text-slate-700 font-medium" onClick={() => setIsMenuOpen(false)}>
+                Home
+              </Link>
+              <Link to="/pricing" className="block text-base text-slate-700 font-medium" onClick={() => setIsMenuOpen(false)}>
+                Pricing
+              </Link>
+              <Link to="/support" className="block text-base text-slate-700 font-medium" onClick={() => setIsMenuOpen(false)}>
+                Support & FAQ
+              </Link>
+              <Link to="/privacy-terms" className="block text-base text-slate-700 font-medium" onClick={() => setIsMenuOpen(false)}>
+                Privacy & Terms
+              </Link>
+              <div className="pt-2 border-t border-slate-50">
+                <SlackInstallButton className="w-full flex items-center justify-center gap-2 bg-slate-900 text-white px-4 py-3 rounded-lg text-sm font-bold hover:bg-slate-800 transition-colors" />
               </div>
             </div>
           )}
