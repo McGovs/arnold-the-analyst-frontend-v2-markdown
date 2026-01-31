@@ -31,7 +31,7 @@ export default function ThankYou() {
           </h1>
           
           <p className="text-lg text-slate-600 mb-8">
-            Thank you for your interest in the 14 day free trial. Cian will be in touch to confirm.
+            Thank you for your interest in the 14 day free trial. Cian will be in touch within 12 hours to confirm.
           </p>
           
           <button
