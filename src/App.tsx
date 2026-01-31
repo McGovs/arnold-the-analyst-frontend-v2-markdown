@@ -30,6 +30,8 @@ function PageWrapper({ children }: { children: React.ReactNode }) {
               <span className="font-semibold text-slate-900">Arnold</span>
             </button>
             
+            {/* ✅ Fixed: Added the opening "a" tag below */}
+            <a 
               href={TRIAL_URL}
               target="_blank"
               rel="noopener noreferrer"
