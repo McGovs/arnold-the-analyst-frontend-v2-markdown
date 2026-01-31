@@ -6,7 +6,7 @@ interface SlackInstallButtonProps {
 
 export default function SlackInstallButton({ className = "" }: SlackInstallButtonProps) {
   const slackInstallUrl =
-    "https://slack.com/oauth/v2/authorize?client_id=134528973318.9712045945332&scope=app_mentions:read,channels:history,channels:join,channels:manage,channels:read,chat:write,chat:write.public,commands,groups:history,groups:read,im:history,im:write,mpim:history,users:read&user_scope=";
+    "https://tally.so/r/eqRRVO";
 
   const handleClick = () => {
     window.dataLayer = window.dataLayer || [];
