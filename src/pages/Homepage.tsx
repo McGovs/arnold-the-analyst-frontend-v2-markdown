@@ -64,7 +64,7 @@ export default function Homepage() {
               </button>
             </div>
 
-            <SlackInstallButton className="hidden sm:inline-flex items-center gap-2 bg-white text-slate-800 px-3 py-1.5 rounded border border-slate-300 text-sm font-bold hover:bg-slate-50 transition-colors shadow-sm" />
+            <InstallButton className="hidden sm:inline-flex items-center gap-2 bg-white text-slate-800 px-3 py-1.5 rounded border border-slate-300 text-sm font-bold hover:bg-slate-50 transition-colors shadow-sm" />
           </div>
         </div>
       </nav>
@@ -83,7 +83,7 @@ export default function Homepage() {
               Talk To Your GA4 Data{' '}
             </span>
             <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">
-              Without Leaving Slack.
+              In Slack.
             </span>
             <br />
             <span className="text-slate-900 font-bold">Insights In </span>
