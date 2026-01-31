@@ -4,31 +4,18 @@ import {
   MessageCircle,
   Clock,
   Zap,
-  Slack,
 } from 'lucide-react';
-
-const TRIAL_URL = 'https://tally.so/r/eqRRVO';
+// Import the shared button component
+import SlackInstallButton from '../components/SlackInstallButton';
 
 export default function Homepage() {
   const navigate = useNavigate();
   const contactUrl = 'https://calendly.com/cian-arnoldtheanalyst/30min';
 
-  const TrialCTA = ({ className = '' }: { className?: string }) => (
-    <a
-      href={TRIAL_URL}
-      target="_blank"
-      rel="noopener noreferrer"
-      className={className}
-    >
-      <Slack className="w-4 h-4" />
-      <span>14 Day Free Trial</span>
-    </a>
-  );
-
   return (
     <div 
       className="bg-gradient-to-b from-slate-50 via-white to-blue-50/30 min-h-screen"
-      style={{ fontFamily: "'Playfair Display', serif" }} // Applied to match Pricing.tsx
+      style={{ fontFamily: "'Playfair Display', serif" }}
     >
       {/* HERO */}
       <main className="pt-24 pb-4 px-6">
@@ -38,7 +25,6 @@ export default function Homepage() {
             <span className="text-xs text-slate-600">Built for digital agencies</span>
           </div>
 
-          {/* Header styled to match Pricing page weight and scale */}
           <h1 className="text-[1.35rem] sm:text-2xl md:text-3xl lg:text-4xl tracking-tight leading-normal mb-5 font-bold text-slate-900">
             <span>Talk To Your GA4 Data </span>
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">
@@ -59,8 +45,11 @@ export default function Homepage() {
             </div>
           </div>
 
+          {/* REPLACED TrialCTA with SlackInstallButton */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3 mb-3">
-            <TrialCTA className="inline-flex items-center gap-2 bg-white text-slate-800 px-5 py-2.5 rounded border-2 border-slate-300 text-base font-bold hover:bg-slate-50 hover:border-slate-400 transition-colors shadow-sm" />
+            <SlackInstallButton 
+              className="inline-flex items-center gap-2 bg-white text-slate-800 px-5 py-2.5 rounded border-2 border-slate-300 text-base font-bold hover:bg-slate-50 hover:border-slate-400 transition-colors shadow-sm" 
+            />
           </div>
 
           <p className="text-sm text-slate-500 mb-3">
