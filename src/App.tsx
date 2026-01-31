@@ -1,5 +1,5 @@
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route, useNavigate } from 'react-router-dom';
+import React, { useState } from 'react';
+import { BrowserRouter as Router, Routes, Route, useNavigate, Link } from 'react-router-dom';
 import Homepage from './pages/Homepage';
 import Description from './pages/Description';
 import Privacy from './pages/Privacy';
@@ -9,19 +9,27 @@ import Support from './pages/Support';
 import Video from './pages/Video';
 import ThankYou from './pages/ThankYou';
 import ChatInterface from './components/ChatInterface';
-import { BarChart3, Slack } from 'lucide-react';
+import { BarChart3, Slack, Menu, X } from 'lucide-react';
 
 const TRIAL_URL = 'https://tally.so/r/eqRRVO';
 
 function PageWrapper({ children }: { children: React.ReactNode }) {
   const navigate = useNavigate();
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
+
   return (
     <div className="min-h-screen bg-slate-50">
-      <nav className="bg-white shadow-sm border-b border-slate-100">
+      <nav className="bg-white shadow-sm border-b border-slate-100 sticky top-0 z-50">
         <div className="max-w-4xl mx-auto px-4">
           <div className="flex items-center justify-between h-16">
+            {/* Logo */}
             <button
-              onClick={() => navigate('/')}
+              onClick={() => {
+                navigate('/');
+                setIsMenuOpen(false);
+              }}
               className="flex items-center gap-2.5 hover:opacity-80"
             >
               <div className="w-8 h-8 bg-gradient-to-br from-blue-600 to-indigo-600 rounded-lg flex items-center justify-center">
@@ -29,21 +37,69 @@ function PageWrapper({ children }: { children: React.ReactNode }) {
               </div>
               <span className="font-semibold text-slate-900">Arnold</span>
             </button>
-            
-            {/* ✅ Fixed: Added the opening "a" tag below */}
-            <a 
-              href={TRIAL_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-white text-slate-800 px-3 py-1.5 rounded border border-slate-300 text-sm font-bold hover:bg-slate-50 shadow-sm"
-            >
-              <Slack className="w-4 h-4" />
-              <span>14 Day Free Trial</span>
-            </a>
+
+            {/* Desktop Navigation */}
+            <div className="hidden md:flex items-center gap-6">
+              <Link to="/pricing" className="text-sm font-medium text-slate-600 hover:text-slate-900">Pricing</Link>
+              <Link to="/support" className="text-sm font-medium text-slate-600 hover:text-slate-900">Support</Link>
+              <a
+                href={TRIAL_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 bg-white text-slate-800 px-3 py-1.5 rounded border border-slate-300 text-sm font-bold hover:bg-slate-50 shadow-sm"
+              >
+                <Slack className="w-4 h-4" />
+                <span>14 Day Free Trial</span>
+              </a>
+            </div>
+
+            {/* Mobile Menu Button */}
+            <div className="md:hidden flex items-center">
+              <button
+                onClick={toggleMenu}
+                className="text-slate-600 hover:text-slate-900 focus:outline-none"
+              >
+                {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+              </button>
+            </div>
           </div>
         </div>
+
+        {/* Mobile Menu Overlay */}
+        {isMenuOpen && (
+          <div className="md:hidden bg-white border-b border-slate-100 px-4 pt-2 pb-6 space-y-4 shadow-lg">
+            <Link 
+              to="/pricing" 
+              className="block px-3 py-2 text-base font-medium text-slate-700 hover:bg-slate-50 rounded-md"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Pricing
+            </Link>
+            <Link 
+              to="/support" 
+              className="block px-3 py-2 text-base font-medium text-slate-700 hover:bg-slate-50 rounded-md"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Support
+            </Link>
+            <div className="pt-2">
+              <a
+                href={TRIAL_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-center gap-2 bg-slate-900 text-white px-4 py-3 rounded-lg text-sm font-bold hover:bg-slate-800 transition-colors"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                <Slack className="w-5 h-5" />
+                <span>Start 14 Day Free Trial</span>
+              </a>
+            </div>
+          </div>
+        )}
       </nav>
-      {children}
+      <main>
+        {children}
+      </main>
     </div>
   );
 }
