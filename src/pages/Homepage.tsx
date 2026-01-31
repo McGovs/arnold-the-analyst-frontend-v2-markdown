@@ -26,11 +26,10 @@ export default function Homepage() {
   );
 
   return (
-    <div className="bg-gradient-to-b from-slate-50 via-white to-blue-50/30">
-      {/* NAV REMOVED FROM HERE 
-          It is now provided by PageWrapper in App.tsx 
-      */}
-
+    <div 
+      className="bg-gradient-to-b from-slate-50 via-white to-blue-50/30 min-h-screen"
+      style={{ fontFamily: "'Playfair Display', serif" }} // Applied to match Pricing.tsx
+    >
       {/* HERO */}
       <main className="pt-24 pb-4 px-6">
         <div className="max-w-4xl mx-auto text-center">
@@ -39,14 +38,15 @@ export default function Homepage() {
             <span className="text-xs text-slate-600">Built for digital agencies</span>
           </div>
 
-          <h1 className="text-[1.35rem] sm:text-2xl md:text-3xl lg:text-4xl tracking-tight leading-normal mb-5 font-serif">
-            <span className="text-slate-900 font-bold">Talk To Your GA4 Data </span>
-            <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">
+          {/* Header styled to match Pricing page weight and scale */}
+          <h1 className="text-[1.35rem] sm:text-2xl md:text-3xl lg:text-4xl tracking-tight leading-normal mb-5 font-bold text-slate-900">
+            <span>Talk To Your GA4 Data </span>
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">
               In Slack.
             </span>
             <br />
-            <span className="text-slate-900 font-bold">Insights In </span>
-            <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">
+            <span>Insights In </span>
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">
               20s.
             </span>
           </h1>
@@ -90,10 +90,10 @@ export default function Homepage() {
       {/* FOOTER */}
       <footer className="py-8 px-6 border-t border-slate-100">
         <div className="max-w-5xl mx-auto flex items-center justify-between">
-          <span className="text-sm text-slate-600">Arnold The Analyst</span>
+          <span className="text-sm text-slate-600 font-semibold">Arnold The Analyst</span>
           <div className="flex gap-6 text-sm text-slate-500">
-            <button onClick={() => navigate('/support')}>Support & FAQ</button>
-            <button onClick={() => navigate('/privacy-terms')}>Privacy & Terms</button>
+            <button onClick={() => navigate('/support')} className="hover:text-slate-900 transition-colors">Support & FAQ</button>
+            <button onClick={() => navigate('/privacy-terms')} className="hover:text-slate-900 transition-colors">Privacy & Terms</button>
           </div>
         </div>
       </footer>
@@ -104,10 +104,10 @@ export default function Homepage() {
 function Feature({ icon, title }: { icon: React.ReactNode; title: string }) {
   return (
     <div className="text-center p-6">
-      <div className="w-12 h-12 bg-slate-100 rounded-xl flex items-center justify-center mx-auto mb-4">
+      <div className="w-12 h-12 bg-slate-100 rounded-xl flex items-center justify-center mx-auto mb-4 text-blue-600">
         {icon}
       </div>
-      <h3 className="text-lg font-semibold text-slate-900 mb-2">{title}</h3>
+      <h3 className="text-lg font-bold text-slate-900 mb-2">{title}</h3>
     </div>
   );
 }
