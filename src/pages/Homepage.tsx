@@ -14,12 +14,10 @@ export default function Homepage() {
       className="min-h-screen bg-gradient-to-b from-slate-50 via-white to-blue-50/30"
       style={{ fontFamily: "'Playfair Display', serif" }}
     >
-      {/* Google Fonts - Playfair Display with all variants */}
       <link rel="preconnect" href="https://fonts.googleapis.com" />
       <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
       <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,700&display=swap" rel="stylesheet" />
 
-      {/* Navigation */}
       <nav className="fixed top-0 left-0 right-0 bg-white/80 backdrop-blur-md border-b border-slate-100 z-50">
         <div className="max-w-6xl mx-auto px-6">
           <div className="flex items-center justify-between h-14">
@@ -47,13 +45,13 @@ export default function Homepage() {
                 onClick={() => navigate('/support')}
                 className="text-sm text-slate-600 hover:text-slate-900 transition-colors"
               >
-                Support & FAQ
+                Support &amp; FAQ
               </button>
               <button 
                 onClick={() => navigate('/privacy-terms')}
                 className="text-sm text-slate-600 hover:text-slate-900 transition-colors"
               >
-                Privacy & Terms
+                Privacy &amp; Terms
               </button>
             </div>
 
@@ -62,16 +60,13 @@ export default function Homepage() {
         </div>
       </nav>
 
-      {/* Hero Section */}
       <main className="pt-24 pb-4 px-6">
         <div className="max-w-4xl mx-auto text-center">
-          {/* Social Proof Badge */}
           <div className="inline-flex items-center gap-2 bg-white border border-slate-200 rounded-full px-3 py-1 mb-4 shadow-sm">
             <span className="w-2 h-2 bg-emerald-500 rounded-full animate-pulse"></span>
             <span className="text-xs text-slate-600">Built for digital agencies</span>
           </div>
 
-          {/* Main Headline */}
           <h1 className="text-[1.35rem] sm:text-2xl md:text-3xl lg:text-4xl tracking-tight leading-normal mb-5">
             <span className="text-slate-900 font-bold">Talk To Your GA4 Data </span>
             <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">Without Leaving Slack.</span>
@@ -80,7 +75,6 @@ export default function Homepage() {
             <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">20s.</span>
           </h1>
 
-          {/* Demo Video */}
           <div className="relative max-w-xl mx-auto mb-5">
             <div className="aspect-video bg-gradient-to-br from-slate-100 to-slate-200 rounded-xl border border-slate-200 shadow-xl shadow-slate-200/50 overflow-hidden">
               <video 
@@ -94,13 +88,10 @@ export default function Homepage() {
                 Your browser does not support the video tag.
               </video>
             </div>
-            
-            {/* Decorative elements */}
             <div className="absolute -top-3 -right-3 w-16 h-16 bg-blue-500/10 rounded-full blur-2xl"></div>
             <div className="absolute -bottom-3 -left-3 w-20 h-20 bg-indigo-500/10 rounded-full blur-2xl"></div>
           </div>
 
-          {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3 mb-3">
             <SlackInstallButton className="inline-flex items-center gap-2 bg-white text-slate-800 px-5 py-2.5 rounded border-2 border-slate-300 text-base font-bold hover:bg-slate-50 hover:border-slate-400 transition-colors shadow-sm" />
           </div>
@@ -109,7 +100,6 @@ export default function Homepage() {
             Switch clients in one click • Delivered in Slack • Exported to Sheets
           </p>
 
-          {/* Contact CTA */}
           
             href={contactUrl}
             target="_blank"
@@ -121,7 +111,6 @@ export default function Homepage() {
         </div>
       </main>
 
-      {/* Features Section */}
       <section className="py-16 px-6 border-t border-slate-100">
         <div className="max-w-5xl mx-auto">
           <div className="grid md:grid-cols-3 gap-8">
@@ -131,7 +120,7 @@ export default function Homepage() {
               </div>
               <h3 className="text-lg font-semibold text-slate-900 mb-2">Natural Language</h3>
               <p className="text-slate-600">
-                Ask questions the way you&apos;d ask a colleague. No SQL or technical GA4 knowledge needed.
+                Ask questions the way you would ask a colleague. No SQL or technical GA4 knowledge needed.
               </p>
             </div>
             
@@ -151,14 +140,13 @@ export default function Homepage() {
               </div>
               <h3 className="text-lg font-semibold text-slate-900 mb-2">Lives In Slack 24/7</h3>
               <p className="text-slate-600">
-                Managers and marketers don&apos;t have to wait on analysts. Analysts claim back their time.
+                Managers and marketers do not have to wait on analysts. Analysts claim back their time.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Footer */}
       <footer className="py-8 px-6 border-t border-slate-100">
         <div className="max-w-5xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
           <div className="flex items-center gap-2">
@@ -170,10 +158,10 @@ export default function Homepage() {
           
           <div className="flex items-center gap-6 text-sm text-slate-500">
             <button onClick={() => navigate('/support')} className="hover:text-slate-700 transition-colors">
-              Support & FAQ
+              Support &amp; FAQ
             </button>
             <button onClick={() => navigate('/privacy-terms')} className="hover:text-slate-700 transition-colors">
-              Privacy & Terms
+              Privacy &amp; Terms
             </button>
           </div>
         </div>
