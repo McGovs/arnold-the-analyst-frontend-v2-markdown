@@ -73,10 +73,10 @@ export default function Homepage() {
 
           {/* Main Headline */}
           <h1 className="text-[1.35rem] sm:text-2xl md:text-3xl lg:text-4xl tracking-tight leading-normal mb-5">
-            <span className="text-slate-900 font-bold">Talk to your GA4 data. </span>
-            <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">without leaving Slack.</span>
+            <span className="text-slate-900 font-bold">Talk To Your GA4 Data </span>
+            <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">Without Leaving Slack.</span>
             <br />
-            <span className="text-slate-900 font-bold">Insights in </span>
+            <span className="text-slate-900 font-bold">Insights In </span>
             <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">20s.</span>
           </h1>
 
