@@ -73,7 +73,7 @@ export default function Homepage() {
           <Feature 
             icon={<MessageCircle />} 
             title="Natural Language" 
-            description="Ask questions in plain English. No need to touch the Google Analytics UI or BigQuery."
+            description="Ask qns in plain English. No need to touch the Google Analytics UI or BigQuery."
           />
           <Feature 
             icon={<Zap />} 
