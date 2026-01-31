@@ -28,12 +28,12 @@ export default function Homepage() {
           <h1 className="text-[1.35rem] sm:text-2xl md:text-3xl lg:text-4xl tracking-tight leading-normal mb-5 font-bold text-slate-900">
             <span>Talk To Your GA4 Data </span>
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">
-              In Slack.
+              In Slack
             </span>
             <br />
             <span>Insights In </span>
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">
-              20s.
+              20s
             </span>
           </h1>
 
