@@ -95,11 +95,11 @@ export default function Pricing() {
                 <table className="w-full">
                   <thead>
                     <tr className="bg-slate-50 border-b border-slate-200">
-                      <th className="px-6 py-4 text-left text-base font-semibold text-slate-900">Tier</th>
-                      <th className="px-6 py-4 text-left text-base font-semibold text-slate-900">Queries/Month</th>
-                      <th className="px-6 py-4 text-left text-base font-semibold text-slate-900">Monthly Price</th>
-                      <th className="px-6 py-4 text-left text-base font-semibold text-slate-900">Time Saved</th>
-                      <th className="px-6 py-4 text-left text-base font-semibold text-slate-900">Value to You</th>
+                      <th className="px-6 py-4 text-center text-base font-semibold text-slate-900">Tier</th>
+                      <th className="px-6 py-4 text-center text-base font-semibold text-slate-900">Queries/Month</th>
+                      <th className="px-6 py-4 text-center text-base font-semibold text-slate-900">Monthly Price</th>
+                      <th className="px-6 py-4 text-center text-base font-semibold text-slate-900">Time Saved</th>
+                      <th className="px-6 py-4 text-center text-base font-semibold text-slate-900">Value to You</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -108,17 +108,17 @@ export default function Pricing() {
                         key={tier.tier}
                         className={`border-b border-slate-100 ${index % 2 === 1 ? 'bg-slate-50/50' : ''}`}
                       >
-                        <td className="px-6 py-4 text-base font-medium text-slate-900">{tier.tier}</td>
-                        <td className="px-6 py-4 text-base text-slate-600">{tier.queries}</td>
-                        <td className="px-6 py-4 text-base text-slate-900 font-medium">${tier.price}</td>
-                        <td className="px-6 py-4 text-base text-slate-600">{tier.timeSaved}</td>
-                        <td className="px-6 py-4 text-base font-semibold text-green-600">${tier.value.toLocaleString()}</td>
+                        <td className="px-6 py-4 text-center text-base font-medium text-slate-900">{tier.tier}</td>
+                        <td className="px-6 py-4 text-center text-base text-slate-600">{tier.queries}</td>
+                        <td className="px-6 py-4 text-center text-base text-slate-900 font-medium">${tier.price}</td>
+                        <td className="px-6 py-4 text-center text-base text-slate-600">{tier.timeSaved}</td>
+                        <td className="px-6 py-4 text-center text-base font-semibold text-green-600">${tier.value.toLocaleString()}</td>
                       </tr>
                     ))}
                     <tr className="bg-gradient-to-r from-blue-50 to-indigo-50">
-                      <td className="px-6 py-4 text-base font-medium text-slate-900">Enterprise</td>
-                      <td className="px-6 py-4 text-base text-slate-600">Custom</td>
-                      <td colSpan={3} className="px-6 py-4 text-base text-slate-600 italic">
+                      <td className="px-6 py-4 text-center text-base font-medium text-slate-900">Enterprise</td>
+                      <td className="px-6 py-4 text-center text-base text-slate-600">Custom</td>
+                      <td colSpan={3} className="px-6 py-4 text-center text-base text-slate-600 italic">
                         Speak To Sales For Custom Pricing
                       </td>
                     </tr>
