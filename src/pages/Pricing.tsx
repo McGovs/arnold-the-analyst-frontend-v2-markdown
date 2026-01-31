@@ -84,7 +84,7 @@ export default function Pricing() {
                   Pricing
                 </span>
               </h1>
-              <p className="text-lg text-slate-600">
+              <p className="text-xl text-slate-600">
                 Every plan delivers a 5x return on your investment.
               </p>
             </div>
@@ -95,11 +95,11 @@ export default function Pricing() {
                 <table className="w-full">
                   <thead>
                     <tr className="bg-slate-50 border-b border-slate-200">
-                      <th className="px-6 py-4 text-left text-sm font-semibold text-slate-900">Tier</th>
-                      <th className="px-6 py-4 text-left text-sm font-semibold text-slate-900">Queries/Month</th>
-                      <th className="px-6 py-4 text-left text-sm font-semibold text-slate-900">Price</th>
-                      <th className="px-6 py-4 text-left text-sm font-semibold text-slate-900">Time Saved</th>
-                      <th className="px-6 py-4 text-left text-sm font-semibold text-slate-900">Value to You</th>
+                      <th className="px-6 py-4 text-left text-base font-semibold text-slate-900">Tier</th>
+                      <th className="px-6 py-4 text-left text-base font-semibold text-slate-900">Queries/Month</th>
+                      <th className="px-6 py-4 text-left text-base font-semibold text-slate-900">Price</th>
+                      <th className="px-6 py-4 text-left text-base font-semibold text-slate-900">Time Saved</th>
+                      <th className="px-6 py-4 text-left text-base font-semibold text-slate-900">Value to You</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -108,17 +108,17 @@ export default function Pricing() {
                         key={tier.tier}
                         className={`border-b border-slate-100 ${index % 2 === 1 ? 'bg-slate-50/50' : ''}`}
                       >
-                        <td className="px-6 py-4 text-sm font-medium text-slate-900">{tier.tier}</td>
-                        <td className="px-6 py-4 text-sm text-slate-600">{tier.queries}</td>
-                        <td className="px-6 py-4 text-sm text-slate-900 font-medium">${tier.price}/mo</td>
-                        <td className="px-6 py-4 text-sm text-slate-600">{tier.timeSaved}</td>
-                        <td className="px-6 py-4 text-sm font-semibold text-green-600">${tier.value.toLocaleString()}</td>
+                        <td className="px-6 py-4 text-base font-medium text-slate-900">{tier.tier}</td>
+                        <td className="px-6 py-4 text-base text-slate-600">{tier.queries}</td>
+                        <td className="px-6 py-4 text-base text-slate-900 font-medium">${tier.price}/mo</td>
+                        <td className="px-6 py-4 text-base text-slate-600">{tier.timeSaved}</td>
+                        <td className="px-6 py-4 text-base font-semibold text-green-600">${tier.value.toLocaleString()}</td>
                       </tr>
                     ))}
                     <tr className="bg-gradient-to-r from-blue-50 to-indigo-50">
-                      <td className="px-6 py-4 text-sm font-medium text-slate-900">Enterprise</td>
-                      <td className="px-6 py-4 text-sm text-slate-600">Custom</td>
-                      <td colSpan={3} className="px-6 py-4 text-sm text-slate-600 italic">
+                      <td className="px-6 py-4 text-base font-medium text-slate-900">Enterprise</td>
+                      <td className="px-6 py-4 text-base text-slate-600">Custom</td>
+                      <td colSpan={3} className="px-6 py-4 text-base text-slate-600 italic">
                         Chat to Sales for custom pricing
                       </td>
                     </tr>
@@ -148,24 +148,21 @@ export default function Pricing() {
               >
                 <div className="px-6 pb-6 border-t border-slate-100 pt-4">
                   <ul className="space-y-3 text-slate-600">
-                    <li className="flex items-start gap-3">
+                    <li className="flex items-start gap-3 text-base">
                       <span className="text-blue-600 font-bold">→</span>
                       <span>3 minutes saved per query</span>
                     </li>
-                    <li className="flex items-start gap-3">
+                    <li className="flex items-start gap-3 text-base">
                       <span className="text-blue-600 font-bold">→</span>
                       <span>Analyst time valued at $50/hour</span>
                     </li>
-                    <li className="flex items-start gap-3">
+                    <li className="flex items-start gap-3 text-base">
                       <span className="text-blue-600 font-bold">→</span>
                       <span>
                         <strong>You keep 80% of the value</strong> — Arnold pays for itself 4x over
                       </span>
                     </li>
                   </ul>
-                  <p className="mt-4 text-sm text-slate-500">
-                    Starter pays for itself if Arnold saves your team just 1.5 hours/month — you'll actually save 7.5.
-                  </p>
                 </div>
               </div>
             </div>
