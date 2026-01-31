@@ -7,6 +7,7 @@ import Pricing from './pages/Pricing';
 import SlackInstall from './pages/SlackInstall';
 import Support from './pages/Support';
 import Video from './pages/Video';
+import ThankYou from './pages/ThankYou';
 import ChatInterface from './components/ChatInterface';
 import { BarChart3, Slack } from 'lucide-react';
 
@@ -14,7 +15,6 @@ const TRIAL_URL = 'https://tally.so/r/eqRRVO';
 
 function PageWrapper({ children }: { children: React.ReactNode }) {
   const navigate = useNavigate();
-
   return (
     <div className="min-h-screen bg-slate-50">
       <nav className="bg-white shadow-sm border-b border-slate-100">
@@ -29,8 +29,7 @@ function PageWrapper({ children }: { children: React.ReactNode }) {
               </div>
               <span className="font-semibold text-slate-900">Arnold</span>
             </button>
-
-            <a
+            
               href={TRIAL_URL}
               target="_blank"
               rel="noopener noreferrer"
@@ -42,7 +41,6 @@ function PageWrapper({ children }: { children: React.ReactNode }) {
           </div>
         </div>
       </nav>
-
       {children}
     </div>
   );
@@ -92,6 +90,7 @@ export default function App() {
         <Route path="/slack-install" element={<SlackInstallPage />} />
         <Route path="/support" element={<Support />} />
         <Route path="/video-tour" element={<VideoPage />} />
+        <Route path="/thank-you" element={<ThankYou />} />
       </Routes>
     </Router>
   );
