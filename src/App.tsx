@@ -1,4 +1,3 @@
-// src/App.tsx
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, useNavigate } from 'react-router-dom';
 import Homepage from './pages/Homepage';
@@ -9,41 +8,46 @@ import SlackInstall from './pages/SlackInstall';
 import Support from './pages/Support';
 import Video from './pages/Video';
 import ChatInterface from './components/ChatInterface';
-import { BarChart3 } from 'lucide-react';
+import { BarChart3, Slack } from 'lucide-react';
 
-// Wrapper for pages that need the simple nav with back button
+const TRIAL_URL = 'https://tally.so/r/eqRRVO';
+
 function PageWrapper({ children }: { children: React.ReactNode }) {
   const navigate = useNavigate();
-  
+
   return (
     <div className="min-h-screen bg-slate-50">
       <nav className="bg-white shadow-sm border-b border-slate-100">
         <div className="max-w-4xl mx-auto px-4">
           <div className="flex items-center justify-between h-16">
-            <button 
+            <button
               onClick={() => navigate('/')}
-              className="flex items-center gap-2.5 hover:opacity-80 transition-opacity"
+              className="flex items-center gap-2.5 hover:opacity-80"
             >
               <div className="w-8 h-8 bg-gradient-to-br from-blue-600 to-indigo-600 rounded-lg flex items-center justify-center">
                 <BarChart3 className="w-4 h-4 text-white" />
               </div>
-              <span className="font-semibold text-slate-900 tracking-tight">Arnold</span>
+              <span className="font-semibold text-slate-900">Arnold</span>
             </button>
-            <button
-              onClick={() => navigate('/')}
-              className="px-3 py-2 text-sm font-medium rounded-md transition-colors text-slate-600 hover:text-slate-900 hover:bg-slate-100"
+
+            <a
+              href={TRIAL_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 bg-white text-slate-800 px-3 py-1.5 rounded border border-slate-300 text-sm font-bold hover:bg-slate-50 shadow-sm"
             >
-              ← Back to Home
-            </button>
+              <Slack className="w-4 h-4" />
+              <span>14 Day Free Trial</span>
+            </a>
           </div>
         </div>
       </nav>
+
       {children}
     </div>
   );
 }
 
-// Demo page - shows the ChatInterface
 function DemoPage() {
   return (
     <PageWrapper>
@@ -52,7 +56,6 @@ function DemoPage() {
   );
 }
 
-// About page
 function AboutPage() {
   return (
     <PageWrapper>
@@ -61,7 +64,6 @@ function AboutPage() {
   );
 }
 
-// Slack Install page
 function SlackInstallPage() {
   return (
     <PageWrapper>
@@ -70,7 +72,6 @@ function SlackInstallPage() {
   );
 }
 
-// Video Tour page
 function VideoPage() {
   return (
     <PageWrapper>
@@ -79,8 +80,7 @@ function VideoPage() {
   );
 }
 
-// Main App with Router
-function App() {
+export default function App() {
   return (
     <Router>
       <Routes>
@@ -96,5 +96,3 @@ function App() {
     </Router>
   );
 }
-
-export default App;
