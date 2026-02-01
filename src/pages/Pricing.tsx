@@ -36,7 +36,7 @@ export default function Pricing() {
                   <th className="px-6 py-4 text-center text-lg font-semibold text-slate-900">Tier</th>
                   <th className="px-6 py-4 text-center text-lg font-semibold text-slate-900">Queries Per Month</th>
                   <th className="px-6 py-4 text-center text-lg font-semibold text-slate-900">Price Per Month</th>
-                  <th className="px-6 py-4 text-center text-lg font-semibold text-slate-900">Time Saved Per Month</th>
+                  <th className="px-6 py-4 text-center text-lg font-semibold text-slate-900">Est. Time Saved Per Month</th>
                   <th className="px-6 py-4 text-center text-lg font-semibold text-slate-900">Annual Value Passed to You</th>
                 </tr>
               </thead>
