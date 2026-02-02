@@ -31,7 +31,7 @@ export default function ThankYou() {
           </h1>
           
           <p className="text-lg text-slate-600 mb-8">
-            I’ll email you within 12 hours to enable the 14 day free trial for your Slack workspace and make sure everything’s working smoothly
+            I’ll email you within 12 hours to confirm that the 14 day free trial for your Slack workspace is live and make sure everything’s working smoothly
           </p>
 
           <p className="text-lg text-slate-600 mb-8">
