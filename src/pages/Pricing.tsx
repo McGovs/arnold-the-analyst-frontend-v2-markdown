@@ -143,7 +143,7 @@ export default function Pricing() {
         <Dropdown
           title={
             <>
-              Annual Pricing ({' '}
+              Annual Pricing (
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">
               🥇 2 Months Free
               </span>
