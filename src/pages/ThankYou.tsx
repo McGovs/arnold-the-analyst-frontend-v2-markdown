@@ -7,7 +7,7 @@ export default function ThankYou() {
   const navigate = useNavigate();
 
   return (
-    <div className="min-h-screen bg-slate-50" style={{ fontFamily: "system-ui, sans-serif" }}>
+    <div className="min-h-screen bg-slate-50">
       <nav className="bg-white shadow-sm border-b border-slate-100">
         <div className="max-w-4xl mx-auto px-4">
           <div className="flex items-center justify-between h-16">
