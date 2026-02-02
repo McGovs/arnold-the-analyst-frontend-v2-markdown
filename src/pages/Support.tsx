@@ -17,7 +17,7 @@ export default function Support() {
     },
     {
       q: 'What data does Arnold access?',
-      a: 'Arnold can only see the GA4 data you explicitly ask for. It uses temporary, read-only access to your GA4 property to answer questions, then discards that access. OAuth tokens expire after one hour. Raw GA4 event data or user-level information is never stored.',
+      a: 'Arnold can only see the GA4 data you explicitly ask for. It uses temporary, read-only access to your GA4 property before discarding that access. OAuth tokens expire after one hour. Raw GA4 event data or user information is never stored.',
     },
     {
       q: 'Can I export results?',
