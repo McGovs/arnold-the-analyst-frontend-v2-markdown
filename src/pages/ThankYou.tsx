@@ -27,11 +27,19 @@ export default function ThankYou() {
       <main className="pt-24 pb-16 px-6">
         <div className="max-w-2xl mx-auto text-center">
           <h1 className="text-3xl font-bold text-slate-900 mb-6">
-            Thank You
+            You’re all set 🙌
           </h1>
           
           <p className="text-lg text-slate-600 mb-8">
-            Thank you for your interest in the 14 day free trial. Cian will be in touch within 12 hours to confirm.
+            I’ll be in touch within 12 hours to enable the trial for your Slack workspace and make sure everything’s set up properly.
+          </p>
+
+           <p className="text-lg text-slate-600 mb-8">
+            Speak soon,
+          </p>
+
+          <p className="text-lg text-slate-600 mb-8">
+            Cian
           </p>
           
           <button
