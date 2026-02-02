@@ -180,7 +180,7 @@ export default function Pricing() {
             <li className="flex items-start gap-3 text-base">
               <span className="text-blue-600 font-bold">→</span>
               <span>
-                <strong>You keep 80% of the value generated with a 4X ROI.</strong>
+                <strong>You keep 80% of the value generated with a 4X or more ROI.</strong>
               </span>
             </li>
           </ul>
