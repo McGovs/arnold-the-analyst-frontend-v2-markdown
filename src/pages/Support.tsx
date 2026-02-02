@@ -29,11 +29,14 @@ export default function Support() {
     },
   ];
 
+  const questionClass =
+    'text-base font-medium text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600';
+
   return (
     <main className="pt-20 pb-16 px-6 flex-grow">
       <div className="max-w-4xl mx-auto">
 
-        {/* Header — matches Pricing */}
+        {/* Header */}
         <div className="text-center mb-12">
           <h1 className="text-2xl md:text-3xl lg:text-4xl tracking-tight leading-normal font-bold text-slate-900 mb-4">
             Support &{' '}
@@ -64,7 +67,7 @@ export default function Support() {
                   onClick={() => setOpenFaq(openFaq === index ? null : index)}
                   className="w-full px-6 py-4 flex items-center justify-between text-left hover:bg-slate-50 transition-colors"
                 >
-                  <h3 className="text-base font-medium text-slate-900">
+                  <h3 className={questionClass}>
                     {faq.q}
                   </h3>
                   <ChevronDown
@@ -76,10 +79,10 @@ export default function Support() {
 
                 <div
                   className={`overflow-hidden transition-all duration-300 ease-in-out ${
-                    openFaq === index ? 'max-h-40 opacity-100' : 'max-h-0 opacity-0'
+                    openFaq === index ? 'max-h-48 opacity-100' : 'max-h-0 opacity-0'
                   }`}
                 >
-                  <div className="px-6 pb-6 text-base text-slate-600">
+                  <div className="px-6 pt-6 pb-6 text-base text-slate-600 leading-relaxed">
                     {faq.a}
                   </div>
                 </div>
@@ -88,7 +91,7 @@ export default function Support() {
           </div>
         </div>
 
-        {/* Still Have Questions — Collapsible */}
+        {/* Still Have Questions */}
         <div className="bg-white rounded-xl border border-slate-200 shadow-sm overflow-hidden">
           <button
             onClick={() => setIsSupportOpen(!isSupportOpen)}
@@ -109,7 +112,7 @@ export default function Support() {
               isSupportOpen ? 'max-h-40 opacity-100' : 'max-h-0 opacity-0'
             }`}
           >
-            <div className="px-6 pb-6 border-t border-slate-100 pt-4 text-base text-slate-600">
+            <div className="px-6 pt-6 pb-6 border-t border-slate-100 text-base text-slate-600">
               For support questions, feature requests, or technical issues, email{' '}
               <a
                 href="mailto:cian@arnoldtheanalyst.com"
