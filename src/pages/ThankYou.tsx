@@ -42,7 +42,7 @@ export default function ThankYou() {
             onClick={() => navigate('/')}
             className="inline-flex items-center justify-center bg-white text-slate-700 px-6 py-3 rounded-full text-sm font-bold border-2 border-slate-300 hover:border-slate-400 hover:bg-slate-50"
           >
-            Back to Home
+            Website Homepage
           </button>
         </div>
       </main>
