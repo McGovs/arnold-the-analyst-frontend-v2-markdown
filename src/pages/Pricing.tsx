@@ -51,7 +51,9 @@ export default function Pricing() {
                 className={`border-b border-slate-100 ${index % 2 === 1 ? 'bg-slate-50/50' : ''}`}
               >
                 <td className="px-6 py-4 text-center text-base font-medium text-slate-900">{tier.tier}</td>
-                <td className="px-6 py-4 text-center text-base text-slate-600">{tier.queries}</td>
+                <td className="px-6 py-4 text-center text-base text-slate-600">
+                  {tier.queries.toLocaleString()}
+                </td>
                 <td className="px-6 py-4 text-center text-base text-slate-900 font-medium">
                   ${tier.price.toLocaleString()}
                 </td>
