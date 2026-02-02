@@ -25,7 +25,7 @@ export default function Privacy() {
             </span>
           </h1>
           <p className="text-base text-slate-600">
-            How Arnold accesses, processes, and protects your data
+            How We Access, Process, and Protect Your Data
           </p>
         </div>
 
