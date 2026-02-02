@@ -34,7 +34,7 @@ export default function Privacy() {
 
           {/* Metadata bar — BLUE */}
           <div className="px-6 py-4 bg-gradient-to-r from-blue-600 to-indigo-600 text-sm text-white font-medium">
-            Effective Date: November 18, 2025 &nbsp;·&nbsp; Last Updated: November 18, 2025
+            Effective Date: January 30, 2026 &nbsp;·&nbsp; Last Updated: January 30, 2026
           </div>
 
           {/* 1. Introduction */}
