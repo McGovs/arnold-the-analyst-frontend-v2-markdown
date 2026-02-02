@@ -141,7 +141,7 @@ export default function Pricing() {
 
         {/* Annual Pricing */}
         <Dropdown
-          title="Annual Pricing – 12 Months At The Price Of 10"
+          title="Annual Pricing (12 Months At The Price Of 10)"
           open={isAnnualOpen}
           toggle={() => setIsAnnualOpen(!isAnnualOpen)}
         >
