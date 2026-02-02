@@ -145,7 +145,7 @@ export default function Pricing() {
             <>
               Annual Pricing ({' '}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">
-                12 Months Of Value For The Price Of 10
+                🥇 2 Months Free
               </span>
               )
             </>
