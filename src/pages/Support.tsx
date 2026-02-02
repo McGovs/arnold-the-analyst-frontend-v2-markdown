@@ -9,23 +9,19 @@ export default function Support() {
   const faqs = [
     {
       q: 'How do I install Arnold in my Slack workspace?',
-      a: "Go to the homepage or top navigation bar and click the '14 Day Free Trial' button.",
+      a: "Go to the homepage or top navigation bar and click the '14 Day Free Trial' button to request an install.",
     },
     {
       q: 'How do I connect my Google Analytics account?',
-      a: "After installing Arnold, run '/arnold-connect' in Slack. You will be redirected to Google OAuth to grant read-only access.",
+      a: "After installing Arnold, run '/arnold-connect' in Slack. You will be redirected to Google OAuth so that you can grant read-only access.",
     },
     {
       q: 'What data does Arnold access?',
-      a: 'Arnold has read-only access to your GA4 properties. OAuth tokens expire after one hour and no raw GA4 data is stored permanently.',
+      a: 'Arnold can only see the GA4 data you explicitly ask for. It uses temporary, read-only access to your GA4 property to answer questions, then discards that access. OAuth tokens expire after one hour, and Arnold does not store raw GA4 event data or user-level information.',
     },
     {
       q: 'Can I export results?',
       a: 'Yes. Every response includes a link to a Google Sheets file containing the underlying data.',
-    },
-    {
-      q: 'How much does Arnold cost?',
-      a: 'Arnold is currently free during beta. Paid plans will launch in 2026, with grandfathered pricing for early users.',
     },
   ];
 
@@ -120,7 +116,7 @@ export default function Support() {
               >
                 cian@arnoldtheanalyst.com
               </a>
-              . We typically respond within 12 hours.
+              . Typical response time is under 12 hours.
             </div>
           </div>
         </div>
