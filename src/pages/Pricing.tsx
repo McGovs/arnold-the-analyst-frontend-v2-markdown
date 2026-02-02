@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { ChevronDown } from 'lucide-react';
 
 export default function Pricing() {
-  const [isMonthlyOpen, setIsMonthlyOpen] = useState(true);
+  const [isMonthlyOpen, setIsMonthlyOpen] = useState(false);
   const [isAnnualOpen, setIsAnnualOpen] = useState(false);
   const [isValueCalcOpen, setIsValueCalcOpen] = useState(false);
 
@@ -80,7 +80,7 @@ export default function Pricing() {
     toggle,
     children,
   }: {
-    title: string;
+    title: React.ReactNode;
     open: boolean;
     toggle: () => void;
     children: React.ReactNode;
@@ -141,7 +141,14 @@ export default function Pricing() {
 
         {/* Annual Pricing */}
         <Dropdown
-          title="Annual Pricing - 12 Months At The Price Of 10"
+          title={
+            <>
+              Annual Pricing –{' '}
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">
+                12 Months Of Value For The Price Of 10
+              </span>
+            </>
+          }
           open={isAnnualOpen}
           toggle={() => setIsAnnualOpen(!isAnnualOpen)}
         >
@@ -155,46 +162,28 @@ export default function Pricing() {
         </Dropdown>
 
         {/* Value Calculation */}
-        <div className="bg-white rounded-xl border border-slate-200 shadow-sm overflow-hidden">
-          <button
-            onClick={() => setIsValueCalcOpen(!isValueCalcOpen)}
-            className="w-full px-6 py-4 flex items-center justify-between text-left hover:bg-slate-50 transition-colors"
-          >
-            <h2 className="text-lg font-semibold text-slate-900">
-              How We Calculate Value Passed To You
-            </h2>
-            <ChevronDown
-              className={`w-5 h-5 text-slate-400 transition-transform duration-200 ${
-                isValueCalcOpen ? 'rotate-180' : ''
-              }`}
-            />
-          </button>
-
-          <div
-            className={`overflow-hidden transition-all duration-300 ease-in-out ${
-              isValueCalcOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
-            }`}
-          >
-            <div className="px-6 pb-6 border-t border-slate-100 pt-4">
-              <ul className="space-y-3 text-slate-600">
-                <li className="flex items-start gap-3 text-base">
-                  <span className="text-blue-600 font-bold">→</span>
-                  <span>Conservative estimate of 3 minutes saved per query</span>
-                </li>
-                <li className="flex items-start gap-3 text-base">
-                  <span className="text-blue-600 font-bold">→</span>
-                  <span>Arnold user time valued at $50/hour on average</span>
-                </li>
-                <li className="flex items-start gap-3 text-base">
-                  <span className="text-blue-600 font-bold">→</span>
-                  <span>
-                    <strong>You keep 80% of the value generated with a 4X ROI.</strong>
-                  </span>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
+        <Dropdown
+          title="How We Calculate Value Passed To You"
+          open={isValueCalcOpen}
+          toggle={() => setIsValueCalcOpen(!isValueCalcOpen)}
+        >
+          <ul className="space-y-3 text-slate-600">
+            <li className="flex items-start gap-3 text-base">
+              <span className="text-blue-600 font-bold">→</span>
+              <span>Conservative estimate of 3 minutes saved per query</span>
+            </li>
+            <li className="flex items-start gap-3 text-base">
+              <span className="text-blue-600 font-bold">→</span>
+              <span>Arnold user time valued at $50/hour on average</span>
+            </li>
+            <li className="flex items-start gap-3 text-base">
+              <span className="text-blue-600 font-bold">→</span>
+              <span>
+                <strong>You keep 80% of the value generated with a 4X ROI.</strong>
+              </span>
+            </li>
+          </ul>
+        </Dropdown>
 
       </div>
     </main>
