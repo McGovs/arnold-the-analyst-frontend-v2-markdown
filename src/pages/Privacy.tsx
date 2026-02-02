@@ -9,11 +9,14 @@ export default function Privacy() {
     setOpenSection(openSection === section ? null : section);
   };
 
+  const sectionTitleClass =
+    'text-lg font-semibold mb-2 text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600';
+
   return (
     <main className="pt-20 pb-16 px-6 flex-grow">
       <div className="max-w-4xl mx-auto">
 
-        {/* Header – matches Pricing */}
+        {/* Header */}
         <div className="text-center mb-12">
           <h1 className="text-2xl md:text-3xl lg:text-4xl tracking-tight leading-normal font-bold text-slate-900 mb-4">
             Privacy{' '}
@@ -26,20 +29,17 @@ export default function Privacy() {
           </p>
         </div>
 
-        {/* Main Container */}
+        {/* Main Card */}
         <div className="bg-white rounded-xl border border-slate-200 shadow-sm overflow-hidden">
 
-          {/* Metadata bar */}
-          <div className="px-6 py-4 bg-slate-50 border-b border-slate-200 text-sm text-slate-600">
-            <strong>Effective Date:</strong> November 18, 2025 &nbsp;·&nbsp;
-            <strong>Last Updated:</strong> November 18, 2025
+          {/* Metadata bar — BLUE */}
+          <div className="px-6 py-4 bg-gradient-to-r from-blue-600 to-indigo-600 text-sm text-white font-medium">
+            Effective Date: November 18, 2025 &nbsp;·&nbsp; Last Updated: November 18, 2025
           </div>
 
           {/* 1. Introduction */}
           <div className="px-6 py-6">
-            <h2 className="text-lg font-semibold text-slate-900 mb-2">
-              1. Introduction
-            </h2>
+            <h2 className={sectionTitleClass}>1. Introduction</h2>
             <p className="text-base text-slate-600 leading-relaxed mb-4">
               Arnold The Analyst ("Arnold", "we", "us") is a Slack-based analytics assistant that allows authorized
               users to query Google Analytics 4 (GA4) data using natural language.
@@ -57,14 +57,11 @@ export default function Privacy() {
             </p>
           </div>
 
-          {/* Divider */}
           <div className="border-t border-slate-100" />
 
           {/* 2. Information We Collect */}
           <div className="px-6 py-6">
-            <h2 className="text-lg font-semibold text-slate-900 mb-2">
-              2. Information We Collect
-            </h2>
+            <h2 className={sectionTitleClass}>2. Information We Collect</h2>
             <ul className="list-disc list-inside space-y-1 text-base text-slate-600">
               <li>Slack workspace and user identifiers</li>
               <li>Google OAuth authorization tokens</li>
@@ -78,9 +75,7 @@ export default function Privacy() {
 
           {/* 3. How We Use Data */}
           <div className="px-6 py-6">
-            <h2 className="text-lg font-semibold text-slate-900 mb-2">
-              3. How We Use Your Information
-            </h2>
+            <h2 className={sectionTitleClass}>3. How We Use Your Information</h2>
             <p className="text-base text-slate-600 mb-3">
               Arnold processes data solely to deliver the analytics responses explicitly requested by authorized users.
             </p>
@@ -97,9 +92,7 @@ export default function Privacy() {
 
           {/* 4. Data Sharing */}
           <div className="px-6 py-6">
-            <h2 className="text-lg font-semibold text-slate-900 mb-2">
-              4. Data Sharing & Sub-Processors
-            </h2>
+            <h2 className={sectionTitleClass}>4. Data Sharing & Sub-Processors</h2>
             <p className="text-base text-slate-600 mb-3">
               Arnold does not sell or monetize customer data. Data is shared only with vetted sub-processors
               strictly as required to deliver the service.
@@ -108,23 +101,18 @@ export default function Privacy() {
               <li><strong>Google Cloud Platform:</strong> Primary hosting and processing infrastructure</li>
               <li><strong>Google Analytics API:</strong> Accessed only on explicit user request</li>
               <li><strong>Slack:</strong> Used solely to deliver responses</li>
-              <li>
-                <strong>AI Providers (OpenAI, Anthropic):</strong> Receive limited, aggregate GA4 metrics only
-              </li>
+              <li><strong>AI Providers (OpenAI, Anthropic):</strong> Receive limited, aggregate GA4 metrics only</li>
             </ul>
             <p className="text-base text-slate-600">
-              Arnold does not intentionally process or transmit personally identifiable information (PII) and is
-              designed to operate on aggregate, non-user-level analytics data only.
+              Arnold does not intentionally process or transmit personally identifiable information (PII).
             </p>
           </div>
 
           <div className="border-t border-slate-100" />
 
-          {/* 5. Security */}
+          {/* 5. Data Security */}
           <div className="px-6 py-6">
-            <h2 className="text-lg font-semibold text-slate-900 mb-2">
-              5. Data Security
-            </h2>
+            <h2 className={sectionTitleClass}>5. Data Security</h2>
             <ul className="list-disc list-inside space-y-1 text-base text-slate-600 mb-3">
               <li>Encryption of data in transit and at rest</li>
               <li>OAuth-scoped, least-privilege access controls</li>
@@ -132,8 +120,7 @@ export default function Privacy() {
               <li>No credential or raw analytics data exposure to AI vendors</li>
             </ul>
             <p className="text-base text-slate-600">
-              In the event of a data security incident affecting customer data, Arnold will notify affected customers
-              without undue delay in accordance with applicable law.
+              Arnold will notify affected customers of security incidents without undue delay.
             </p>
           </div>
 
@@ -141,9 +128,7 @@ export default function Privacy() {
 
           {/* 6. Data Retention */}
           <div className="px-6 py-6">
-            <h2 className="text-lg font-semibold text-slate-900 mb-2">
-              6. Data Retention
-            </h2>
+            <h2 className={sectionTitleClass}>6. Data Retention</h2>
             <ul className="list-disc list-inside space-y-1 text-base text-slate-600">
               <li>OAuth tokens revoked immediately upon disconnect</li>
               <li>No persistent storage of raw GA4 event-level data</li>
@@ -154,14 +139,12 @@ export default function Privacy() {
 
           <div className="border-t border-slate-100" />
 
-          {/* 7. Rights – Collapsible (Pricing-style) */}
+          {/* 7. Rights – Collapsible */}
           <button
             onClick={() => toggleSection('rights')}
             className="w-full px-6 py-4 flex items-center justify-between text-left hover:bg-slate-50 transition-colors"
           >
-            <h2 className="text-lg font-semibold text-slate-900">
-              7. Your Data Protection Rights
-            </h2>
+            <h2 className={sectionTitleClass}>7. Your Data Protection Rights</h2>
             <ChevronDown
               className={`w-5 h-5 text-slate-400 transition-transform ${
                 openSection === 'rights' ? 'rotate-180' : ''
@@ -175,9 +158,8 @@ export default function Privacy() {
             }`}
           >
             <div className="px-6 pb-6 text-base text-slate-600">
-              You may request access to, correction of, or deletion of personal data, or object to certain processing
-              activities. Requests can be submitted to <strong>cian@arnoldtheanalyst.com</strong> and will be handled
-              within statutory timelines.
+              You may request access to, correction of, or deletion of personal data by emailing
+              <strong> cian@arnoldtheanalyst.com</strong>.
             </div>
           </div>
 
@@ -185,9 +167,7 @@ export default function Privacy() {
 
           {/* Contact */}
           <div className="px-6 py-6">
-            <h2 className="text-lg font-semibold text-slate-900 mb-2">
-              Contact
-            </h2>
+            <h2 className={sectionTitleClass}>Contact</h2>
             <p className="text-base text-slate-600">
               Email: cian@arnoldtheanalyst.com<br />
               Location: Ireland
