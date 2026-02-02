@@ -19,7 +19,6 @@ function PageWrapper({ children }: { children: React.ReactNode }) {
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
-  // Helper to highlight active link
   const isActive = (path: string) => location.pathname === path;
 
   return (
@@ -32,15 +31,15 @@ function PageWrapper({ children }: { children: React.ReactNode }) {
         rel="stylesheet"
       />
 
-      <div 
-        className="min-h-screen bg-slate-50 flex flex-col" 
+      <div
+        className="min-h-screen bg-slate-50 flex flex-col"
         style={{ fontFamily: "'Playfair Display', serif" }}
       >
-        {/* GLOBAL NAV BAR - Styled to match Pricing.tsx exactly */}
+        {/* GLOBAL NAV BAR */}
         <nav className="fixed top-0 left-0 right-0 bg-white/80 backdrop-blur-md border-b border-slate-100 z-50">
           <div className="max-w-6xl mx-auto px-6">
             <div className="flex items-center justify-between h-14">
-              {/* Logo Section */}
+              {/* Logo */}
               <button
                 onClick={() => {
                   navigate('/');
@@ -54,31 +53,39 @@ function PageWrapper({ children }: { children: React.ReactNode }) {
                 <span className="font-semibold text-slate-900 tracking-tight">Arnold</span>
               </button>
 
-              {/* Desktop Links - Matches Pricing.tsx style */}
+              {/* Desktop Links */}
               <div className="hidden md:flex items-center gap-8">
                 <button
                   onClick={() => navigate('/')}
-                  className={`text-sm transition-colors ${isActive('/') ? 'font-medium text-blue-600' : 'text-slate-600 hover:text-slate-900'}`}
+                  className={`text-sm transition-colors ${
+                    isActive('/') ? 'font-medium text-blue-600' : 'text-slate-600 hover:text-slate-900'
+                  }`}
                 >
                   Home
                 </button>
                 <button
                   onClick={() => navigate('/pricing')}
-                  className={`text-sm transition-colors ${isActive('/pricing') ? 'font-medium text-blue-600' : 'text-slate-600 hover:text-slate-900'}`}
+                  className={`text-sm transition-colors ${
+                    isActive('/pricing') ? 'font-medium text-blue-600' : 'text-slate-600 hover:text-slate-900'
+                  }`}
                 >
                   Pricing
                 </button>
                 <button
                   onClick={() => navigate('/support')}
-                  className={`text-sm transition-colors ${isActive('/support') ? 'font-medium text-blue-600' : 'text-slate-600 hover:text-slate-900'}`}
+                  className={`text-sm transition-colors ${
+                    isActive('/support') ? 'font-medium text-blue-600' : 'text-slate-600 hover:text-slate-900'
+                  }`}
                 >
                   Support & FAQ
                 </button>
                 <button
                   onClick={() => navigate('/privacy-terms')}
-                  className={`text-sm transition-colors ${isActive('/privacy-terms') ? 'font-medium text-blue-600' : 'text-slate-600 hover:text-slate-900'}`}
+                  className={`text-sm transition-colors ${
+                    isActive('/privacy-terms') ? 'font-medium text-blue-600' : 'text-slate-600 hover:text-slate-900'
+                  }`}
                 >
-                  Privacy & Terms
+                  Privacy Policy
                 </button>
               </div>
 
@@ -87,7 +94,7 @@ function PageWrapper({ children }: { children: React.ReactNode }) {
                 <SlackInstallButton className="inline-flex items-center gap-2 bg-white text-slate-800 px-3 py-1.5 rounded border border-slate-300 text-sm font-bold hover:bg-slate-50 transition-colors shadow-sm" />
               </div>
 
-              {/* Mobile Burger Menu Button */}
+              {/* Mobile Menu Button */}
               <div className="md:hidden flex items-center">
                 <button
                   onClick={toggleMenu}
@@ -100,7 +107,7 @@ function PageWrapper({ children }: { children: React.ReactNode }) {
             </div>
           </div>
 
-          {/* Mobile Menu Overlay */}
+          {/* Mobile Menu */}
           {isMenuOpen && (
             <div className="md:hidden bg-white border-b border-slate-100 px-6 py-4 space-y-4 shadow-lg animate-in slide-in-from-top duration-200">
               <Link to="/" className="block text-base text-slate-700 font-medium" onClick={() => setIsMenuOpen(false)}>
@@ -113,7 +120,7 @@ function PageWrapper({ children }: { children: React.ReactNode }) {
                 Support & FAQ
               </Link>
               <Link to="/privacy-terms" className="block text-base text-slate-700 font-medium" onClick={() => setIsMenuOpen(false)}>
-                Privacy & Terms
+                Privacy Policy
               </Link>
               <div className="pt-2 border-t border-slate-50">
                 <SlackInstallButton className="w-full flex items-center justify-center gap-2 bg-slate-900 text-white px-4 py-3 rounded-lg text-sm font-bold hover:bg-slate-800 transition-colors" />
@@ -122,16 +129,13 @@ function PageWrapper({ children }: { children: React.ReactNode }) {
           )}
         </nav>
 
-        {/* Dynamic Page Content */}
-        <div className="flex-grow">
-          {children}
-        </div>
+        {/* Page Content */}
+        <div className="flex-grow">{children}</div>
       </div>
     </>
   );
 }
 
-// Ensure every page is wrapped for consistency
 function WrappedHomepage() { return <PageWrapper><Homepage /></PageWrapper>; }
 function WrappedPricing() { return <PageWrapper><Pricing /></PageWrapper>; }
 function DemoPage() { return <PageWrapper><ChatInterface /></PageWrapper>; }
