@@ -120,7 +120,7 @@ export default function Pricing() {
             </span>
           </h1>
           <p className="text-xl text-slate-600">
-            Every plan delivers a 4X return on your investment
+            Every plan delivers a 4X or more return on your investment
           </p>
         </div>
 
