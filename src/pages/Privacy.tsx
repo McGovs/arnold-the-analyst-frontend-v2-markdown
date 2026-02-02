@@ -1,14 +1,7 @@
 // src/pages/Privacy.tsx
-import React, { useState } from 'react';
-import { ChevronDown } from 'lucide-react';
+import React from 'react';
 
 export default function Privacy() {
-  const [openSection, setOpenSection] = useState<string | null>(null);
-
-  const toggleSection = (section: string) => {
-    setOpenSection(openSection === section ? null : section);
-  };
-
   const sectionTitleClass =
     'text-lg font-semibold mb-2 text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600';
 
@@ -32,7 +25,7 @@ export default function Privacy() {
         {/* Main Card */}
         <div className="bg-white rounded-xl border border-slate-200 shadow-sm overflow-hidden">
 
-          {/* Metadata bar — BLUE */}
+          {/* Metadata bar */}
           <div className="px-6 py-4 bg-gradient-to-r from-blue-600 to-indigo-600 text-sm text-white font-medium">
             Effective Date: January 30, 2026 &nbsp;·&nbsp; Last Updated: January 30, 2026
           </div>
@@ -139,28 +132,14 @@ export default function Privacy() {
 
           <div className="border-t border-slate-100" />
 
-          {/* 7. Rights – Collapsible */}
-          <button
-            onClick={() => toggleSection('rights')}
-            className="w-full px-6 py-4 flex items-center justify-between text-left hover:bg-slate-50 transition-colors"
-          >
+          {/* 7. Data Protection Rights — ALWAYS VISIBLE */}
+          <div className="px-6 py-6">
             <h2 className={sectionTitleClass}>7. Your Data Protection Rights</h2>
-            <ChevronDown
-              className={`w-5 h-5 text-slate-400 transition-transform ${
-                openSection === 'rights' ? 'rotate-180' : ''
-              }`}
-            />
-          </button>
-
-          <div
-            className={`overflow-hidden transition-all duration-300 ${
-              openSection === 'rights' ? 'max-h-64 opacity-100' : 'max-h-0 opacity-0'
-            }`}
-          >
-            <div className="px-6 pb-6 text-base text-slate-600">
-              You may request access to, correction of, or deletion of personal data by emailing
-              <strong> cian@arnoldtheanalyst.com</strong>.
-            </div>
+            <p className="text-base text-slate-600">
+              Under applicable data protection laws, you may request access to, correction of, or deletion of personal
+              data, as well as restrict or object to certain processing activities. Requests can be submitted to
+              <strong> cian@arnoldtheanalyst.com</strong> and will be handled within statutory timelines.
+            </p>
           </div>
 
           <div className="border-t border-slate-100" />
