@@ -34,10 +34,6 @@ export default function ThankYou() {
             I’ll be in touch within 12 hours to enable the trial for your Slack workspace and make sure everything’s set up properly.
           </p>
 
-           <p className="text-lg text-slate-600 mb-8">
-            Speak soon,
-          </p>
-
           <p className="text-lg text-slate-600 mb-8">
             Cian
           </p>
