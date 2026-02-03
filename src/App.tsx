@@ -8,6 +8,7 @@ import SlackInstall from './pages/SlackInstall';
 import Support from './pages/Support';
 import Video from './pages/Video';
 import ThankYou from './pages/ThankYou';
+import Install from './pages/Install';
 import ChatInterface from './components/ChatInterface';
 import { BarChart3, Menu, X } from 'lucide-react';
 import SlackInstallButton from './components/SlackInstallButton';
@@ -158,6 +159,7 @@ export default function App() {
         <Route path="/support" element={<SupportPage />} />
         <Route path="/video-tour" element={<VideoPage />} />
         <Route path="/thank-you" element={<ThankYou />} />
+        <Route path="/install" element={<Install />} />
       </Routes>
     </Router>
   );
