@@ -59,7 +59,7 @@ export default function Privacy() {
               <li>Slack workspace and user identifiers</li>
               <li>Google OAuth authorization tokens</li>
               <li>GA4 property IDs explicitly selected by the user</li>
-              <li>Natural-language queries submitted to Arnold</li>
+              <li>Natural language queries submitted to Arnold</li>
               <li>Operational logs for security, auditing, and reliability</li>
             </ul>
           </div>
@@ -76,7 +76,7 @@ export default function Privacy() {
               <li>Secure authentication and authorization</li>
               <li>Execution of GA4 queries initiated by the user</li>
               <li>Transformation of GA4 data into structured outputs</li>
-              <li>Generation of natural-language summaries from aggregate, non-user-level metrics</li>
+              <li>Generation of natural language summaries from aggregate, non-user level metrics</li>
               <li>Service reliability, monitoring, and abuse prevention</li>
             </ul>
           </div>
@@ -97,7 +97,7 @@ export default function Privacy() {
               <li><strong>AI Providers (OpenAI, Anthropic):</strong> Receive limited, aggregate GA4 metrics only</li>
             </ul>
             <p className="text-base text-slate-600">
-              Arnold does not intentionally process or transmit personally identifiable information (PII).
+              Arnold does not process or transmit personally identifiable information (PII).
             </p>
           </div>
 
@@ -108,7 +108,7 @@ export default function Privacy() {
             <h2 className={sectionTitleClass}>5. Data Security</h2>
             <ul className="list-disc list-inside space-y-1 text-base text-slate-600 mb-3">
               <li>Encryption of data in transit and at rest</li>
-              <li>OAuth-scoped, least-privilege access controls</li>
+              <li>OAuth scoped, least privilege access controls</li>
               <li>Isolated infrastructure hosted on Google Cloud</li>
               <li>No credential or raw analytics data exposure to AI vendors</li>
             </ul>
@@ -124,7 +124,7 @@ export default function Privacy() {
             <h2 className={sectionTitleClass}>6. Data Retention</h2>
             <ul className="list-disc list-inside space-y-1 text-base text-slate-600">
               <li>OAuth tokens revoked immediately upon disconnect</li>
-              <li>No persistent storage of raw GA4 event-level data</li>
+              <li>No persistent storage of raw GA4 event level data</li>
               <li>Operational metadata retained for up to 30 days</li>
               <li>Workspace data deleted within 30 days of uninstall</li>
             </ul>
