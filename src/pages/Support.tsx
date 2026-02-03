@@ -8,7 +8,7 @@ export default function Support() {
 
   const faqs = [
     {
-      q: 'How do I install Arnold in my Slack workspace?',
+      q: 'How do I install Arnold for my Slack workspace?',
       a: "Go to the homepage or top navigation bar and click the '14 Day Free Trial' button to request an install.",
     },
     {
