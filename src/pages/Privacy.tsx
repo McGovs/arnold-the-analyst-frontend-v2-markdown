@@ -42,12 +42,6 @@ export default function Privacy() {
               Article 6(1)(f) (legitimate interests in providing, maintaining, and securing the service).
               Arnold acts solely as a data processor and transient processing layer for data accessed on your behalf.
             </p>
-            <p className="text-base text-slate-600 leading-relaxed">
-              <strong>Operator:</strong> Cian McGovern<br />
-              <strong>Location:</strong> Ireland<br />
-              <strong>Contact:</strong> cian@arnoldtheanalyst.com<br />
-              <strong>Website:</strong> https://arnoldtheanalyst.com
-            </p>
           </div>
 
           <div className="border-t border-slate-100" />
