@@ -34,7 +34,7 @@ export default function Homepage() {
             <br />
             <span>Insights In </span>
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">
-              30s
+              20s
             </span>
           </h1>
 
